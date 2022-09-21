@@ -162,6 +162,7 @@ h6 {
   font-size: 20px;
   line-height: 28px;
   color: #172B4D;
+  margin-top: -30px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -177,5 +178,14 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main-container .homepage-section .scroll-button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: calc(50% - 40px/2 + 0.5px);
+  bottom: 4px;
+  background: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
