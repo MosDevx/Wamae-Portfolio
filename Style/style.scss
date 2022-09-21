@@ -104,7 +104,7 @@ h6 {
       text-align: center;
       color: #28352f;
       align-items: center;
-      margin-left:20px;
+      margin-left: 20px;
     }
 
     .menu-icon {
@@ -121,51 +121,48 @@ h6 {
     background-image: url(../Assets/Images/header-illsutration-mobile.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    align-items:center;
+    align-items: center;
     text-align: center;
     justify-content: space-around;
-    
 
     h1 {
-      font-style:normal;
-      font-weight:700;
-      font-size:40px;
-      line-height:52px;
-      color: #172B4D;
-      
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 52px;
+      color: #172b4d;
+
       span {
-        color:#36b37e;
+        color: #36b37e;
       }
     }
 
     p {
       font-style: normal;
-      font-weight:400;
-      font-size:20px;
-      line-height:28px;
-      color: #172B4D;
-      margin-top: -30px;
-      margin-left:10px;
-      margin-right:10px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      color: #172b4d;
+      margin-top:40px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
 
-    .social-media-nav{
-        display:flex;
-        width:50%;
-        justify-content:space-between;
-        align-items:center;
-        
-       
+    .social-media-nav {
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .scroll-button{
-      position:absolute;
-      width:40px;
-      height:40px;
-      left:calc(50% - 40px/2 + 0.5px);
-      bottom:4px;
-      background:#ffffff;
-      border:none;
+    .scroll-button {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: calc(50% - 40px / 2 + 0.5px);
+      bottom: 4px;
+      background: #fff;
+      border: none;
     }
   }
 }

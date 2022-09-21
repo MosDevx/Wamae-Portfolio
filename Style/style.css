@@ -152,7 +152,7 @@ h6 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .main-container .homepage-section h1 span {
@@ -164,10 +164,10 @@ h6 {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #172B4D;
-  margin-top: -30px;
-  margin-left: 10px;
-  margin-right: 10px;
+  color: #172b4d;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .main-container .homepage-section .social-media-nav {
@@ -187,9 +187,9 @@ h6 {
   position: absolute;
   width: 40px;
   height: 40px;
-  left: calc(50% - 40px/2 + 0.5px);
+  left: calc(50% - 40px / 2 + 0.5px);
   bottom: 4px;
-  background: #ffffff;
+  background: #fff;
   border: none;
 }
 /*# sourceMappingURL=style.css.map */
