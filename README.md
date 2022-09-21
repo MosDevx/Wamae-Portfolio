@@ -26,9 +26,6 @@ To get a local copy up and running follow these simple example steps.
 ### Install
 	Open Html file in preferred browser
 
-
-
-
 ## Authors
 
 👤 **Author1**
