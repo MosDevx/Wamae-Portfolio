@@ -148,11 +148,13 @@ h6 {
       margin-right: 20px;
     }
 
-    .social-media-nav {
+    .social-media-list {
       display: flex;
       width: 50%;
       justify-content: space-between;
       align-items: center;
+      list-style-type: none;
+      padding: 0;
     }
 
     .scroll-button {

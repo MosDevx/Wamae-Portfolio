@@ -171,7 +171,7 @@ h6 {
   margin-right: 20px;
 }
 
-.main-container .homepage-section .social-media-nav {
+.main-container .homepage-section .social-media-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,6 +182,8 @@ h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  list-style-type: none;
+  padding: 0;
 }
 
 .main-container .homepage-section .scroll-button {
