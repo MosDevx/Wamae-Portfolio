@@ -120,6 +120,7 @@ h6 {
     flex: 1;
     background-image: url(../Assets/Images/header-illsutration-mobile.svg);
     background-size: cover;
+    background-repeat: no-repeat;
     align-items:center;
     text-align: center;
     justify-content: space-around;
@@ -153,6 +154,8 @@ h6 {
         width:50%;
         justify-content:space-between;
         align-items:center;
+        
+       
     }
 
     .scroll-button{
@@ -162,6 +165,7 @@ h6 {
       left:calc(50% - 40px/2 + 0.5px);
       bottom:4px;
       background:#ffffff;
+      border:none;
     }
   }
 }

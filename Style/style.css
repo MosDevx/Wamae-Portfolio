@@ -138,6 +138,7 @@ h6 {
           flex: 1;
   background-image: url(../Assets/Images/header-illsutration-mobile.svg);
   background-size: cover;
+  background-repeat: no-repeat;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -189,5 +190,6 @@ h6 {
   left: calc(50% - 40px/2 + 0.5px);
   bottom: 4px;
   background: #ffffff;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
