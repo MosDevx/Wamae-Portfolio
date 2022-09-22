@@ -23,6 +23,7 @@
   */
 html,
 body {
+  scroll-behavior: smooth;
   height: 100%;
   font-family: 'Inter', sans-serif;
 }
@@ -82,7 +83,7 @@ h6 {
 
 // end reset
 
-.main-container {
+.homepage-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -168,3 +169,37 @@ h6 {
     }
   }
 }
+
+.project-container{
+  height:100vh;
+
+  section{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+      font-weight: 700;
+      font-size:40px;
+      line-height:52px;
+      text-align: center;
+    }
+
+    div {
+      width:48px;
+      height:4px;
+      background:#36B37E;
+      border-radius:24px;
+    }
+  }
+    
+  .project-grid{
+    display:grid;
+    
+    .project-card{
+      
+    }
+  }
+}
+  

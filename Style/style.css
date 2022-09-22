@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
-
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -7,7 +6,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*
@@ -22,6 +21,7 @@
   */
 html,
 body {
+  scroll-behavior: smooth;
   height: 100%;
   font-family: 'Inter', sans-serif;
 }
@@ -79,32 +79,32 @@ h6 {
   isolation: isolate;
 }
 
-.main-container {
+.homepage-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
 }
 
-.main-container .homepage-header {
+.homepage-container .homepage-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-  -ms-flex: 0;
-  flex: 0;
+      -ms-flex: 0;
+          flex: 0;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 8px;
   margin-top: 10px;
 }
 
-.main-container .homepage-header span {
+.homepage-container .homepage-header span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,40 +115,40 @@ h6 {
   text-align: center;
   color: #28352f;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 20px;
 }
 
-.main-container .homepage-header .menu-icon {
+.homepage-container .homepage-header .menu-icon {
   height: 22px;
   width: 22px;
   margin-right: 20px;
 }
 
-.main-container .homepage-section {
+.homepage-container .homepage-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background-image: url(../Assets/Images/header-illsutration-mobile.svg);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
-.main-container .homepage-section h1 {
+.homepage-container .homepage-section h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -156,11 +156,11 @@ h6 {
   color: #172b4d;
 }
 
-.main-container .homepage-section h1 span {
+.homepage-container .homepage-section h1 span {
   color: #36b37e;
 }
 
-.main-container .homepage-section p {
+.homepage-container .homepage-section p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -171,22 +171,22 @@ h6 {
   margin-right: 20px;
 }
 
-.main-container .homepage-section .social-media-list {
+.homepage-container .homepage-section .social-media-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 50%;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
   padding: 0;
 }
 
-.main-container .homepage-section .scroll-button {
+.homepage-container .homepage-section .scroll-button {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -195,3 +195,43 @@ h6 {
   background: #fff;
   border: none;
 }
+
+.project-container {
+  height: 100vh;
+}
+
+.project-container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-container section h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.project-container section div {
+  width: 48px;
+  height: 4px;
+  background: #36B37E;
+  border-radius: 24px;
+}
+
+.project-container .project-grid {
+  display: -ms-grid;
+  display: grid;
+}
+/*# sourceMappingURL=style.css.map */
