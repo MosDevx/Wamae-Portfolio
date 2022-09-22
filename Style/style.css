@@ -242,6 +242,12 @@ h6 {
 .project-container .project-grid {
   display: -ms-grid;
   display: grid;
+  grid-gap: 20px;
+  padding: 10px 0;
+  -ms-grid-columns: max-content;
+      grid-template-columns: -webkit-max-content;
+      grid-template-columns: max-content;
+  background-color: yellow;
 }
 
 .project-container .project-grid .project-card {

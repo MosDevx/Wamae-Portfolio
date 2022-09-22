@@ -210,6 +210,12 @@ $text-main: #172B4D;
     
   .project-grid{
     display:grid;
+    grid-gap:20px;
+    padding: 10px 0;
+    // grid-template-rows:max-content;
+    grid-template-columns:max-content;
+    // grid-auto-flow: column;
+    background-color:yellow;
     
     .project-card{
       display:flex;
