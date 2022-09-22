@@ -181,12 +181,16 @@ $text-main: #172B4D;
 
 .project-container{
   height:100%;
+  display:flex;
+  flex-direction: column;
+
 
   section{
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    margin:50px 0;
 
     h1{
       font-weight: 700;
@@ -211,7 +215,6 @@ $text-main: #172B4D;
       display:flex;
       flex-direction:column;
       text-align: center;
-      // background:blue;
       margin:0px 15px;
       border: 1px solid #D0D9D4;
       background:#EBF0EE;
@@ -220,7 +223,7 @@ $text-main: #172B4D;
 
       .project-card-image{
         flex-basis:250px;
-       
+        padding: 20px;
       }
     
       .project-card-details{

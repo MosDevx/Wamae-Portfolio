@@ -198,6 +198,13 @@ h6 {
 
 .project-container {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .project-container section {
@@ -214,6 +221,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 50px 0;
 }
 
 .project-container section h1 {
@@ -254,6 +262,7 @@ h6 {
 .project-container .project-grid .project-card .project-card-image {
   -ms-flex-preferred-size: 250px;
       flex-basis: 250px;
+  padding: 20px;
 }
 
 .project-container .project-grid .project-card .project-card-details {
