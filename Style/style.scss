@@ -476,6 +476,14 @@ $screen-extra-large-min:1200px;
           align-items:center;
         }
       } 
+      .skill-card-heading{
+        font-style:normal;
+        font-weight:600;
+        font-size:24px;
+        line-height:32px;
+        margin-top:10px;
+        color: #344563;;
+      }
         .skill-card-details{
           display:flex;
           // flex-grow:1;
@@ -489,22 +497,15 @@ $screen-extra-large-min:1200px;
           // border-radius:8px;
           margin-top:20px;
 
-        .card-heading{
-          font-style:normal;
-          font-weight:600;
-          font-size:24px;
-          line-height:32px;
-          margin-top:10px;
-          color: $text-project-card;
-        }
+  
         
-        .card-languages{
+        .skill-card-languages{
           margin: 10px 10px;
-          flex-basis:0;
+          // flex-basis:0;
           height:auto;
           max-width:315px;
          
-          .language-list{
+          .skill-language-list{
             display:flex;
             justify-content:center;
             flex-wrap:wrap;

@@ -527,6 +527,15 @@ h6 {
           align-items: center;
 }
 
+.about-me-page .grid-skill-display .skill-card .skill-card-heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 10px;
+  color: #344563;
+}
+
 .about-me-page .grid-skill-display .skill-card .skill-card-details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,24 +556,13 @@ h6 {
   margin-top: 20px;
 }
 
-.about-me-page .grid-skill-display .skill-card .skill-card-details .card-heading {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  margin-top: 10px;
-  color: #3A4A42;
-}
-
-.about-me-page .grid-skill-display .skill-card .skill-card-details .card-languages {
+.about-me-page .grid-skill-display .skill-card .skill-card-details .skill-card-languages {
   margin: 10px 10px;
-  -ms-flex-preferred-size: 0;
-      flex-basis: 0;
   height: auto;
   max-width: 315px;
 }
 
-.about-me-page .grid-skill-display .skill-card .skill-card-details .card-languages .language-list {
+.about-me-page .grid-skill-display .skill-card .skill-card-details .skill-card-languages .skill-language-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,7 +576,7 @@ h6 {
   list-style-type: none;
 }
 
-.about-me-page .grid-skill-display .skill-card .skill-card-details .card-languages .language-list li {
+.about-me-page .grid-skill-display .skill-card .skill-card-details .skill-card-languages .skill-language-list li {
   padding: 12px;
   background: #fff;
   border-radius: 8px;
