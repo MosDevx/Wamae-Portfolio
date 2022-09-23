@@ -249,13 +249,16 @@ $screen-extra-large-min:1200px;
     grid-gap:20px;
     padding: 10px 0px;
     margin:0 auto;
-    background-color:yellow;
+    // background-color:yellow;
 
     @include medium{
       grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-gap:24px;
       // grid-auto-flow:column;
     }
     @include large{
+      grid-gap:32px 24px;
       grid-template-columns:1fr 1fr 1fr;
     }
     
@@ -267,40 +270,59 @@ $screen-extra-large-min:1200px;
       border: 1px solid #D0D9D4;
       background:#EBF0EE;
       border-radius:8px;
+      // max-width:315px;
       
 
       .project-card-image{
-        flex-basis:250px;
+        // flex-basis:0;
+        // flex-grow:1;
+        flex: 1 1 0px;
+
         padding: 20px;
       }
     
       .project-card-details{
         display:flex;
+        // flex-grow:1;
+        flex: 1 1 0px;
         width:100%;
+        gap:10px;
         flex-direction:column;
-        justify-content:space-around;
+        justify-content:space-between;
         background:#fff;
         padding:10px 0px;
         border-radius:8px;
 
         .project-card-heading{
+          // flex-grow:1;
+          // flex-basis:0;
           font-style:normal;
           font-weight:600;
           font-size:24px;
           line-height:32px;
-          margin:10px 0;
+          // margin:10px 0;
+          margin-top:10px;
           color: $text-project-card;
         }
+        
         .project-card-languages{
-          margin: 8px 10px;
+          margin: 10px 10px;
+          // background-color:yellow;
+          // flex-grow:1;
+          flex-basis:0;
+          height:auto;
+          max-width:315px;
          
           .language-list{
             display:flex;
-            justify-content:space-between;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:10px 10px;
             padding: 0px;
             list-style-type: none;
 
             li{
+              
               padding: 8px 12px;
               background:#EBF0EE;
               border-radius:4px;
@@ -308,17 +330,21 @@ $screen-extra-large-min:1200px;
               line-height:16px;
               font-style:normal;
               font-weight:600;
+              text-align: center;
               color: $text-project-card;
             }
           }
         }
+        
         .project-card-button{
-          display:flex;
-          align-items:center;
+          // flex-grow:1;
+          // display:flex;
+          // flex-basis:0;
+          // align-items:center;
           width:122px;
           height:48px;
           padding:12px;
-          margin:20px 0px;
+          margin-bottom:10px;
           background:$button-enable;
           border-radius:4px;
           border:0;
