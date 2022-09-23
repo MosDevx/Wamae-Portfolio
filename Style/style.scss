@@ -167,6 +167,8 @@ $screen-extra-large-min:1200px;
     align-items: center;
     text-align: center;
     justify-content: space-around;
+    margin: 0 20px;
+
 
     h1 {
       font-style: normal;
@@ -174,6 +176,7 @@ $screen-extra-large-min:1200px;
       font-size: 40px;
       line-height: 52px;
       color: $text-main;
+      
 
       span {
         color:$primary;
@@ -244,17 +247,23 @@ $screen-extra-large-min:1200px;
   .project-grid{
     display:grid;
     grid-gap:20px;
-    padding: 10px 0;
-    // grid-template-rows:max-content;
-    grid-template-columns:max-content;
-    // grid-auto-flow: column;
+    padding: 10px 0px;
+    margin:0 auto;
     background-color:yellow;
+
+    @include medium{
+      grid-template-columns: 1fr 1fr;
+      // grid-auto-flow:column;
+    }
+    @include large{
+      grid-template-columns:1fr 1fr 1fr;
+    }
     
     .project-card{
       display:flex;
       flex-direction:column;
       text-align: center;
-      margin:0px 15px;
+      margin:0px 0px;
       border: 1px solid #D0D9D4;
       background:#EBF0EE;
       border-radius:8px;
