@@ -198,7 +198,7 @@ h6 {
   border: none;
 }
 
-.project-page {
+section.project-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,7 +208,7 @@ h6 {
   flex-direction: column;
 }
 
-.project-page section {
+section.project-page div.recent-work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +225,7 @@ h6 {
   margin: 50px 0;
 }
 
-.project-page section h1 {
+section.project-page div.recent-work h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -233,14 +233,15 @@ h6 {
   color: #172b4d;
 }
 
-.project-page section .underline {
+section.project-page div.recent-work .underline {
   width: 48px;
   height: 4px;
   background: #36b37e;
   border-radius: 24px;
+  margin-top: 20px;
 }
 
-.project-page .grid-card-display {
+section.project-page .grid-card-display {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
@@ -249,7 +250,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
-  .project-page .grid-card-display {
+  section.project-page .grid-card-display {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr;
@@ -259,14 +260,14 @@ h6 {
 }
 
 @media (min-width: 992px) {
-  .project-page .grid-card-display {
+  section.project-page .grid-card-display {
     grid-gap: 32px 24px;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-.project-page .grid-card-display .project-card {
+section.project-page .grid-card-display .project-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,14 +282,14 @@ h6 {
   border-radius: 8px;
 }
 
-.project-page .grid-card-display .project-card .project-card-image {
+section.project-page .grid-card-display .project-card .project-card-image {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 0;
   flex: 1 1 0;
   padding: 20px;
 }
 
-.project-page .grid-card-display .project-card .card-details {
+section.project-page .grid-card-display .project-card .card-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,7 +310,7 @@ h6 {
   border-radius: 8px;
 }
 
-.project-page .grid-card-display .project-card .card-details .card-heading {
+section.project-page .grid-card-display .project-card .card-details .card-heading {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -318,7 +319,7 @@ h6 {
   color: #3a4a42;
 }
 
-.project-page .grid-card-display .project-card .card-details .card-languages {
+section.project-page .grid-card-display .project-card .card-details .card-languages {
   margin: 10px 10px;
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
@@ -326,7 +327,7 @@ h6 {
   max-width: 315px;
 }
 
-.project-page .grid-card-display .project-card .card-details .card-languages .language-list {
+section.project-page .grid-card-display .project-card .card-details .card-languages .language-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,7 +341,7 @@ h6 {
   list-style-type: none;
 }
 
-.project-page .grid-card-display .project-card .card-details .card-languages .language-list li {
+section.project-page .grid-card-display .project-card .card-details .card-languages .language-list li {
   padding: 8px 12px;
   background: #ebf0ee;
   border-radius: 4px;
@@ -352,12 +353,12 @@ h6 {
   color: #3a4a42;
 }
 
-.project-page .grid-card-display .project-card .card-details .project-card-button {
+section.project-page .grid-card-display .project-card .card-details .project-card-button {
   width: 122px;
   height: 48px;
   padding: 12px;
   margin-bottom: 10px;
-  background: #36b37f;
+  background: #36b37e;
   border-radius: 4px;
   border: 0;
   -ms-flex-item-align: center;
@@ -373,11 +374,16 @@ h6 {
   white-space: nowrap;
 }
 
-.project-page .grid-card-display .project-card .card-details .project-card-button:active {
+section.project-page .grid-card-display .project-card .card-details .project-card-button:hover {
+  -webkit-box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+  box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+}
+
+section.project-page .grid-card-display .project-card .card-details .project-card-button:active {
   background: #008552;
 }
 
-.about-me-page {
+section.about-me-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,10 +392,10 @@ h6 {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100vh;
-  margin: 30px 20px;
+  margin: 30px 10px;
 }
 
-.about-me-page .about-me-section {
+section.about-me-page div.about-me-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,9 +412,12 @@ h6 {
   -ms-flex-line-pack: justify;
   align-content: space-between;
   text-align: center;
+  background-image: url(../Assets/Images/background-about-me-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.about-me-page .about-me-section h2 {
+section.about-me-page div.about-me-div h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -416,7 +425,7 @@ h6 {
   margin: 10px 0;
 }
 
-.about-me-page .about-me-section p {
+section.about-me-page div.about-me-div p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -424,7 +433,7 @@ h6 {
   margin: 10px 0;
 }
 
-.about-me-page .about-me-section .resume-button {
+section.about-me-page div.about-me-div .resume-button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -432,7 +441,7 @@ h6 {
   padding: 12px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background: #36b37f;
+  background: #36b37e;
   border-radius: 4px;
   border: 0;
   -ms-flex-item-align: center;
@@ -448,11 +457,16 @@ h6 {
   white-space: nowrap;
 }
 
-.about-me-page .about-me-section .resume-button:active {
+section.about-me-page div.about-me-div .resume-button:hover {
+  -webkit-box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+  box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+}
+
+section.about-me-page div.about-me-div .resume-button:active {
   background: #008552;
 }
 
-.about-me-page .grid-skill-display {
+section.about-me-page .grid-skill-display {
   display: -ms-grid;
   display: grid;
   grid-gap: 20px;
@@ -461,7 +475,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
-  .about-me-page .grid-skill-display {
+  section.about-me-page .grid-skill-display {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr;
@@ -471,14 +485,14 @@ h6 {
 }
 
 @media (min-width: 992px) {
-  .about-me-page .grid-skill-display {
+  section.about-me-page .grid-skill-display {
     grid-gap: 32px 24px;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-.about-me-page .grid-skill-display .skill-card {
+section.about-me-page .grid-skill-display .skill-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,7 +511,7 @@ h6 {
   padding: 20px 0;
 }
 
-.about-me-page .grid-skill-display .skill-card .framework-logo-div {
+section.about-me-page .grid-skill-display .skill-card .framework-logo-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,7 +524,7 @@ h6 {
   margin-bottom: 30px;
 }
 
-.about-me-page .grid-skill-display .skill-card .framework-logo-div .framework-logo {
+section.about-me-page .grid-skill-display .skill-card .framework-logo-div .framework-logo {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -528,7 +542,7 @@ h6 {
   align-items: center;
 }
 
-.about-me-page .grid-skill-display .skill-card .skill-card-heading {
+section.about-me-page .grid-skill-display .skill-card .skill-card-heading {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -537,7 +551,7 @@ h6 {
   color: #344563;
 }
 
-.about-me-page .grid-skill-display .skill-card .skill-card-details {
+section.about-me-page .grid-skill-display .skill-card .skill-card-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,13 +571,13 @@ h6 {
   margin-top: 20px;
 }
 
-.about-me-page .grid-skill-display .skill-card .skill-card-details .skill-card-languages {
+section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill-card-languages {
   margin: 10px 10px;
   height: auto;
   max-width: 315px;
 }
 
-.about-me-page .grid-skill-display .skill-card .skill-card-details .skill-card-languages .skill-language-list {
+section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill-card-languages .skill-language-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -577,7 +591,7 @@ h6 {
   list-style-type: none;
 }
 
-.about-me-page .grid-skill-display .skill-card .skill-card-details .skill-card-languages .skill-language-list li {
+section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill-card-languages .skill-language-list li {
   padding: 12px;
   background: #fff;
   border-radius: 8px;
