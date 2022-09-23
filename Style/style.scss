@@ -91,6 +91,39 @@ $button-active:#008552;
 $text-project-card:#3A4A42;
 $text-main: #172B4D;
 
+// Screen breakpoints
+$screen-small-min:576px;
+$screen-medium-min:768px;
+$screen-large-min:992px;
+$screen-extra-large-min:1200px;
+
+//mixin for media-queries
+
+@mixin small {
+  @media(min-width: #{$screen-small-min}){
+    @content;
+  }
+}
+
+@mixin medium{
+  @media(min-width: #{$screen-medium-min}){
+    @content;
+  }
+}
+
+@mixin large{
+  @media(min-width: #{$screen-large-min}){
+    @content;
+  }
+}
+
+@mixin extra-large{
+  @media(min-width: #{$screen-extra-large-min}) {
+    @content;
+  }
+}
+
+
 
 .homepage-container {
   display: flex;
