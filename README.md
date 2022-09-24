@@ -23,6 +23,7 @@ To get a local copy up and running follow these simple example steps.
  - Git
 ### Setup
 	Clone this repository
+	git clone https://github.com/MosDevx/Wamae-Portfolio.git
 ### Install
 	Open Html file in preferred browser
 
