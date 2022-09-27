@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -6,7 +7,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*
@@ -85,8 +86,8 @@ h6 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100vh;
 }
 
@@ -95,11 +96,11 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 0;
-      -ms-flex: 0;
-          flex: 0;
+  -ms-flex: 0;
+  flex: 0;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 8px;
   margin-top: 10px;
 }
@@ -115,8 +116,8 @@ h6 {
   text-align: center;
   color: #28352f;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-left: 20px;
 }
 
@@ -132,20 +133,20 @@ h6 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background-image: url(../Assets/Images/header-illsutration-mobile.svg);
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin: 0 20px;
 }
 
@@ -178,11 +179,11 @@ h6 {
   display: flex;
   width: 50%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   list-style-type: none;
   padding: 0;
 }
@@ -203,8 +204,8 @@ section.project-page {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 section.project-page div.recent-work {
@@ -213,14 +214,14 @@ section.project-page div.recent-work {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 50px 0;
 }
 
@@ -251,9 +252,9 @@ section.project-page .grid-card-display {
 @media (min-width: 768px) {
   section.project-page .grid-card-display {
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    grid-template-rows: 1fr;
     grid-gap: 24px;
   }
 }
@@ -262,7 +263,7 @@ section.project-page .grid-card-display {
   section.project-page .grid-card-display {
     grid-gap: 32px 24px;
     -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -272,8 +273,8 @@ section.project-page .grid-card-display .project-card {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   margin: 0 0;
   border: 1px solid #d0d9d4;
@@ -283,8 +284,8 @@ section.project-page .grid-card-display .project-card {
 
 section.project-page .grid-card-display .project-card .project-card-image {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
   padding: 20px;
 }
 
@@ -293,17 +294,17 @@ section.project-page .grid-card-display .project-card .card-details {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
   width: 100%;
   gap: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background: #fff;
   padding: 10px 0;
   border-radius: 8px;
@@ -321,7 +322,7 @@ section.project-page .grid-card-display .project-card .card-details .card-headin
 section.project-page .grid-card-display .project-card .card-details .card-languages {
   margin: 10px 10px;
   -ms-flex-preferred-size: 0;
-      flex-basis: 0;
+  flex-basis: 0;
   height: auto;
   max-width: 315px;
 }
@@ -331,10 +332,10 @@ section.project-page .grid-card-display .project-card .card-details .card-langua
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 10px 10px;
   padding: 0;
   list-style-type: none;
@@ -361,8 +362,8 @@ section.project-page .grid-card-display .project-card .card-details .project-car
   border-radius: 4px;
   border: 0;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   letter-spacing: 0.03em;
   text-align: center;
   font-weight: 500;
@@ -375,7 +376,7 @@ section.project-page .grid-card-display .project-card .card-details .project-car
 
 section.project-page .grid-card-display .project-card .card-details .project-card-button:hover {
   -webkit-box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
-          box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+  box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
 }
 
 section.project-page .grid-card-display .project-card .card-details .project-card-button:active {
@@ -388,8 +389,8 @@ section.about-me-page {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 30px 10px;
 }
 
@@ -399,16 +400,16 @@ section.about-me-page div.about-me-div {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-line-pack: justify;
-      align-content: space-between;
+  align-content: space-between;
   text-align: center;
   background-image: url(../Assets/Images/background-about-me-mobile.svg);
   background-size: cover;
@@ -443,8 +444,8 @@ section.about-me-page div.about-me-div .resume-button {
   border-radius: 4px;
   border: 0;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   letter-spacing: 0.03em;
   text-align: center;
   font-weight: 500;
@@ -457,7 +458,7 @@ section.about-me-page div.about-me-div .resume-button {
 
 section.about-me-page div.about-me-div .resume-button:hover {
   -webkit-box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
-          box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+  box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
 }
 
 section.about-me-page div.about-me-div .resume-button:active {
@@ -475,9 +476,9 @@ section.about-me-page .grid-skill-display {
 @media (min-width: 768px) {
   section.about-me-page .grid-skill-display {
     -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    grid-template-rows: 1fr;
     grid-gap: 24px;
   }
 }
@@ -486,7 +487,7 @@ section.about-me-page .grid-skill-display {
   section.about-me-page .grid-skill-display {
     grid-gap: 32px 24px;
     -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -496,16 +497,16 @@ section.about-me-page .grid-skill-display .skill-card {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   margin: 0 0;
   border: 1px solid #d0d9d4;
   background: #ebf0ee;
   border-radius: 8px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 20px 0;
 }
 
@@ -514,11 +515,11 @@ section.about-me-page .grid-skill-display .skill-card .framework-logo-div {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -528,16 +529,16 @@ section.about-me-page .grid-skill-display .skill-card .framework-logo-div .frame
   border-radius: 50%;
   background: #fff;
   -webkit-box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
-          box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 section.about-me-page .grid-skill-display .skill-card .skill-card-heading {
@@ -554,17 +555,17 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
   width: 100%;
   gap: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 10px 0;
   margin-top: 20px;
 }
@@ -580,10 +581,10 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 10px 10px;
   padding: 0;
   list-style-type: none;
@@ -618,12 +619,12 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 24px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-image: url(../Assets/Images/illustration-contact-form.svg);
   background-repeat: no-repeat;
   background-size: auto;
@@ -635,45 +636,38 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   width: 327px;
   height: 48px;
   padding: 15px 16px;
-  border: 1px solid #D0D9D4;
-}
-
-.contact-form-page form .form-field:invalid:not(:focus):not(:placeholder-shown) {
-  -webkit-box-shadow: 0 0 5px 1px #f35252;
-          box-shadow: 0 0 5px 1px #f35252;
-}
-
-.contact-form-page form .form-field:not(:focus):not(:placeholder-shown):valid {
-  -webkit-box-shadow: 0 0 2px 1px #0e890e;
-          box-shadow: 0 0 2px 1px #0e890e;
+  border: 1px solid #d0d9d4;
 }
 
 .contact-form-page form .form-field::-webkit-input-placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  color: #6B778C;
+  color: #6b778c;
 }
 
 .contact-form-page form .form-field:-ms-input-placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  color: #6B778C;
-}
-
-.contact-form-page form .form-field::-ms-input-placeholder {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #6B778C;
+  color: #6b778c;
 }
 
 .contact-form-page form .form-field::placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  color: #6B778C;
+  color: #6b778c;
+}
+
+.contact-form-page form .form-field:not(:focus):not(:placeholder-shown):valid {
+  -webkit-box-shadow: 0 0 2px 1px #0e890e;
+  box-shadow: 0 0 2px 1px #0e890e;
+}
+
+.contact-form-page form .form-field:invalid:not(:focus):not(:placeholder-shown) {
+  -webkit-box-shadow: 0 0 5px 1px #f35252;
+  box-shadow: 0 0 5px 1px #f35252;
 }
 
 .contact-form-page form textarea {
@@ -681,45 +675,45 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   width: 327px;
   height: 114px;
   padding: 12px;
-  border: 1px solid #60C095;
-}
-
-.contact-form-page form textarea:invalid:not(:focus):not(:placeholder-shown) {
-  -webkit-box-shadow: 0 0 5px 1px #f35252;
-          box-shadow: 0 0 5px 1px #f35252;
-}
-
-.contact-form-page form textarea:not(:focus):not(:placeholder-shown):valid {
-  -webkit-box-shadow: 0 0 2px 1px #0e890e;
-          box-shadow: 0 0 2px 1px #0e890e;
+  border: 1px solid #60c095;
 }
 
 .contact-form-page form textarea::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #091E42;
-}
-
-.contact-form-page form textarea:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .contact-form-page form textarea::-ms-input-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
+}
+
+.contact-form-page form textarea:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
 }
 
 .contact-form-page form textarea::placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
+}
+
+.contact-form-page form textarea:not(:placeholder-shown):valid:not(:focus) {
+  -webkit-box-shadow: 0 0 2px 1px #0e890e;
+  box-shadow: 0 0 2px 1px #0e890e;
+}
+
+.contact-form-page form textarea:invalid:not(:placeholder-shown):not(:focus) {
+  -webkit-box-shadow: 0 0 5px 1px #f35252;
+  box-shadow: 0 0 5px 1px #f35252;
 }
 
 .contact-form-page form .form-button {
@@ -734,15 +728,15 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   line-height: 24px;
   letter-spacing: 0.03em;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   text-align: center;
   border: none;
 }
 
 .contact-form-page form .form-button:hover {
   -webkit-box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
-          box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+  box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
 }
 
 .contact-form-page form .form-button:active {
@@ -757,11 +751,11 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contact-form-page .footer-social-media .footer-social-media-list {
@@ -770,11 +764,11 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   display: flex;
   width: 50%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   list-style-type: none;
   padding: 0;
 }
@@ -787,6 +781,5 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #42526E;
+  color: #42526e;
 }
-/*# sourceMappingURL=style.css.map */
