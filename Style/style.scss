@@ -534,6 +534,8 @@ section.about-me-page {
 }
 
 
+// Form-Section
+
 .contact-form-area {
   .form-title {
     font-weight: 700;
@@ -557,11 +559,34 @@ section.about-me-page {
       width: 327px;
       height: 48px;
       padding: 15px 16px;
+      border:1px solid #D0D9D4;
+    
+      
+      // &:not(:focus):invalid{
+      //   // box-shadow: 0 0 5px 1px red;
+      //   // box-shadow: none;
+      // }
+
+      
+      &:invalid:not(:focus):not(:placeholder-shown){
+        box-shadow: 0 0 5px 1px rgb(243, 82, 82);
+      }
+
+      &:not(:focus):not(:placeholder-shown):valid{
+        box-shadow: 0 0 2px 1px rgb(14, 137, 14);
+      }
+      
+      // &:valid{
+        
+      //   box-shadow: 0 0 2px 1px rgb(14, 137, 14);
+      // }
     }
 
-    .form-field:invalid{
-      border-color:rgb(235, 40, 40);
-    }
+
+
+    // .form-field:invalid{
+    //   box-shadow: 0 0 5px 1px red;
+    // }
 
     .form-field::placeholder {
       font-size: 15px;
@@ -576,10 +601,11 @@ section.about-me-page {
       width: 327px;
       height: 114px;
       padding: 12px;
+      border:1px solid #60C095;
     }
 
     textarea:invalid{
-      border-color:rgb(235, 40, 40);
+      box-shadow: 0 0 5px 1px red;
 
     }
 
@@ -603,6 +629,7 @@ section.about-me-page {
       letter-spacing: 0.03em;
       align-self: center;
       text-align:center;
+      border:none;
       
       &:hover {
         box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);

@@ -631,10 +631,17 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   width: 327px;
   height: 48px;
   padding: 15px 16px;
+  border: 1px solid #D0D9D4;
 }
 
-.contact-form-area form .form-field:invalid {
-  border-color: #eb2828;
+.contact-form-area form .form-field:invalid:not(:focus):not(:placeholder-shown) {
+  -webkit-box-shadow: 0 0 5px 1px #f35252;
+          box-shadow: 0 0 5px 1px #f35252;
+}
+
+.contact-form-area form .form-field:not(:focus):not(:placeholder-shown):valid {
+  -webkit-box-shadow: 0 0 2px 1px #0e890e;
+          box-shadow: 0 0 2px 1px #0e890e;
 }
 
 .contact-form-area form .form-field::-webkit-input-placeholder {
@@ -670,10 +677,12 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   width: 327px;
   height: 114px;
   padding: 12px;
+  border: 1px solid #60C095;
 }
 
 .contact-form-area form textarea:invalid {
-  border-color: #eb2828;
+  -webkit-box-shadow: 0 0 5px 1px red;
+          box-shadow: 0 0 5px 1px red;
 }
 
 .contact-form-area form textarea::-webkit-input-placeholder {
@@ -719,6 +728,7 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
+  border: none;
 }
 
 .contact-form-area form .form-button:hover {
