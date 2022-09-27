@@ -541,6 +541,8 @@ section.about-me-page {
     line-height: 52px;
     text-align: center;
     color: $text-main;
+    height:363px;
+    margin: 0 24px;
   }
 
   form {
@@ -548,12 +550,17 @@ section.about-me-page {
     display: flex;
     flex-direction: column;
     padding: 24px;
+    align-items:center;
 
     .form-field {
       margin-bottom: 24px;
       width: 327px;
       height: 48px;
       padding: 15px 16px;
+    }
+
+    .form-field:invalid{
+      border-color:rgb(235, 40, 40);
     }
 
     .form-field::placeholder {
@@ -571,11 +578,39 @@ section.about-me-page {
       padding: 12px;
     }
 
+    textarea:invalid{
+      border-color:rgb(235, 40, 40);
+
+    }
+
     textarea::placeholder {
       font-weight: 400;
       font-size: 15px;
       line-height: 24px;
       color: #091E42;
+    }
+
+    .form-button{
+      width: 129px;
+      height: 48px;
+      background-color:$button-enable;
+      color:#fff;
+      border-radius:4px;
+      padding:12px;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      align-self: center;
+      text-align:center;
+      
+      &:hover {
+        box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+      }
+
+      &:active {
+        background: $button-active;
+      }
     }
   }
 }
