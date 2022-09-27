@@ -368,7 +368,7 @@ section.project-page {
 section.about-me-page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  // height: 100vh;
   margin: 30px 10px;
 
   div.about-me-div {
@@ -529,6 +529,53 @@ section.about-me-page {
           }
         }
       }
+    }
+  }
+}
+
+
+.contact-form-area {
+  .form-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: $text-main;
+  }
+
+  form {
+    margin-top: 58px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+
+    .form-field {
+      margin-bottom: 24px;
+      width: 327px;
+      height: 48px;
+      padding: 15px 16px;
+    }
+
+    .form-field::placeholder {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #6B778C;
+      
+    }
+
+    textarea {
+      margin-bottom: 24px;
+      width: 327px;
+      height: 114px;
+      padding: 12px;
+    }
+
+    textarea::placeholder {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: #091E42;
     }
   }
 }
