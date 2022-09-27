@@ -588,12 +588,18 @@ section.about-me-page {
       height: 114px;
       padding: 12px;
       border:1px solid #60C095;
+
+         
+      &:invalid:not(:focus):not(:placeholder-shown){
+        box-shadow: 0 0 5px 1px rgb(243, 82, 82);
+      }
+
+      &:not(:focus):not(:placeholder-shown):valid{
+        box-shadow: 0 0 2px 1px rgb(14, 137, 14);
+      }
     }
 
-    textarea:invalid{
-      box-shadow: 0 0 5px 1px red;
 
-    }
 
     textarea::placeholder {
       font-weight: 400;

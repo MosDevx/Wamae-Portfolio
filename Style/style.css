@@ -684,9 +684,14 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   border: 1px solid #60C095;
 }
 
-.contact-form-page form textarea:invalid {
-  -webkit-box-shadow: 0 0 5px 1px red;
-          box-shadow: 0 0 5px 1px red;
+.contact-form-page form textarea:invalid:not(:focus):not(:placeholder-shown) {
+  -webkit-box-shadow: 0 0 5px 1px #f35252;
+          box-shadow: 0 0 5px 1px #f35252;
+}
+
+.contact-form-page form textarea:not(:focus):not(:placeholder-shown):valid {
+  -webkit-box-shadow: 0 0 2px 1px #0e890e;
+          box-shadow: 0 0 2px 1px #0e890e;
 }
 
 .contact-form-page form textarea::-webkit-input-placeholder {
