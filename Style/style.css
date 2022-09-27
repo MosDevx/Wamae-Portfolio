@@ -601,7 +601,7 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   color: #36b37e;
 }
 
-.contact-form-area .form-title {
+.contact-form-page .form-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -611,7 +611,7 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   margin: 0 24px;
 }
 
-.contact-form-area form {
+.contact-form-page form {
   margin-top: 58px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,9 +624,13 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url(../Assets/Images/illustration-contact-form.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
 }
 
-.contact-form-area form .form-field {
+.contact-form-page form .form-field {
   margin-bottom: 24px;
   width: 327px;
   height: 48px;
@@ -634,45 +638,45 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   border: 1px solid #D0D9D4;
 }
 
-.contact-form-area form .form-field:invalid:not(:focus):not(:placeholder-shown) {
+.contact-form-page form .form-field:invalid:not(:focus):not(:placeholder-shown) {
   -webkit-box-shadow: 0 0 5px 1px #f35252;
           box-shadow: 0 0 5px 1px #f35252;
 }
 
-.contact-form-area form .form-field:not(:focus):not(:placeholder-shown):valid {
+.contact-form-page form .form-field:not(:focus):not(:placeholder-shown):valid {
   -webkit-box-shadow: 0 0 2px 1px #0e890e;
           box-shadow: 0 0 2px 1px #0e890e;
 }
 
-.contact-form-area form .form-field::-webkit-input-placeholder {
+.contact-form-page form .form-field::-webkit-input-placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #6B778C;
 }
 
-.contact-form-area form .form-field:-ms-input-placeholder {
+.contact-form-page form .form-field:-ms-input-placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #6B778C;
 }
 
-.contact-form-area form .form-field::-ms-input-placeholder {
+.contact-form-page form .form-field::-ms-input-placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #6B778C;
 }
 
-.contact-form-area form .form-field::placeholder {
+.contact-form-page form .form-field::placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #6B778C;
 }
 
-.contact-form-area form textarea {
+.contact-form-page form textarea {
   margin-bottom: 24px;
   width: 327px;
   height: 114px;
@@ -680,40 +684,40 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   border: 1px solid #60C095;
 }
 
-.contact-form-area form textarea:invalid {
+.contact-form-page form textarea:invalid {
   -webkit-box-shadow: 0 0 5px 1px red;
           box-shadow: 0 0 5px 1px red;
 }
 
-.contact-form-area form textarea::-webkit-input-placeholder {
+.contact-form-page form textarea::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #091E42;
 }
 
-.contact-form-area form textarea:-ms-input-placeholder {
+.contact-form-page form textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #091E42;
 }
 
-.contact-form-area form textarea::-ms-input-placeholder {
+.contact-form-page form textarea::-ms-input-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #091E42;
 }
 
-.contact-form-area form textarea::placeholder {
+.contact-form-page form textarea::placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #091E42;
 }
 
-.contact-form-area form .form-button {
+.contact-form-page form .form-button {
   width: 129px;
   height: 48px;
   background-color: #36b37e;
@@ -731,12 +735,53 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   border: none;
 }
 
-.contact-form-area form .form-button:hover {
+.contact-form-page form .form-button:hover {
   -webkit-box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
           box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
 }
 
-.contact-form-area form .form-button:active {
+.contact-form-page form .form-button:active {
   background: #008552;
+}
+
+.contact-form-page .footer-social-media {
+  margin-top: 46px;
+  margin-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-form-page .footer-social-media .footer-social-media-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-form-page .footer-social-media .footer-email {
+  text-decoration: none;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526E;
 }
 /*# sourceMappingURL=style.css.map */
