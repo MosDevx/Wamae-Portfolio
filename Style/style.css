@@ -391,7 +391,6 @@ section.about-me-page {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh;
   margin: 30px 10px;
 }
 
@@ -601,4 +600,186 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   font-weight: 600;
   text-align: center;
   color: #36b37e;
+}
+
+.contact-form-page .form-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  height: 363px;
+  margin: 0 24px;
+}
+
+.contact-form-page form {
+  margin-top: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 24px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url(../Assets/Images/illustration-contact-form.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right bottom;
+}
+
+.contact-form-page form .form-field {
+  margin-bottom: 24px;
+  width: 327px;
+  height: 48px;
+  padding: 15px 16px;
+  border: 1px solid #d0d9d4;
+}
+
+.contact-form-page form .form-field::-webkit-input-placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+.contact-form-page form .form-field:-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+.contact-form-page form .form-field::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+.contact-form-page form .form-field:not(:focus):not(:placeholder-shown):valid {
+  -webkit-box-shadow: 0 0 2px 1px #0e890e;
+  box-shadow: 0 0 2px 1px #0e890e;
+}
+
+.contact-form-page form .form-field:invalid:not(:focus):not(:placeholder-shown) {
+  -webkit-box-shadow: 0 0 5px 1px #f35252;
+  box-shadow: 0 0 5px 1px #f35252;
+}
+
+.contact-form-page form textarea {
+  margin-bottom: 24px;
+  width: 327px;
+  height: 114px;
+  padding: 12px;
+  border: 1px solid #60c095;
+}
+
+.contact-form-page form textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.contact-form-page form textarea::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.contact-form-page form textarea:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.contact-form-page form textarea::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.contact-form-page form textarea:not(:placeholder-shown):valid:not(:focus) {
+  -webkit-box-shadow: 0 0 2px 1px #0e890e;
+  box-shadow: 0 0 2px 1px #0e890e;
+}
+
+.contact-form-page form textarea:invalid:not(:placeholder-shown):not(:focus) {
+  -webkit-box-shadow: 0 0 5px 1px #f35252;
+  box-shadow: 0 0 5px 1px #f35252;
+}
+
+.contact-form-page form .form-button {
+  width: 129px;
+  height: 48px;
+  background-color: #36b37e;
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  text-align: center;
+  border: none;
+}
+
+.contact-form-page form .form-button:hover {
+  -webkit-box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+  box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+}
+
+.contact-form-page form .form-button:active {
+  background: #008552;
+}
+
+.contact-form-page .footer-social-media {
+  margin-top: 46px;
+  margin-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact-form-page .footer-social-media .footer-social-media-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-form-page .footer-social-media .footer-email {
+  text-decoration: none;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
 }
