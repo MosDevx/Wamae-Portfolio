@@ -310,10 +310,13 @@ section.project-page {
 
           .language-list {
             display: flex;
+            // background-color: #008552;
             justify-content: center;
+            align-content:space-around;
             flex-wrap: wrap;
-            gap: 10px 10px;
+            gap: 0 10px;
             padding: 0;
+            height: 90px;
             list-style-type: none;
 
             li {
@@ -510,6 +513,9 @@ section.about-me-page {
           .skill-language-list {
             display: flex;
             justify-content: center;
+            align-items: center;
+            align-content: space-around;
+            height: 90px;
             flex-wrap: wrap;
             gap: 10px 10px;
             padding: 0;

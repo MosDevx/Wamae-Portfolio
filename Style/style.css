@@ -333,10 +333,13 @@ section.project-page .grid-card-display .project-card .card-details .card-langua
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px 10px;
+  gap: 0 10px;
   padding: 0;
+  height: 90px;
   list-style-type: none;
 }
 
@@ -582,6 +585,12 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  height: 90px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10px 10px;
