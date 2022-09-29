@@ -171,7 +171,7 @@ $screen-extra-large-min:1200px;
     background-repeat: no-repeat;
     align-items: center;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 0 20px;
 
     .homepage-h1 {
@@ -219,13 +219,13 @@ $screen-extra-large-min:1200px;
 }
 //End Homepage 
 
-//Works Page
-section.project-page {
+//portfolio section
+.project-page {
   // height:100vh;
   display: flex;
   flex-direction: column;
 
-  div.recent-work {
+  .recent-work {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -256,12 +256,12 @@ section.project-page {
     margin: 0 auto;
     // background-color:yellow;
 
-    @include medium {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-gap: 24px;
-      // grid-auto-flow:column;
-    }
+    // @include medium {
+    //   grid-template-columns: 1fr 1fr;
+    //   grid-template-rows: 1fr;
+    //   grid-gap: 24px;
+    //   // grid-auto-flow:column;
+    // }
 
     @include large {
       grid-gap: 32px 24px;
@@ -376,7 +376,7 @@ section.project-page {
     }
   }
 }
-//End Works Section
+//End portfolio Section
 
 // About me page
 section.about-me-page {
@@ -680,17 +680,19 @@ section.about-me-page {
 
 //Start Media Queries
 
-  // Homepage
-@include medium{
-
-}
+// Homepage
 
 @include medium{
-  
+  //homepage
   .homepage-container{
+    background-image: url(../Assets/Images/homepage-background-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    // background-size:auto 800px ;
+  
     .homepage-header{
       display:none;
-      background-color: yellow;
     }
     .homepage-header-large-screen{
       display:flex;
@@ -702,14 +704,81 @@ section.about-me-page {
         text-decoration: none;
         color:#344563;
         padding: 5px;
-        margin-right:60px;
+        margin:0 30px;
         font-size: 18px;
         font-weight: 600;
       }
 
     }
+    .homepage-section{
+      // flex:auto;
+      // height:80%;
+      background:none;
+      // padding: 0px 0;
+      // padding-bottom:100px;
+      // margin-bottom:400px;
+      // margin-left: 130px;
+      // margin-right:130px;
+      margin:0 130px;
+      // background-color: yellow;
+      
+      .homepage-h1{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.37px;
+        color:$text-main;
+        // background-color: black;
+        // margin:0 100px;
+      }
+      p{
+        margin-left: 50px;
+        margin-right:50px;
+      }
+      .social-media-list{
+        width:40%;
+      }
+    }
   }
-  
+  //end homepage
 
+  //portfolio section
+  // .project-page{
+  //   .grid-card-display{
+  //     grid-template-columns: 1fr 1fr;
+  //     grid-template-rows: 1fr;
+  //     grid-gap: 24px;
+  //   }
+  // }
+
+  //end portfolio section
+}
+
+@include large{
+  //homepage 
+  .homepage-container{
+
+    background-repeat: no-repeat;
+  
+    .homepage-section{
+      // background:none;
+      // background:black;
+      margin:0 260px;
+      
+      .homepage-h1{
+        font-size: 48px;
+      }
+      .social-media-list{
+        width:30%;
+      }
+    }
+  }
+  //end homepage
+
+  //portfolio
+
+  //endportfolio
 
 }
