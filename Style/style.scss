@@ -725,7 +725,7 @@ section.about-me-page {
       .homepage-h1{
         font-style: normal;
         font-weight: 800;
-        font-size: 44px;
+        font-size: 46px;
         line-height: 60px;
         text-align: center;
         letter-spacing: 0.37px;
@@ -734,8 +734,11 @@ section.about-me-page {
         // margin:0 100px;
       }
       p{
-        margin-left: 50px;
-        margin-right:50px;
+        // margin-left: 50px;
+        // margin-right:50px;
+        // width:100%;
+        margin-left: auto;
+        margin-right:auto;
       }
       .social-media-list{
         width:40%;
@@ -771,6 +774,9 @@ section.about-me-page {
       .homepage-h1{
         font-size: 48px;
       }
+      p{
+        width:75%;
+      }
       .social-media-list{
         width:30%;
       }
@@ -784,8 +790,7 @@ section.about-me-page {
     .grid-card-display{
     grid-gap: 32px 24px;
     grid-template-columns: 1fr 1fr 1fr;
+    }
   }
-  //endportfolio
-
-  }
+//end portfolio
 }
