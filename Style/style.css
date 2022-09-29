@@ -822,8 +822,8 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   .homepage-container .homepage-header-large-screen a {
     text-decoration: none;
     color: #344563;
-    padding: 10px;
-    margin-right: 10px;
+    padding: 5px;
+    margin-right: 60px;
     font-size: 18px;
     font-weight: 600;
   }
