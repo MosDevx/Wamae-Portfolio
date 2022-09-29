@@ -253,14 +253,6 @@ h6 {
   margin: 0 auto;
 }
 
-@media (min-width: 992px) {
-  .project-page .grid-card-display {
-    grid-gap: 32px 24px;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
 .project-page .grid-card-display .project-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -843,6 +835,13 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   .homepage-container .homepage-section .social-media-list {
     width: 40%;
   }
+  .project-page .grid-card-display {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-gap: 24px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -857,6 +856,11 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   }
   .homepage-container .homepage-section .social-media-list {
     width: 30%;
+  }
+  .project-page .grid-card-display {
+    grid-gap: 32px 24px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
 }
 /*# sourceMappingURL=style.css.map */

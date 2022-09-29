@@ -263,10 +263,10 @@ $screen-extra-large-min:1200px;
     //   // grid-auto-flow:column;
     // }
 
-    @include large {
-      grid-gap: 32px 24px;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
+    // @include large {
+    //   grid-gap: 32px 24px;
+    //   grid-template-columns: 1fr 1fr 1fr;
+    // }
 
     .project-card {
       display: flex;
@@ -745,13 +745,14 @@ section.about-me-page {
   //end homepage
 
   //portfolio section
-  // .project-page{
-  //   .grid-card-display{
-  //     grid-template-columns: 1fr 1fr;
-  //     grid-template-rows: 1fr;
-  //     grid-gap: 24px;
-  //   }
-  // }
+  .project-page{
+
+    .grid-card-display{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 24px;
+    }
+  }
 
   //end portfolio section
 }
@@ -778,7 +779,13 @@ section.about-me-page {
   //end homepage
 
   //portfolio
+  .project-page{
 
+    .grid-card-display{
+    grid-gap: 32px 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   //endportfolio
 
+  }
 }
