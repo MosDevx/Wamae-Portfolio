@@ -81,9 +81,9 @@ h6 {
   isolation: isolate;
 }
 
-// end reset
+// end of css reset
 
-//Variables
+//Scss Variable and Mixins
 //Color themes
 $primary:#36b37e;
 $button-enable:#36b37e;
@@ -122,13 +122,15 @@ $screen-extra-large-min:1200px;
     @content;
   }
 }
-//end mixin for media-queries
 
+//End Scss Variable and Mixins
+
+// Homepage
 .homepage-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
-
+  
   .homepage-header {
     display: flex;
     flex: 0;
@@ -154,6 +156,10 @@ $screen-extra-large-min:1200px;
       width: 22px;
       margin-right: 20px;
     }
+  }
+
+  .homepage-header-large-screen{
+    display:none;
   }
 
   .homepage-section {
@@ -211,7 +217,9 @@ $screen-extra-large-min:1200px;
     }
   }
 }
+//End Homepage 
 
+//Works Page
 section.project-page {
   // height:100vh;
   display: flex;
@@ -368,7 +376,9 @@ section.project-page {
     }
   }
 }
+//End Works Section
 
+// About me page
 section.about-me-page {
   display: flex;
   flex-direction: column;
@@ -539,9 +549,9 @@ section.about-me-page {
     }
   }
 }
+//End About-Me section
 
 // Form-Section
-
 .contact-form-page {
   .form-title {
     font-weight: 700;
@@ -549,7 +559,6 @@ section.about-me-page {
     line-height: 52px;
     text-align: center;
     color: $text-main;
-    height: 363px;
     margin: 0 24px;
   }
 
@@ -665,4 +674,42 @@ section.about-me-page {
       color: #42526e;
     }
   }
+}
+//End form Section
+
+
+//Start Media Queries
+
+  // Homepage
+@include medium{
+
+}
+
+@include medium{
+  
+  .homepage-container{
+    .homepage-header{
+      display:none;
+      background-color: yellow;
+    }
+    .homepage-header-large-screen{
+      display:flex;
+      justify-content: center;
+      padding: 8px;
+      margin-top: 10px;
+
+      a{
+        text-decoration: none;
+        color:#344563;
+        padding: 10px;
+        margin-right:10px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+    }
+  }
+  
+
+
 }

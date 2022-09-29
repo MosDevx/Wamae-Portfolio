@@ -126,6 +126,10 @@ h6 {
   margin-right: 20px;
 }
 
+.homepage-container .homepage-header-large-screen {
+  display: none;
+}
+
 .homepage-container .homepage-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,7 +620,6 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   line-height: 52px;
   text-align: center;
   color: #172b4d;
-  height: 363px;
   margin: 0 24px;
 }
 
@@ -799,5 +802,30 @@ section.about-me-page .grid-skill-display .skill-card .skill-card-details .skill
   line-height: 32px;
   text-align: center;
   color: #42526e;
+}
+
+@media (min-width: 768px) {
+  .homepage-container .homepage-header {
+    display: none;
+    background-color: yellow;
+  }
+  .homepage-container .homepage-header-large-screen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 8px;
+    margin-top: 10px;
+  }
+  .homepage-container .homepage-header-large-screen a {
+    text-decoration: none;
+    color: #344563;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
 }
 /*# sourceMappingURL=style.css.map */
