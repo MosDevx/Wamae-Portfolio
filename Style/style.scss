@@ -202,7 +202,7 @@ $screen-extra-large-min:1200px;
       justify-content: space-between;
       align-items: center;
       list-style-type: none;
-      padding: 0;
+      padding: 10px;
     }
 
     .scroll-button {
@@ -670,6 +670,7 @@ $screen-extra-large-min:1200px;
     .homepage-section{
       background:none;
       margin:0 130px;
+      justify-content: center;
       
       .homepage-h1{
         font-style: normal;
@@ -686,6 +687,7 @@ $screen-extra-large-min:1200px;
       }
       .social-media-list{
         width:40%;
+        margin-top:40px;
       }
     }
   }
@@ -747,9 +749,8 @@ $screen-extra-large-min:1200px;
 @include large{
   //homepage 
   .homepage-container{
-
-    background-repeat: no-repeat;
-  
+    background-position: unset;
+    
     .homepage-section{
       margin:0 260px;
       
