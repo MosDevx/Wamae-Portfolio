@@ -597,7 +597,11 @@ h6 {
   color: #36b37e;
 }
 
-.contact-form-page .form-title {
+.contact-form-page {
+  height: 100%;
+}
+
+.contact-form-page .form-div .form-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -606,7 +610,7 @@ h6 {
   margin: 0 24px;
 }
 
-.contact-form-page form {
+.contact-form-page .form-div form {
   margin-top: 58px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -615,6 +619,9 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 24px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -625,7 +632,7 @@ h6 {
   background-position: right bottom;
 }
 
-.contact-form-page form .form-field {
+.contact-form-page .form-div form .form-field {
   margin-bottom: 24px;
   width: 327px;
   height: 48px;
@@ -634,45 +641,45 @@ h6 {
   border-radius: 4px;
 }
 
-.contact-form-page form .form-field::-webkit-input-placeholder {
+.contact-form-page .form-div form .form-field::-webkit-input-placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #6b778c;
 }
 
-.contact-form-page form .form-field:-ms-input-placeholder {
+.contact-form-page .form-div form .form-field:-ms-input-placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #6b778c;
 }
 
-.contact-form-page form .form-field::-ms-input-placeholder {
+.contact-form-page .form-div form .form-field::-ms-input-placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #6b778c;
 }
 
-.contact-form-page form .form-field::placeholder {
+.contact-form-page .form-div form .form-field::placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #6b778c;
 }
 
-.contact-form-page form .form-field:not(:focus):not(:placeholder-shown):valid {
+.contact-form-page .form-div form .form-field:not(:focus):not(:placeholder-shown):valid {
   -webkit-box-shadow: 0 0 2px 1px #0e890e;
           box-shadow: 0 0 2px 1px #0e890e;
 }
 
-.contact-form-page form .form-field:invalid:not(:focus):not(:placeholder-shown) {
+.contact-form-page .form-div form .form-field:invalid:not(:focus):not(:placeholder-shown) {
   -webkit-box-shadow: 0 0 5px 1px #f35252;
           box-shadow: 0 0 5px 1px #f35252;
 }
 
-.contact-form-page form textarea {
+.contact-form-page .form-div form textarea {
   margin-bottom: 24px;
   width: 327px;
   height: 114px;
@@ -681,45 +688,45 @@ h6 {
   border-radius: 4px;
 }
 
-.contact-form-page form textarea::-webkit-input-placeholder {
+.contact-form-page .form-div form textarea::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #091e42;
 }
 
-.contact-form-page form textarea:-ms-input-placeholder {
+.contact-form-page .form-div form textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #091e42;
 }
 
-.contact-form-page form textarea::-ms-input-placeholder {
+.contact-form-page .form-div form textarea::-ms-input-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #091e42;
 }
 
-.contact-form-page form textarea::placeholder {
+.contact-form-page .form-div form textarea::placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #091e42;
 }
 
-.contact-form-page form textarea:not(:placeholder-shown):valid:not(:focus) {
+.contact-form-page .form-div form textarea:not(:placeholder-shown):valid:not(:focus) {
   -webkit-box-shadow: 0 0 2px 1px #0e890e;
           box-shadow: 0 0 2px 1px #0e890e;
 }
 
-.contact-form-page form textarea:invalid:not(:placeholder-shown):not(:focus) {
+.contact-form-page .form-div form textarea:invalid:not(:placeholder-shown):not(:focus) {
   -webkit-box-shadow: 0 0 5px 1px #f35252;
           box-shadow: 0 0 5px 1px #f35252;
 }
 
-.contact-form-page form .form-button {
+.contact-form-page .form-div form .form-button {
   width: 129px;
   height: 48px;
   background-color: #36b37e;
@@ -730,25 +737,22 @@ h6 {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   text-align: center;
   border: none;
 }
 
-.contact-form-page form .form-button:hover {
+.contact-form-page .form-div form .form-button:hover {
   -webkit-box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
           box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
 }
 
-.contact-form-page form .form-button:active {
+.contact-form-page .form-div form .form-button:active {
   background: #008552;
 }
 
 .contact-form-page .footer-social-media {
   margin-top: 46px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -789,7 +793,7 @@ h6 {
 
 @media (min-width: 768px) {
   .homepage-container {
-    background-image: url(../Assets/Images/homepage-background-desktop.png);
+    background-image: url(../Assets/Images/homepage-background-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -807,7 +811,7 @@ h6 {
     padding: 8px;
     margin-top: 10px;
   }
-  .homepage-container .homepage-header-large-screen a {
+  .homepage-container .homepage-header-large-screen nav a {
     text-decoration: none;
     color: #344563;
     padding: 5px;
@@ -852,6 +856,16 @@ h6 {
     margin-right: auto;
     width: 75%;
   }
+  .contact-form-page {
+    background-image: url(../Assets/Images/contact-background-desktop.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+  .contact-form-page .form-div form {
+    background-image: none;
+  }
 }
 
 @media (min-width: 992px) {
@@ -877,6 +891,38 @@ h6 {
   }
   .about-me-page .about-me-div {
     background-size: cover;
+  }
+  .contact-form-page {
+    background-position: unset;
+  }
+  .contact-form-page .form-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-form-page .form-div .form-title {
+    font-size: 30px;
+    width: 30%;
+  }
+  .contact-form-page .form-div form {
+    width: 40%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .contact-form-page .form-div form .form-field {
+    width: 75%;
+  }
+  .contact-form-page .form-div form textarea {
+    width: 75%;
   }
 }
 /*# sourceMappingURL=style.css.map */
