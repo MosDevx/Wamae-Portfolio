@@ -462,24 +462,6 @@ h6 {
   margin: 50px auto;
 }
 
-@media (min-width: 768px) {
-  .about-me-page .grid-skill-display {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    grid-gap: 24px;
-  }
-}
-
-@media (min-width: 992px) {
-  .about-me-page .grid-skill-display {
-    grid-gap: 32px 24px;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
 .about-me-page .grid-skill-display .skill-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -856,6 +838,13 @@ h6 {
     margin-right: auto;
     width: 75%;
   }
+  .about-me-page .grid-skill-display {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-gap: 24px;
+  }
   .contact-form-page {
     background-image: url(../Assets/Images/contact-background-desktop.svg);
     background-position: bottom;
@@ -891,6 +880,11 @@ h6 {
   }
   .about-me-page .about-me-div {
     background-size: cover;
+  }
+  .about-me-page .grid-skill-display {
+    grid-gap: 32px 24px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
   .contact-form-page {
     background-position: unset;

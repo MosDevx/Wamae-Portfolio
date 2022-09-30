@@ -135,7 +135,6 @@ $screen-extra-large-min:1200px;
     display: flex;
     flex: 0;
     justify-content: space-between;
-    // height:48px;
     padding: 8px;
     margin-top: 10px;
 
@@ -221,7 +220,6 @@ $screen-extra-large-min:1200px;
 
 //portfolio section
 .project-page {
-  // height:100vh;
   display: flex;
   flex-direction: column;
 
@@ -448,20 +446,7 @@ $screen-extra-large-min:1200px;
     padding: 10px 0;
     margin: 50px auto;
 
-    @include medium {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      grid-gap: 24px;
-      // grid-auto-flow:column;
-    }
-
-    @include large {
-      grid-gap: 32px 24px;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
     .skill-card {
-      // position:relative;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -479,11 +464,8 @@ $screen-extra-large-min:1200px;
         margin-bottom: 30px;
 
         .framework-logo {
-          // position:absolute;
           width: 80px;
           height: 80px;
-          // left: calc(50% - 80px/2 + 0.5px);
-          // top: calc(50% - 80px/2);
           border-radius: 50%;
           background: #fff;
           box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
@@ -504,15 +486,12 @@ $screen-extra-large-min:1200px;
 
       .skill-card-details {
         display: flex;
-        // flex-grow:1;
         flex: 1 1 0;
         width: 100%;
         gap: 10px;
         flex-direction: column;
         justify-content: space-between;
-        // background:#fff;
         padding: 10px 0;
-        // border-radius:8px;
         margin-top: 20px;
 
         .skill-card-languages {
@@ -783,6 +762,11 @@ $screen-extra-large-min:1200px;
         width:75%;
       }
     }
+    .grid-skill-display{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 24px;
+    }
   }
   //End about me
 
@@ -849,6 +833,10 @@ $screen-extra-large-min:1200px;
   .about-me-page{
     .about-me-div{
       background-size: cover;
+    }
+    .grid-skill-display{
+      grid-gap: 32px 24px;
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
   //end about me
