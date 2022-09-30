@@ -379,13 +379,13 @@ $screen-extra-large-min:1200px;
 //End portfolio Section
 
 // About me page
-section.about-me-page {
+.about-me-page {
   display: flex;
   flex-direction: column;
   // height: 100vh;
   margin: 30px 10px;
 
-  div.about-me-div {
+  .about-me-div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -757,7 +757,23 @@ section.about-me-page {
     }
   }
 
-  //end portfolio section
+  //end portfolio page
+
+  //About me page
+  .about-me-page{
+    .about-me-div{
+      background-image: url(../Assets/Images/aboutme-background-desktop.svg);
+      background-position: 50% 50%;
+      background-size: contain;
+
+      p{
+        margin-left: auto;
+        margin-right:auto;
+        width:75%;
+      }
+    }
+  }
+  //End about me
 }
 
 @include large{
@@ -792,5 +808,13 @@ section.about-me-page {
     grid-template-columns: 1fr 1fr 1fr;
     }
   }
-//end portfolio
+  //end portfolio
+
+  //about-me
+  .about-me-page{
+    .about-me-div{
+      background-size: cover;
+    }
+  }
+  //end about me
 }
