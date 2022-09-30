@@ -252,19 +252,7 @@ $screen-extra-large-min:1200px;
     grid-gap: 20px;
     padding: 10px 0;
     margin: 0 auto;
-    // background-color:yellow;
-
-    // @include medium {
-    //   grid-template-columns: 1fr 1fr;
-    //   grid-template-rows: 1fr;
-    //   grid-gap: 24px;
-    //   // grid-auto-flow:column;
-    // }
-
-    // @include large {
-    //   grid-gap: 32px 24px;
-    //   grid-template-columns: 1fr 1fr 1fr;
-    // }
+  
 
     .project-card {
       display: flex;
@@ -274,18 +262,14 @@ $screen-extra-large-min:1200px;
       border: 1px solid #d0d9d4;
       background: #ebf0ee;
       border-radius: 8px;
-      // max-width:315px;
 
       .project-card-image {
-        // flex-basis:0;
-        // flex-grow:1;
         flex: 1 1 0;
         padding: 20px;
       }
 
       .card-details {
         display: flex;
-        // flex-grow:1;
         flex: 1 1 0;
         width: 100%;
         gap: 10px;
@@ -296,28 +280,22 @@ $screen-extra-large-min:1200px;
         border-radius: 8px;
 
         .card-heading {
-          // flex-grow:1;
-          // flex-basis:0;
           font-style: normal;
           font-weight: 600;
           font-size: 24px;
           line-height: 32px;
-          // margin:10px 0;
           margin-top: 10px;
           color: $text-project-card;
         }
 
         .card-languages {
           margin: 10px 10px;
-          // background-color:yellow;
-          // flex-grow:1;
           flex-basis: 0;
           height: auto;
           max-width: 315px;
 
           .language-list {
             display: flex;
-            // background-color: #008552;
             justify-content: center;
             align-content:space-around;
             flex-wrap: wrap;
@@ -341,10 +319,7 @@ $screen-extra-large-min:1200px;
         }
 
         .project-card-button {
-          // flex-grow:1;
-          // display:flex;
-          // flex-basis:0;
-          // align-items:center;
+        
           width: 122px;
           height: 48px;
           padding: 12px;
@@ -380,7 +355,6 @@ $screen-extra-large-min:1200px;
 .about-me-page {
   display: flex;
   flex-direction: column;
-  // height: 100vh;
   margin: 30px 10px;
 
   .about-me-div {
@@ -439,7 +413,7 @@ $screen-extra-large-min:1200px;
     }
   }
 
-  // grid-card-display - reusing previous class; trying anyway
+
   .grid-skill-display {
     display: grid;
     grid-gap: 20px;
@@ -496,7 +470,6 @@ $screen-extra-large-min:1200px;
 
         .skill-card-languages {
           margin: 10px 10px;
-          // flex-basis:0;
           height: auto;
           max-width: 315px;
 
@@ -532,7 +505,6 @@ $screen-extra-large-min:1200px;
 
 // Form-Section
 .contact-form-page {
-  // background-color: yellow;
   height:100%;
   .form-div{
     .form-title {
@@ -557,8 +529,6 @@ $screen-extra-large-min:1200px;
       background-repeat: no-repeat;
       background-size: auto;
       background-position: right bottom;
-      // background-color:yellow;
-      // background-color: #36b37e;
 
       .form-field {
         margin-bottom: 24px;
@@ -619,7 +589,6 @@ $screen-extra-large-min:1200px;
         font-size: 17px;
         line-height: 24px;
         letter-spacing: 0.03em;
-        // align-self: center;
         text-align: center;
         border: none;
 
@@ -639,7 +608,6 @@ $screen-extra-large-min:1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
 
     .footer-social-media-list {
       display: flex;
@@ -665,7 +633,7 @@ $screen-extra-large-min:1200px;
 //End form Section
 
 
-//Start Media Queries
+//START MEDIA QUERIES
 
 // Homepage
 
@@ -676,7 +644,6 @@ $screen-extra-large-min:1200px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    // background-size:auto 800px ;
   
     .homepage-header{
       display:none;
@@ -701,16 +668,8 @@ $screen-extra-large-min:1200px;
 
     }
     .homepage-section{
-      // flex:auto;
-      // height:80%;
       background:none;
-      // padding: 0px 0;
-      // padding-bottom:100px;
-      // margin-bottom:400px;
-      // margin-left: 130px;
-      // margin-right:130px;
       margin:0 130px;
-      // background-color: yellow;
       
       .homepage-h1{
         font-style: normal;
@@ -720,13 +679,8 @@ $screen-extra-large-min:1200px;
         text-align: center;
         letter-spacing: 0.37px;
         color:$text-main;
-        // background-color: black;
-        // margin:0 100px;
       }
       p{
-        // margin-left: 50px;
-        // margin-right:50px;
-        // width:100%;
         margin-left: auto;
         margin-right:auto;
       }
@@ -774,7 +728,6 @@ $screen-extra-large-min:1200px;
   .contact-form-page {
     
       background-image: url(../Assets/Images/contact-background-desktop.svg);
-      // background-color: yellow;
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: contain;
@@ -784,10 +737,6 @@ $screen-extra-large-min:1200px;
 
         form{
           background-image: none;
-          // width:40%;
-          // // margin-top: 0;
-          // margin-left: 40px;
-          // margin-right:40px;
         }
       }
     
@@ -802,8 +751,6 @@ $screen-extra-large-min:1200px;
     background-repeat: no-repeat;
   
     .homepage-section{
-      // background:none;
-      // background:black;
       margin:0 260px;
       
       .homepage-h1{
@@ -843,8 +790,6 @@ $screen-extra-large-min:1200px;
 
   //Contact page
   .contact-form-page {
-    // background-repeat: no-repeat;
-    // background-size: cover;
     background-position: unset;
    
     .form-div{
@@ -855,12 +800,9 @@ $screen-extra-large-min:1200px;
       .form-title{
         font-size:30px;
         width:30%;
-        // margin:0 auto;
       }
       form{
-        // background-image: none;
         width:40%;
-        // margin-top: 0;
         align-items: flex-start;
 
         margin-left: 40px;
