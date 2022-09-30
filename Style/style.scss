@@ -791,7 +791,9 @@ $screen-extra-large-min:1200px;
   //Contact page
   .contact-form-page {
     background-position: unset;
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .form-div{
       display:flex;
       align-items: center;
@@ -814,6 +816,19 @@ $screen-extra-large-min:1200px;
           width:75%;
         }
         
+      }
+   }
+   .footer-social-media{
+      border:1px solid ;
+      width:100%;
+      margin-bottom: 0px;
+
+      .footer-social-media-list{
+        padding:20px 0;
+        width:30%;
+      }
+      .footer-email{
+        display:none;
       }
    }
 }

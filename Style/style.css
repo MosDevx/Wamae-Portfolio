@@ -888,6 +888,16 @@ h6 {
   }
   .contact-form-page {
     background-position: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .contact-form-page .form-div {
     display: -webkit-box;
@@ -917,6 +927,18 @@ h6 {
   }
   .contact-form-page .form-div form textarea {
     width: 75%;
+  }
+  .contact-form-page .footer-social-media {
+    border: 1px solid;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .contact-form-page .footer-social-media .footer-social-media-list {
+    padding: 20px 0;
+    width: 30%;
+  }
+  .contact-form-page .footer-social-media .footer-email {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
