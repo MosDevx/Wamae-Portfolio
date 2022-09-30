@@ -642,7 +642,7 @@ $screen-extra-large-min:1200px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-
+    height:65vh;
     .homepage-header {
       display: none;
     }
@@ -688,6 +688,10 @@ $screen-extra-large-min:1200px;
       .social-media-list {
         width: 40%;
         margin-top: 40px;
+      }
+
+      .scroll-button{
+        bottom:350px;
       }
     }
   }
@@ -746,6 +750,7 @@ $screen-extra-large-min:1200px;
   //homepage
   .homepage-container {
     background-position: unset;
+    height: 100vh;
 
     .homepage-section {
       margin: 0 260px;
@@ -760,6 +765,10 @@ $screen-extra-large-min:1200px;
 
       .social-media-list {
         width: 30%;
+      }
+
+      .scroll-button{
+        bottom:4px;
       }
     }
   }
