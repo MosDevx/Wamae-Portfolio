@@ -130,7 +130,7 @@ $screen-extra-large-min:1200px;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  
+
   .homepage-header {
     display: flex;
     flex: 0;
@@ -157,8 +157,8 @@ $screen-extra-large-min:1200px;
     }
   }
 
-  .homepage-header-large-screen{
-    display:none;
+  .homepage-header-large-screen {
+    display: none;
   }
 
   .homepage-section {
@@ -216,7 +216,7 @@ $screen-extra-large-min:1200px;
     }
   }
 }
-//End Homepage 
+//End Homepage
 
 //portfolio section
 .project-page {
@@ -252,7 +252,6 @@ $screen-extra-large-min:1200px;
     grid-gap: 20px;
     padding: 10px 0;
     margin: 0 auto;
-  
 
     .project-card {
       display: flex;
@@ -297,7 +296,7 @@ $screen-extra-large-min:1200px;
           .language-list {
             display: flex;
             justify-content: center;
-            align-content:space-around;
+            align-content: space-around;
             flex-wrap: wrap;
             gap: 0 10px;
             padding: 0;
@@ -319,7 +318,6 @@ $screen-extra-large-min:1200px;
         }
 
         .project-card-button {
-        
           width: 122px;
           height: 48px;
           padding: 12px;
@@ -413,7 +411,6 @@ $screen-extra-large-min:1200px;
     }
   }
 
-
   .grid-skill-display {
     display: grid;
     grid-gap: 20px;
@@ -505,8 +502,9 @@ $screen-extra-large-min:1200px;
 
 // Form-Section
 .contact-form-page {
-  height:100%;
-  .form-div{
+  height: 100%;
+
+  .form-div {
     .form-title {
       font-weight: 700;
       font-size: 40px;
@@ -520,7 +518,7 @@ $screen-extra-large-min:1200px;
       margin-top: 58px;
       display: flex;
       flex-direction: column;
-      width:90%;
+      width: 90%;
       margin-left: auto;
       margin-right: auto;
       padding: 24px;
@@ -602,6 +600,7 @@ $screen-extra-large-min:1200px;
       }
     }
   }
+
   .footer-social-media {
     margin-top: 46px;
     margin-bottom: 100px;
@@ -632,71 +631,71 @@ $screen-extra-large-min:1200px;
 }
 //End form Section
 
-
 //START MEDIA QUERIES
 
 // Homepage
 
-@include medium{
+@include medium {
   //homepage
-  .homepage-container{
+  .homepage-container {
     background-image: url(../Assets/Images/homepage-background-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-  
-    .homepage-header{
-      display:none;
+
+    .homepage-header {
+      display: none;
     }
-    .homepage-header-large-screen{
-      display:flex;
+
+    .homepage-header-large-screen {
+      display: flex;
       justify-content: center;
       padding: 8px;
-    
       margin-top: 10px;
-      nav{
 
-        a{
+      nav {
+        a {
           text-decoration: none;
-          color:#344563;
+          color: #344563;
           padding: 5px;
-          margin:0 30px;
+          margin: 0 30px;
           font-size: 20px;
           font-weight: 600;
         }
       }
-
     }
-    .homepage-section{
-      background:none;
-      margin:0 130px;
+
+    .homepage-section {
+      background: none;
+      margin: 0 130px;
       justify-content: center;
-      
-      .homepage-h1{
+
+      .homepage-h1 {
         font-style: normal;
         font-weight: 800;
         font-size: 46px;
         line-height: 60px;
         text-align: center;
         letter-spacing: 0.37px;
-        color:$text-main;
+        color: $text-main;
       }
-      p{
+
+      p {
         margin-left: auto;
-        margin-right:auto;
+        margin-right: auto;
       }
-      .social-media-list{
-        width:40%;
-        margin-top:40px;
+
+      .social-media-list {
+        width: 40%;
+        margin-top: 40px;
       }
     }
   }
   //end homepage
 
   //portfolio section
-  .project-page{
-
-    .grid-card-display{
+  .project-page {
+    .grid-card-display {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       grid-gap: 24px;
@@ -706,19 +705,20 @@ $screen-extra-large-min:1200px;
   //end portfolio page
 
   //About me page
-  .about-me-page{
-    .about-me-div{
+  .about-me-page {
+    .about-me-div {
       background-image: url(../Assets/Images/aboutme-background-desktop.svg);
       background-position: 50% 50%;
       background-size: contain;
 
-      p{
+      p {
         margin-left: auto;
-        margin-right:auto;
-        width:75%;
+        margin-right: auto;
+        width: 75%;
       }
     }
-    .grid-skill-display{
+
+    .grid-skill-display {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       grid-gap: 24px;
@@ -728,60 +728,59 @@ $screen-extra-large-min:1200px;
 
   //Contact page
   .contact-form-page {
-    
-      background-image: url(../Assets/Images/contact-background-desktop.svg);
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: 50% 50%;
-      
-      .form-div{
+    background-image: url(../Assets/Images/contact-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
 
-        form{
-          background-image: none;
-        }
+    .form-div {
+      form {
+        background-image: none;
       }
-    
+    }
   }
   //EndContact page
 }
 
-@include large{
-  //homepage 
-  .homepage-container{
+@include large {
+  //homepage
+  .homepage-container {
     background-position: unset;
-    
-    .homepage-section{
-      margin:0 260px;
-      
-      .homepage-h1{
+
+    .homepage-section {
+      margin: 0 260px;
+
+      .homepage-h1 {
         font-size: 48px;
       }
-      p{
-        width:75%;
+
+      p {
+        width: 75%;
       }
-      .social-media-list{
-        width:30%;
+
+      .social-media-list {
+        width: 30%;
       }
     }
   }
   //end homepage
 
   //portfolio
-  .project-page{
-    .grid-card-display{
-    grid-gap: 32px 24px;
-    grid-template-columns: 1fr 1fr 1fr;
+  .project-page {
+    .grid-card-display {
+      grid-gap: 32px 24px;
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
   //end portfolio
 
   //about-me
-  .about-me-page{
-    .about-me-div{
+  .about-me-page {
+    .about-me-div {
       background-size: cover;
     }
-    .grid-skill-display{
+
+    .grid-skill-display {
       grid-gap: 32px 24px;
       grid-template-columns: 1fr 1fr 1fr;
     }
@@ -794,43 +793,47 @@ $screen-extra-large-min:1200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    .form-div{
-      display:flex;
+
+    .form-div {
+      display: flex;
       align-items: center;
       justify-content: center;
-     
-      .form-title{
-        font-size:30px;
-        width:30%;
+
+      .form-title {
+        font-size: 30px;
+        width: 30%;
       }
-      form{
-        width:40%;
+
+      form {
+        width: 40%;
         align-items: flex-start;
-
         margin-left: 40px;
-        margin-right:40px;
-        .form-field{
-          width:75%;
-        }
-        textarea{
-          width:75%;
-        }
-        
-      }
-   }
-   .footer-social-media{
-      border:1px solid ;
-      width:100%;
-      margin-bottom: 0px;
+        margin-right: 40px;
 
-      .footer-social-media-list{
-        padding:20px 0;
-        width:25%;
+        .form-field {
+          width: 75%;
+        }
+
+        textarea {
+          width: 75%;
+        }
       }
-      .footer-email{
-        display:none;
+    }
+
+    .footer-social-media {
+      border: 1px solid;
+      width: 100%;
+      margin-bottom: 0;
+
+      .footer-social-media-list {
+        padding: 20px 0;
+        width: 25%;
       }
-   }
-}
+
+      .footer-email {
+        display: none;
+      }
+    }
+  }
   //End Contact page
 }
