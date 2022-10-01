@@ -662,8 +662,6 @@ h6 {
   color: #6b778c;
 }
 
-
-
 .contact-form-page .form-div form .form-field::placeholder {
   font-size: 15px;
   font-weight: 400;
@@ -704,14 +702,9 @@ h6 {
   color: #091e42;
 }
 
-.contact-form-page .form-div form textarea:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #091e42;
-}
 
-.contact-form-page .form-div form textarea::-ms-input-placeholder {
+
+.contact-form-page .form-div form textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
