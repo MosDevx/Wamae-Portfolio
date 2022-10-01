@@ -694,6 +694,13 @@ $screen-extra-large-min:1200px;
         text-align: center;
         letter-spacing: 0.37px;
         color: $text-main;
+        animation: title-animation;
+        animation-duration: 4s;
+      }
+
+      @keyframes title-animation {
+        from { color: green; }
+        to { color: #091e42; }
       }
 
       p {
