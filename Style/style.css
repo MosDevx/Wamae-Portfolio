@@ -118,6 +118,24 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 20px;
+  -webkit-animation-name: flip-logo;
+          animation-name: flip-logo;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes flip-logo {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes flip-logo {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .homepage-container .homepage-header .menu-icon {
