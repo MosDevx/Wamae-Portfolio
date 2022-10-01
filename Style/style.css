@@ -193,10 +193,9 @@ h6 {
 }
 
 .homepage-container .homepage-section .scroll-button {
-  position: absolute;
+  margin-top: 40px;
   width: 40px;
   height: 40px;
-  left: calc(50% - 40px / 2 + 0.5px);
   bottom: 4px;
   background: #fff;
   border: none;
@@ -871,6 +870,9 @@ h6 {
   }
   .homepage-container .homepage-section .social-media-list {
     width: 30%;
+  }
+  .homepage-container .homepage-section .scroll-button {
+    bottom: 4px;
   }
   .project-page .grid-card-display {
     grid-gap: 32px 24px;
