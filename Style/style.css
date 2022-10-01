@@ -519,7 +519,6 @@ h6 {
       -ms-flex: 1 1 0px;
           flex: 1 1 0;
   width: 100%;
-  gap: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -837,11 +836,14 @@ h6 {
     width: 75%;
   }
   .about-me-page .grid-skill-display {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    -ms-grid-columns: 369px 369px;
+        grid-template-columns: 369px 369px;
+    -ms-grid-rows: ()[352px];
+        grid-template-rows: repeat(352px);
     grid-gap: 24px;
+  }
+  .about-me-page .grid-skill-display .skill-card {
+    height: 352px;
   }
   .contact-form-page {
     background-image: url(../Assets/Images/contact-background-desktop.svg);
@@ -884,8 +886,10 @@ h6 {
   }
   .about-me-page .grid-skill-display {
     grid-gap: 32px 24px;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 369px 369px 369px;
+        grid-template-columns: 369px 369px 369px;
+    -ms-grid-rows: ()[352px];
+        grid-template-rows: repeat(352px);
   }
   .contact-form-page {
     background-position: unset;

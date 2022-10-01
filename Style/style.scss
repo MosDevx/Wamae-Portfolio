@@ -455,7 +455,6 @@ $screen-extra-large-min:1200px;
         display: flex;
         flex: 1 1 0;
         width: 100%;
-        gap: 10px;
         flex-direction: column;
         justify-content: space-between;
         padding: 10px 0;
@@ -725,9 +724,12 @@ $screen-extra-large-min:1200px;
     }
 
     .grid-skill-display {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
+      grid-template-columns: 369px 369px;
+      grid-template-rows: repeat(352px);
       grid-gap: 24px;
+      .skill-card{
+        height:352px;
+      }
     }
   }
   //End about me
@@ -793,7 +795,8 @@ $screen-extra-large-min:1200px;
 
     .grid-skill-display {
       grid-gap: 32px 24px;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 369px 369px 369px;
+      grid-template-rows: repeat(352px);
     }
   }
   //end about me
