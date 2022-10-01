@@ -148,6 +148,14 @@ $screen-extra-large-min:1200px;
       color: #28352f;
       align-items: center;
       margin-left: 20px;
+      animation-name: flip-logo;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes flip-logo {
+      to {
+        transform: rotate(360deg);
+      }
     }
 
     .menu-icon {
@@ -264,6 +272,15 @@ $screen-extra-large-min:1200px;
       .project-card-image {
         // flex: 1 1 0;
         padding: 10px 10px;
+
+        img {
+          // width:100px;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
       }
 
       .card-details {
@@ -656,6 +673,11 @@ $screen-extra-large-min:1200px;
           margin: 0 30px;
           font-size: 20px;
           font-weight: 600;
+          transition: color 0.2s ease-in-out;
+
+          &:hover {
+            color: #9836b3;
+          }
         }
       }
     }
@@ -673,6 +695,13 @@ $screen-extra-large-min:1200px;
         text-align: center;
         letter-spacing: 0.37px;
         color: $text-main;
+        animation: title-animation;
+        animation-duration: 4s;
+      }
+
+      @keyframes title-animation {
+        from { color: green; }
+        to { color: #091e42; }
       }
 
       p {
