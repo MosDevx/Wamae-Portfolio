@@ -740,10 +740,48 @@ $screen-extra-large-min:1200px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 
     .form-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .form-title {
+        font-size: 30px;
+        width: 60%;
+      }
+
       form {
-        background-image: none;
+        width: 50%;
+        align-items: flex-start;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        .form-field {
+          width: 95%;
+        }
+
+        textarea {
+          width: 95%;
+        }
+      }
+    }
+    .footer-social-media {
+      border: 1px solid;
+      width: 100%;
+      margin-bottom: 0;
+
+      .footer-social-media-list {
+        padding: 20px 0;
+        width: 25%;
+      }
+
+      .footer-email {
+        display: none;
       }
     }
   }
