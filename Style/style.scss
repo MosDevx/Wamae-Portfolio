@@ -656,6 +656,11 @@ $screen-extra-large-min:1200px;
           margin: 0 30px;
           font-size: 20px;
           font-weight: 600;
+          transition: color .2s ease-in-out;
+
+          &:hover{
+            color:#9836b3;
+          }
         }
       }
     }
