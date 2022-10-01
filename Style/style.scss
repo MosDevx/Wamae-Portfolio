@@ -206,7 +206,7 @@ $screen-extra-large-min:1200px;
     }
 
     .scroll-button {
-      margin-top:40px;
+      margin-top: 40px;
       width: 40px;
       height: 40px;
       bottom: 4px;
@@ -287,7 +287,6 @@ $screen-extra-large-min:1200px;
           flex-basis: 0;
           height: auto;
           max-width: 315px;
-
 
           .language-list {
             display: flex;
@@ -637,7 +636,8 @@ $screen-extra-large-min:1200px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height:65vh;
+    height: 65vh;
+
     .homepage-header {
       display: none;
     }
@@ -684,8 +684,6 @@ $screen-extra-large-min:1200px;
         width: 40%;
         margin-top: 40px;
       }
-
-   
     }
   }
   //end homepage
@@ -696,12 +694,13 @@ $screen-extra-large-min:1200px;
       grid-template-columns: 369px 369px;
       grid-template-rows: repeat(474px);
       grid-gap: 24px;
-      .project-card{
+
+      .project-card {
         // max-width: 369px;
         // max-height: 474px;
-        .project-card-image{
+        .project-card-image {
           // padding:10px;
-          margin:auto;
+          margin: auto;
         }
       }
     }
@@ -727,8 +726,9 @@ $screen-extra-large-min:1200px;
       grid-template-columns: 369px 369px;
       grid-template-rows: repeat(352px);
       grid-gap: 24px;
-      .skill-card{
-        height:352px;
+
+      .skill-card {
+        height: 352px;
       }
     }
   }
@@ -743,8 +743,7 @@ $screen-extra-large-min:1200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height:70%;
-
+    height: 70%;
 
     .form-div {
       display: flex;
@@ -771,6 +770,7 @@ $screen-extra-large-min:1200px;
         }
       }
     }
+
     .footer-social-media {
       border: 1px solid;
       width: 100%;
@@ -810,8 +810,8 @@ $screen-extra-large-min:1200px;
         width: 30%;
       }
 
-      .scroll-button{
-        bottom:4px;
+      .scroll-button {
+        bottom: 4px;
       }
     }
   }
@@ -846,6 +846,7 @@ $screen-extra-large-min:1200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height:100%;
 
     .form-div {
       display: flex;
