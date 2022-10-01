@@ -269,30 +269,21 @@ h6 {
 }
 
 .project-page .grid-card-display .project-card .project-card-image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
-  padding: 20px;
+  padding: 10px 10px;
 }
 
 .project-page .grid-card-display .project-card .card-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
-  width: 100%;
-  gap: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background: #fff;
-  padding: 10px 0;
   border-radius: 8px;
 }
 
@@ -306,7 +297,7 @@ h6 {
 }
 
 .project-page .grid-card-display .project-card .card-details .card-languages {
-  margin: 10px 10px;
+  margin: 10px auto;
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   height: auto;
@@ -326,7 +317,7 @@ h6 {
       flex-wrap: wrap;
   gap: 0 10px;
   padding: 0;
-  height: 90px;
+  height: 80px;
   list-style-type: none;
 }
 
@@ -826,15 +817,15 @@ h6 {
     width: 40%;
     margin-top: 40px;
   }
-  .homepage-container .homepage-section .scroll-button {
-    bottom: 350px;
-  }
   .project-page .grid-card-display {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    -ms-grid-columns: 369px 369px;
+        grid-template-columns: 369px 369px;
+    -ms-grid-rows: ()[474px];
+        grid-template-rows: repeat(474px);
     grid-gap: 24px;
+  }
+  .project-page .grid-card-display .project-card .project-card-image {
+    margin: auto;
   }
   .about-me-page .about-me-div {
     background-image: url(../Assets/Images/aboutme-background-desktop.svg);
@@ -881,13 +872,10 @@ h6 {
   .homepage-container .homepage-section .social-media-list {
     width: 30%;
   }
-  .homepage-container .homepage-section .scroll-button {
-    bottom: 4px;
-  }
   .project-page .grid-card-display {
     grid-gap: 32px 24px;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 369px 369px 369px;
+        grid-template-columns: 369px 369px 369px;
   }
   .about-me-page .about-me-div {
     background-size: cover;
