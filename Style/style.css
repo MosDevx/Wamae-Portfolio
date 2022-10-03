@@ -984,12 +984,11 @@ h6 {
   }
   .project-page .grid-card-display {
     grid-gap: 20px 24px;
-    width: 95%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    -ms-grid-columns: (minmax(330, 350px))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(330, 350px));
   }
   .project-page .project-card {
     overflow: hidden;
@@ -999,6 +998,8 @@ h6 {
   }
   .about-me-page .grid-skill-display {
     grid-gap: 32px 24px;
+    -ms-grid-columns: auto-fill, minmax(300px, 1fr);
+        grid-template-columns: auto-fill, minmax(300px, 1fr);
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
