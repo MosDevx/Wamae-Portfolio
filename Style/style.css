@@ -983,15 +983,12 @@ h6 {
     bottom: 4px;
   }
   .project-page .grid-card-display {
-    grid-gap: 20px 24px;
+    grid-gap: 24px 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-grid-columns: (minmax(330, 350px))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(330, 350px));
-  }
-  .project-page .project-card {
-    overflow: hidden;
+    -ms-grid-columns: (minmax(340px, 350px))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(340px, 350px));
   }
   .about-me-page .about-me-div {
     background-size: cover;

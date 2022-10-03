@@ -856,17 +856,14 @@ $screen-extra-large-min:1200px;
   //portfolio
   .project-page {
     .grid-card-display {
-      grid-gap: 20px 24px;
-      // width:clamp(1000px,80%,1400px);
-      // margin: 0 auto;
+      grid-gap: 24px 30px;
+      // width:99%;
       justify-content: center;
-      grid-template-columns: repeat(auto-fit,minmax(330,350px));
+      grid-template-columns: repeat(auto-fit,minmax(340px,350px));
       // grid-template-columns: 350px 350px 350px;
   
     }
-    .project-card{
-      overflow: hidden;
-    }
+    
   }
   //end portfolio
 
