@@ -758,8 +758,9 @@ $screen-extra-large-min:1200px;
     }
 
     .grid-skill-display {
-      width:98%;
-      grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); 
+      // width:98%;
+      // grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+      grid-template-columns: 1fr 1fr; 
       // grid-template-rows: repeat(352px);
       grid-gap:20px;
 
@@ -859,7 +860,7 @@ $screen-extra-large-min:1200px;
       grid-gap: 20px 24px;
       width:95%;
       justify-content: center;
-      grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+      grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
   
     }
     .project-card{
@@ -876,8 +877,9 @@ $screen-extra-large-min:1200px;
 
     .grid-skill-display {
       grid-gap: 32px 24px;
-      width:98%;
-      grid-template-columns: (auto-fill,minmax(300px,1fr)); 
+      // width:max-content;
+      // grid-template-columns: (auto-fill,minmax(300px,1fr)); 
+      grid-template-columns: 1fr 1fr 1fr;
       // grid-template-rows: repeat(352px);
     }
   }

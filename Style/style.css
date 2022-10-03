@@ -895,9 +895,8 @@ h6 {
     width: 75%;
   }
   .about-me-page .grid-skill-display {
-    width: 98%;
-    -ms-grid-columns: (minmax(320px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
   .about-me-page .grid-skill-display .skill-card {
@@ -989,8 +988,8 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
   .project-page .project-card {
     overflow: hidden;
@@ -1000,9 +999,8 @@ h6 {
   }
   .about-me-page .grid-skill-display {
     grid-gap: 32px 24px;
-    width: 98%;
-    -ms-grid-columns: auto-fill, minmax(300px, 1fr);
-        grid-template-columns: auto-fill, minmax(300px, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
   }
   .contact-form-page {
     background-position: unset;
