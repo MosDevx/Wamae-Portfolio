@@ -29,6 +29,9 @@ To get a local copy up and running follow these simple example steps.
 ### Install
 	Open Html file in preferred browser
 
+### Deployment
+  [Live Demo Link](https://mosdevx.github.io/Wamae-Portfolio/)
+
 ## Authors
 
 👤 **Author1**

@@ -268,7 +268,6 @@ $screen-extra-large-min:1200px;
       border: 1px solid #d0d9d4;
       background: #ebf0ee;
       border-radius: 8px;
-     
 
       .project-card-image {
         // flex: 1 1 0;
@@ -291,7 +290,6 @@ $screen-extra-large-min:1200px;
         justify-content: space-evenly;
         background: #fff;
         border-radius: 8px;
-        
 
         .card-heading {
           font-style: normal;
@@ -368,7 +366,7 @@ $screen-extra-large-min:1200px;
 .about-me-page {
   display: flex;
   flex-direction: column;
-  margin: 30px 0px;
+  margin: 30px 0;
 
   .about-me-div {
     display: flex;
@@ -724,10 +722,10 @@ $screen-extra-large-min:1200px;
   //portfolio section
   .project-page {
     .grid-card-display {
-      width:97%;
+      width: 97%;
       justify-content: center;
       // background-color: yellow;
-      grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       grid-gap: 20px;
 
       .project-card {
@@ -760,9 +758,9 @@ $screen-extra-large-min:1200px;
     .grid-skill-display {
       // width:98%;
       // grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
-      grid-template-columns: 1fr 1fr; 
+      grid-template-columns: 1fr 1fr;
       // grid-template-rows: repeat(352px);
-      grid-gap:20px;
+      grid-gap: 20px;
 
       .skill-card {
         height: 352px;
@@ -786,6 +784,7 @@ $screen-extra-large-min:1200px;
       display: flex;
       align-items: center;
       justify-content: center;
+
       .form-title {
         font-size: 25px;
         width: 50%;
@@ -860,11 +859,9 @@ $screen-extra-large-min:1200px;
       grid-gap: 24px 30px;
       // width:99%;
       justify-content: center;
-      grid-template-columns: repeat(auto-fit,minmax(340px,360px));
+      grid-template-columns: repeat(auto-fit, minmax(340px, 360px));
       // grid-template-columns: 350px 350px 350px;
-  
     }
-    
   }
   //end portfolio
 
@@ -877,7 +874,7 @@ $screen-extra-large-min:1200px;
     .grid-skill-display {
       grid-gap: 32px 24px;
       // width:max-content;
-      grid-template-columns: (auto-fill,minmax(300px,1fr)); 
+      // grid-template-columns: (auto-fill, minmax(300px, 1fr));
       grid-template-columns: 1fr 1fr 1fr;
       // grid-template-rows: repeat(352px);
     }
