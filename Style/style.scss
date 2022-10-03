@@ -475,6 +475,7 @@ $screen-extra-large-min:1200px;
         justify-content: space-between;
         padding: 10px 0;
         margin-top: 20px;
+        align-items: center;
 
         .skill-card-languages {
           margin: 10px 10px;
@@ -720,9 +721,11 @@ $screen-extra-large-min:1200px;
   //portfolio section
   .project-page {
     .grid-card-display {
-      grid-template-columns: 369px 369px;
-      grid-template-rows: repeat(474px);
-      grid-gap: 24px;
+      width:97%;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+      // grid-template-rows: repeat(auto-fill,minmax(400px,420px));
+      grid-gap: 20px;
 
       .project-card {
         // max-width: 369px;
@@ -752,9 +755,10 @@ $screen-extra-large-min:1200px;
     }
 
     .grid-skill-display {
-      grid-template-columns: 369px 369px;
-      grid-template-rows: repeat(352px);
-      grid-gap: 24px;
+      width:98%;
+      grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); 
+      // grid-template-rows: repeat(352px);
+      grid-gap:20px;
 
       .skill-card {
         height: 352px;
@@ -778,9 +782,6 @@ $screen-extra-large-min:1200px;
       display: flex;
       align-items: center;
       justify-content: center;
-      // width:80%;
-      // margin:0 auto;
-      // background-color: yellow;
       .form-title {
         font-size: 25px;
         width: 50%;
@@ -852,8 +853,13 @@ $screen-extra-large-min:1200px;
   //portfolio
   .project-page {
     .grid-card-display {
-      grid-gap: 32px 24px;
-      grid-template-columns: 369px 369px 369px;
+      grid-gap: 20px 24px;
+      width:95%;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    }
+    .project-card{
+      overflow: hidden;
     }
   }
   //end portfolio
@@ -866,8 +872,9 @@ $screen-extra-large-min:1200px;
 
     .grid-skill-display {
       grid-gap: 32px 24px;
-      grid-template-columns: 369px 369px 369px;
-      grid-template-rows: repeat(352px);
+      width:98%;
+      grid-template-columns: (auto-fill,minmax(300px,1fr)); 
+      // grid-template-rows: repeat(352px);
     }
   }
   //end about me
