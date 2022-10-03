@@ -268,10 +268,12 @@ $screen-extra-large-min:1200px;
       border: 1px solid #d0d9d4;
       background: #ebf0ee;
       border-radius: 8px;
+     
 
       .project-card-image {
         // flex: 1 1 0;
         padding: 10px 10px;
+        height: 100%;
 
         img {
           // width:100px;
@@ -289,6 +291,7 @@ $screen-extra-large-min:1200px;
         justify-content: space-evenly;
         background: #fff;
         border-radius: 8px;
+        
 
         .card-heading {
           font-style: normal;
@@ -365,7 +368,7 @@ $screen-extra-large-min:1200px;
 .about-me-page {
   display: flex;
   flex-direction: column;
-  margin: 30px 10px;
+  margin: 30px 0px;
 
   .about-me-div {
     display: flex;
@@ -857,6 +860,7 @@ $screen-extra-large-min:1200px;
       width:95%;
       justify-content: center;
       grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  
     }
     .project-card{
       overflow: hidden;

@@ -287,6 +287,7 @@ h6 {
 
 .project-page .grid-card-display .project-card .project-card-image {
   padding: 10px 10px;
+  height: 100%;
 }
 
 .project-page .grid-card-display .project-card .project-card-image img {
@@ -398,7 +399,7 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 30px 10px;
+  margin: 30px 0px;
 }
 
 .about-me-page .about-me-div {
