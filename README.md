@@ -30,7 +30,7 @@ To get a local copy up and running follow these simple example steps.
 	Open Html file in preferred browser
 
 ### Deployment
-	[Live Demo](https://mosdevx.github.io/Wamae-Portfolio/)
+  [Demo Live Link](https://mosdevx.github.io/Wamae-Portfolio/)
 
 ## Authors
 
