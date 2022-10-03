@@ -987,8 +987,8 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-grid-columns: (minmax(340px, 350px))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(340px, 350px));
+    -ms-grid-columns: (minmax(340px, 360px))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(340px, 360px));
   }
   .about-me-page .about-me-div {
     background-size: cover;

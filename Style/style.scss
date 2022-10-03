@@ -726,6 +726,7 @@ $screen-extra-large-min:1200px;
     .grid-card-display {
       width:97%;
       justify-content: center;
+      // background-color: yellow;
       grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
       grid-gap: 20px;
 
@@ -859,7 +860,7 @@ $screen-extra-large-min:1200px;
       grid-gap: 24px 30px;
       // width:99%;
       justify-content: center;
-      grid-template-columns: repeat(auto-fit,minmax(340px,350px));
+      grid-template-columns: repeat(auto-fit,minmax(340px,360px));
       // grid-template-columns: 350px 350px 350px;
   
     }
