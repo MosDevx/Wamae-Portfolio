@@ -130,7 +130,7 @@ $screen-extra-large-min:1200px;
 .homepage-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 
   .homepage-header {
     display: flex;
@@ -661,7 +661,7 @@ $screen-extra-large-min:1200px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 65vh;
+    min-height: 65vh;
 
     .homepage-header {
       display: none;
@@ -835,7 +835,7 @@ $screen-extra-large-min:1200px;
   //homepage
   .homepage-container {
     background-position: unset;
-    height: 100vh;
+    min-height: 100vh;
 
     .homepage-section {
       margin: 0 260px;
