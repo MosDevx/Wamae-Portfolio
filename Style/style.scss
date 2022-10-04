@@ -394,6 +394,8 @@ $screen-extra-large-min:1200px;
       font-size: 20px;
       line-height: 32px;
       margin: 10px 0;
+      background-color:#fff;
+      display: inline-block;
     }
 
     .resume-button {
@@ -526,6 +528,7 @@ $screen-extra-large-min:1200px;
       text-align: center;
       color: $text-main;
       margin: 0 24px;
+      background-color: #fff;
     }
 
     form {

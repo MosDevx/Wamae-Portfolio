@@ -438,6 +438,8 @@ h6 {
   font-size: 20px;
   line-height: 32px;
   margin: 10px 0;
+  background-color: #fff;
+  display: inline-block;
 }
 
 .about-me-page .about-me-div .resume-button {
@@ -611,6 +613,7 @@ h6 {
   text-align: center;
   color: #172b4d;
   margin: 0 24px;
+  background-color: #fff;
 }
 
 .contact-form-page .form-div form {
