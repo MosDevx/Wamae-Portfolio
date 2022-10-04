@@ -188,6 +188,8 @@ $screen-extra-large-min:1200px;
       font-size: 40px;
       line-height: 52px;
       color: $text-main;
+      width:fit-content;
+      margin:0 auto;
       background-color: #fff;
       span {
         color: $primary;
