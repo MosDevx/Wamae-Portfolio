@@ -85,9 +85,10 @@ h6 {
 
 //Scss Variable and Mixins
 //Color themes
-$primary:#36b37e;
-$button-enable:#36b37e;
-$button-active:#008552;
+$primary:#1E488F;
+$button-enable:#1E488F;
+$button-active:#0A2759;
+$button-hover-shadow:rgba(30, 72, 143, 0.24);
 $text-project-card:#3a4a42;
 $text-main: #172b4d;
 
@@ -349,7 +350,7 @@ $screen-extra-large-min:1200px;
           white-space: nowrap;
 
           &:hover {
-            box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+            box-shadow: 0 8px 16px $button-hover-shadow;
           }
 
           &:active {
@@ -415,7 +416,7 @@ $screen-extra-large-min:1200px;
       white-space: nowrap;
 
       &:hover {
-        box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+        box-shadow: 0 8px 16px $button-hover-shadow;
       }
 
       &:active {
