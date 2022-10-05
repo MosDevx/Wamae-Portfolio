@@ -88,7 +88,7 @@ h6 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .homepage-container .homepage-header {
@@ -179,6 +179,11 @@ h6 {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 .homepage-container .homepage-section .homepage-h1 span {
@@ -384,8 +389,8 @@ h6 {
 }
 
 .project-page .grid-card-display .project-card .card-details .project-card-button:hover {
-  -webkit-box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
-  box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+  -webkit-box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .project-page .grid-card-display .project-card .card-details .project-card-button:active {
@@ -439,6 +444,8 @@ h6 {
   font-size: 20px;
   line-height: 32px;
   margin: 10px 0;
+  background-color: #fff;
+  display: inline-block;
 }
 
 .about-me-page .about-me-div .resume-button {
@@ -466,8 +473,8 @@ h6 {
 }
 
 .about-me-page .about-me-div .resume-button:hover {
-  -webkit-box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
-  box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+  -webkit-box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .about-me-page .about-me-div .resume-button:active {
@@ -612,6 +619,7 @@ h6 {
   text-align: center;
   color: #172b4d;
   margin: 0 24px;
+  background-color: #fff;
 }
 
 .contact-form-page .form-div form {
@@ -634,6 +642,17 @@ h6 {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right bottom;
+}
+
+.contact-form-page .form-div form label.hidden-label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 .contact-form-page .form-div form .form-field {
@@ -801,7 +820,7 @@ h6 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 65vh;
+    min-height: 65vh;
   }
 
   .homepage-container .homepage-header {
@@ -993,7 +1012,7 @@ h6 {
 @media (min-width: 992px) {
   .homepage-container {
     background-position: unset;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .homepage-container .homepage-section {
@@ -1031,8 +1050,7 @@ h6 {
 
   .about-me-page .grid-skill-display {
     grid-gap: 32px 24px;
-    -ms-grid-columns: auto-fill, minmax(300px, 1fr);
-    grid-template-columns: auto-fill, minmax(300px, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
