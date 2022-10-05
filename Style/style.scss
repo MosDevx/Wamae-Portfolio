@@ -85,10 +85,10 @@ h6 {
 
 //Scss Variable and Mixins
 //Color themes
-$primary:#1e488f;
-$button-enable:#1e488f;
-$button-active:#0a2759;
-$button-hover-shadow:rgba(30, 72, 143, 0.24);
+$primary:#36B37E;
+$button-enable:#36B37E;
+$button-active:#008552;
+$button-hover-shadow:rgba(54, 179, 127, 0.24);
 $text-project-card:#3a4a42;
 $text-main: #172b4d;
 
@@ -360,8 +360,8 @@ $screen-extra-large-min:1200px;
             background: $button-active;
           }
 
-          &:focus-visible {
-            outline: #6dff00 solid 3px;
+          // &:focus-visible {
+          //   outline: #6dff00 solid 3px;
           }
         }
       }
@@ -432,9 +432,9 @@ $screen-extra-large-min:1200px;
         background: $button-active;
       }
 
-      &:focus-visible {
-        outline: #6dff00 solid 3px;
-      }
+      // &:focus-visible {
+      //   outline: #6dff00 solid 3px;
+      // }
     }
   }
 
@@ -637,9 +637,9 @@ $screen-extra-large-min:1200px;
           background: $button-active;
         }
 
-        &:focus-visible {
-          outline: #6dff00 solid 3px;
-        }
+        // &:focus-visible {
+        //   outline: #6dff00 solid 3px;
+        // }
       }
     }
   }
