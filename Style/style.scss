@@ -547,7 +547,18 @@ $screen-extra-large-min:1200px;
       background-repeat: no-repeat;
       background-size: auto;
       background-position: right bottom;
-
+   
+      label.hidden-label{
+          border: 0;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px;
+        
+      }
       .form-field {
         margin-bottom: 24px;
         width: 327px;
