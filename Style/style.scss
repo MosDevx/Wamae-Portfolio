@@ -85,9 +85,9 @@ h6 {
 
 //Scss Variable and Mixins
 //Color themes
-$primary:#1E488F;
-$button-enable:#1E488F;
-$button-active:#0A2759;
+$primary:#1e488f;
+$button-enable:#1e488f;
+$button-active:#0a2759;
 $button-hover-shadow:rgba(30, 72, 143, 0.24);
 $text-project-card:#3a4a42;
 $text-main: #172b4d;
@@ -188,9 +188,10 @@ $screen-extra-large-min:1200px;
       font-size: 40px;
       line-height: 52px;
       color: $text-main;
-      width:fit-content;
-      margin:0 auto;
+      width: fit-content;
+      margin: 0 auto;
       background-color: #fff;
+
       span {
         color: $primary;
       }
@@ -396,7 +397,7 @@ $screen-extra-large-min:1200px;
       font-size: 20px;
       line-height: 32px;
       margin: 10px 0;
-      background-color:#fff;
+      background-color: #fff;
       display: inline-block;
     }
 
