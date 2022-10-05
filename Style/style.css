@@ -803,6 +803,17 @@ h6 {
   color: #42526e;
 }
 
+.hidden-label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 @media (min-width: 768px) {
   .homepage-container {
     background-image: url(../Assets/Images/homepage-background-desktop.svg);
