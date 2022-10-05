@@ -396,6 +396,10 @@ h6 {
   background: #0a2759;
 }
 
+.project-page .grid-card-display .project-card .card-details .project-card-button:focus-visible {
+  outline: #6dff00 solid 3px;
+}
+
 .about-me-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -478,6 +482,10 @@ h6 {
 
 .about-me-page .about-me-div .resume-button:active {
   background: #0a2759;
+}
+
+.about-me-page .about-me-div .resume-button:focus-visible {
+  outline: #6dff00 solid 3px;
 }
 
 .about-me-page .grid-skill-display {
@@ -770,6 +778,10 @@ h6 {
 
 .contact-form-page .form-div form .form-button:active {
   background: #0a2759;
+}
+
+.contact-form-page .form-div form .form-button:focus-visible {
+  outline: #6dff00 solid 3px;
 }
 
 .contact-form-page .footer-social-media {

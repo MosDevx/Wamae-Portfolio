@@ -359,6 +359,9 @@ $screen-extra-large-min:1200px;
           &:active {
             background: $button-active;
           }
+          &:focus-visible{
+            outline: #6dff00 solid 3px;
+          }
         }
       }
     }
@@ -426,6 +429,10 @@ $screen-extra-large-min:1200px;
 
       &:active {
         background: $button-active;
+      }
+
+      &:focus-visible{
+        outline: #6dff00 solid 3px;
       }
     }
   }
@@ -627,6 +634,9 @@ $screen-extra-large-min:1200px;
 
         &:active {
           background: $button-active;
+        }
+        &:focus-visible{
+          outline: #6dff00 solid 3px;
         }
       }
     }
