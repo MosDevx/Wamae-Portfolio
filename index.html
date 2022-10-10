@@ -32,13 +32,27 @@
       href="Assets/Icons/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="Assets/Icons/favicon/site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/dad56601c0.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <div class="homepage-container">
       <header class="homepage-header">
         <span>Welcome</span>
-        <img src="Assets/Icons/menu.svg" alt="Menu Icon" class="menu-icon" />
+        <div class="menu-bars"><i class="fa-solid fa-bars fa-2x"></i></div>
+        <div class="menu-close hide-element">
+          <i class="fa-solid fa-xmark fa-2x"></i>
+        </div>
+        <nav class="mobile-nav">
+          <ul>
+            <li><a class="linkItem" href="#portfolio">Portfolio</a></li>
+            <li><a class="linkItem" href="#about-me">About</a></li>
+            <li><a class="linkItem" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </header>
 
       <!-- header for large screens -->
@@ -406,5 +420,6 @@
         >
       </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>

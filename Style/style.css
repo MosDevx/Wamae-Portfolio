@@ -139,10 +139,63 @@ h6 {
   }
 }
 
-.homepage-container .homepage-header .menu-icon {
-  height: 22px;
-  width: 22px;
-  margin-right: 20px;
+.homepage-container .homepage-header .menu-bars {
+  margin-right: 15px;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.homepage-container .homepage-header .hide-element {
+  display: none;
+}
+
+.homepage-container .homepage-header .menu-close {
+  margin-right: 15px;
+  z-index: 99;
+}
+
+.homepage-container .homepage-header nav.mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 0 0 40px 40px;
+  -webkit-box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.homepage-container .homepage-header nav.mobile-nav ul {
+  list-style-type: none;
+  margin-top: 172px;
+}
+
+.homepage-container .homepage-header nav.mobile-nav ul li {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  padding-bottom: 40px;
+}
+
+.homepage-container .homepage-header nav.mobile-nav ul li a {
+  text-decoration: none;
+}
+
+.homepage-container .homepage-header nav.show-mobile-nav {
+  left: 0;
+  opacity: 100%;
 }
 
 .homepage-container .homepage-header-large-screen {
@@ -428,6 +481,7 @@ h6 {
   background-image: url(../Assets/Images/background-about-me-mobile.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0 25px;
 }
 
 .about-me-page .about-me-div h2 {
