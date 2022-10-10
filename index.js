@@ -14,3 +14,12 @@ menuClose.addEventListener('click', () => {
   menuClose.classList.toggle('hide-element');
   navMenu.classList.toggle('show-mobile-nav');
 });
+
+
+for (let i = 0; i < linkItems.length; i += 1) {
+  linkItems[i].addEventListener('click', () => {
+    navMenu.classList.remove('show-mobile-nav');
+    menuClose.classList.toggle('hide-element');
+    menuBars.classList.toggle('hide-element');
+  });
+}
