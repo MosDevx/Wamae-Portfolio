@@ -1,12 +1,67 @@
-"projects" : [
+{
+"projects":[
 	{
 		"id":"0",
 		"name":"Evolve Body Fitness",
-		"tech-list":["Ruby on Rails","Css","Javascript","Html"],
+		"techList":["Ruby on Rails","Css","Javascript","Html"],
 		"imageUrl":"Assets/Images/gym-fit.png",
+		"imageAlt":"Gym Website",
 		"description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
 		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
-		"linkToSource":"https://github.com/",
+		"linkToSource":"https://github.com/"
 	},
-
+	{
+		"id":"1",
+		"name":"Nairobi Art Gallery",
+		"techList":["Php","Css","Javascript"],
+		"imageUrl":"Assets/Images/art-printing.png",
+		"imageAlt":"Gallery Website",
+		"description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
+		"linkToSource":"https://github.com/"
+	},
+	{
+		"id":"2",
+		"name":"Personal Organizer",
+		"techList":["Ruby on Rails","Css","Javascript","Html"],
+		"imageUrl":"Assets/Images/organizer.png",
+		"imageAlt":"Organizer Website",
+		"description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
+		"linkToSource":"https://github.com/"
+	},
+	{
+		"id":"3",
+		"name":"Evolve Body Fitness",
+		"techList":["Ruby on Rails","Css","Javascript","Html"],
+		"imageUrl":"Assets/Images/gym-fit.png",
+		"imageAlt":"Gym Website",
+		"description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
+		"linkToSource":"https://github.com/"
+	},
+	{
+		"id":"4",
+		"name":"Nairobi Art Gallery",
+		"techList":["Php","Css","Javascript"],
+		"imageUrl":"Assets/Images/art-printing.png",
+		"imageAlt":"Art Website",
+		"description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
+		"linkToSource":"https://github.com/"
+	},
+	{
+		"id":"5",
+		"name":"Personal Organizer",
+		"techList":["Ruby on Rails","Css","Javascript","Html"],
+		"imageUrl":"Assets/Images/organizer.png",
+		"imageAlt":"Organizer Website",
+		"description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
+		"linkToSource":"https://github.com/"
+	}
 ]
+
+
+
+}
