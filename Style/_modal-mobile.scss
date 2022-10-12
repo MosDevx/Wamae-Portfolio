@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 40px auto;
+  margin: -40px auto;
   padding:0 10px;
   border: 1px solid #d0d9d4;
   background: #fff;
@@ -20,12 +20,12 @@
   
 
     .icon-close{
-      color:#fff;
+      color:#fff ;
       padding:5px;
       position: absolute;
       right:5%;
       cursor:pointer;
-      // background-color:rgba(248, 80, 80, 0.594);
+      background-color:rgba(248, 80, 80, 0.594);
       // filter:blur(10px);
 
     

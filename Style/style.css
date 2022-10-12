@@ -346,6 +346,7 @@ h6 {
 .project-page .grid-card-display .project-card .project-card-image {
   padding: 10px 10px;
   height: 100%;
+  margin: 0 auto;
 }
 
 .project-page .grid-card-display .project-card .project-card-image img {
@@ -467,7 +468,7 @@ h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin: 40px auto;
+  margin: -40px auto;
   padding: 0 10px;
   border: 1px solid #d0d9d4;
   background: #fff;
@@ -488,6 +489,7 @@ h6 {
   position: absolute;
   right: 5%;
   cursor: pointer;
+  background-color: rgba(248, 80, 80, 0.594);
 }
 
 .modal-card .modal-card-image img {

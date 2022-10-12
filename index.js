@@ -50,7 +50,8 @@ projects.forEach((project, index) => {
 
 // get list of project buttons & add event listener
 
-const projectButtonList = document.querySelectorAll('project-card-button');
+const projectButtonList = document.querySelectorAll('.project-card-button');
+
 
 // where modal parent will be attached
 const modalContainer = document.getElementById('modal-container');
@@ -58,6 +59,7 @@ const modalContainer = document.getElementById('modal-container');
 // open a modal and add it to html. function called by button event listener
 function openModal(projectIndex) {
   const project = projects[projectIndex];
+
   // dynamically generate  the ul containing tech list
   const ulElement = document.createElement('ul');
   ulElement.classList.add('language-list');
@@ -67,11 +69,12 @@ function openModal(projectIndex) {
     liElement.innerHTML = `${item}`;
     ulElement.appendChild(liElement);
   });
-
   const content = `
     <section class="modal-card">
     <div class="modal-card-image">
-      <i id="close-icon" class="fa-solid fa-xmark icon-close fa-2xl"></i>
+      <div id="close-icon">
+      <i  class="fa-solid fa-xmark icon-close fa-2xl"></i>
+      </div>
       <img src="${project.imageUrl}" alt="${project.imageAlt}" />
     </div>
 
@@ -92,19 +95,24 @@ function openModal(projectIndex) {
   </section>
     `;
   modalContainer.innerHTML = content;
-  const ulOriginal = document.getElementById('original-ul');
-  original - ul.replaceWith(ulElement);
+  const originalUl = document.getElementById('original-ul');
+  originalUl.replaceWith(ulElement);
 
   // get a refeerence to the close button
   const closeIcon = document.getElementById('close-icon');
   closeIcon.addEventListener('click', () => {
+    console.log("cloes icoaasdigfdi");
     modalContainer.innerHTML = '';
   });
 }
 
 // add eventlistener to project card buttons
 projectButtonList.forEach((button) => {
-  button.add;
+  button.addEventListener('click', () => {
+    console.log("Button clckke");
+    const projectId = button.dataset.id;
+    openModal(projectId);
+  });
 });
 
 // code to handle opening of mobile nav menu
