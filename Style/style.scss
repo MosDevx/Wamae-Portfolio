@@ -322,7 +322,7 @@ $screen-extra-large-min:1200px;
         // flex: 1 1 0;
         padding: 10px 10px;
         height: 100%;
-        margin:0 auto;
+        margin: 0 auto;
 
         img {
           // width:100px;
@@ -351,7 +351,6 @@ $screen-extra-large-min:1200px;
         }
 
         .card-languages {
-          margin: 10px auto;
           flex-basis: 0;
           height: auto;
           margin: 0 10px;
@@ -415,7 +414,6 @@ $screen-extra-large-min:1200px;
 
 //styling for modals
 @import "modal-mobile";
-
 
 // About me page
 .about-me-page {
@@ -811,10 +809,9 @@ $screen-extra-large-min:1200px;
 
   //end portfolio page
 
-
   // modal desktop
-  @import 'modal-desktop';
-  
+  @import "modal-desktop";
+
   //About me page
   .about-me-page {
     .about-me-div {

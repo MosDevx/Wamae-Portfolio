@@ -52,7 +52,6 @@ projects.forEach((project, index) => {
 
 const projectButtonList = document.querySelectorAll('.project-card-button');
 
-
 // where modal parent will be attached
 const modalContainer = document.getElementById('modal-container');
 
@@ -62,9 +61,10 @@ function openModal(projectIndex) {
 
   // dynamically generate  the ul containing tech list
   const ulElement = document.createElement('ul');
-  ulElement.classList.add('language-list');
+  ulElement.classList.add('modal-language-list');
   project.techList.forEach((item) => {
     const liElement = document.createElement('li');
+    liElement.classList.add('modal-li');
 
     liElement.innerHTML = `${item}`;
     ulElement.appendChild(liElement);
@@ -75,7 +75,7 @@ function openModal(projectIndex) {
       <div id="close-icon">
       <i  class="fa-solid fa-xmark icon-close fa-2xl"></i>
       </div>
-      <img src="${project.imageUrl}" alt="${project.imageAlt}" />
+      <img class="modal-image" src="${project.imageUrlModal}" alt="${project.imageAlt}" />
     </div>
 
     <div class="modal-details">
@@ -88,8 +88,8 @@ function openModal(projectIndex) {
       </div>
       <p>${project.description}</p>
       <div class="modal-button-container">
-        <a href="${project.linkToLive}" class="modal-button"><span>See Live  </span><i class="fa-solid fa-lg fa-arrow-up-right-from-square"></i></a>
-        <a href="${project.linkToSource}" class="modal-button"><span>See Source  </span><i class="fa-brands fa-lg fa-github"></i></a>
+        <a href="${project.linkToLive}" target="_blank" class="modal-button"><span>See Live  </span><i class="fa-solid fa-lg fa-arrow-up-right-from-square"></i></a>
+        <a href="${project.linkToSource}" target="_blank" class="modal-button"><span>See Source  </span><i class="fa-brands fa-lg fa-github"></i></a>
       </div>
     </div>
   </section>
@@ -101,7 +101,6 @@ function openModal(projectIndex) {
   // get a refeerence to the close button
   const closeIcon = document.getElementById('close-icon');
   closeIcon.addEventListener('click', () => {
-    console.log("cloes icoaasdigfdi");
     modalContainer.innerHTML = '';
   });
 }
@@ -109,7 +108,6 @@ function openModal(projectIndex) {
 // add eventlistener to project card buttons
 projectButtonList.forEach((button) => {
   button.addEventListener('click', () => {
-    console.log("Button clckke");
     const projectId = button.dataset.id;
     openModal(projectId);
   });
