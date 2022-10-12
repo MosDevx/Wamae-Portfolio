@@ -179,7 +179,7 @@ $screen-extra-large-min:1200px;
       top: 0;
       left: -100%;
       flex-direction: column;
-      height: 80vh;
+      height: 97vh;
       background-color: #fff;
       border-radius: 0 0 40px 40px;
       box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -189,7 +189,7 @@ $screen-extra-large-min:1200px;
 
       ul {
         list-style-type: none;
-        margin-top: 172px;
+        margin-top: 108px;
 
         li {
           font-style: normal;
@@ -200,6 +200,10 @@ $screen-extra-large-min:1200px;
 
           a {
             text-decoration: none;
+            color:#3A4A42;
+            &:hover{
+              color:#3A4A42;
+            }
           }
         }
       }

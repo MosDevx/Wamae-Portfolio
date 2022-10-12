@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -84,7 +83,6 @@ h6 {
   flex-direction: column;
   min-height: 100vh;
 }
-
 .homepage-container .homepage-header {
   display: flex;
   flex: 0;
@@ -92,7 +90,6 @@ h6 {
   padding: 8px;
   margin-top: 10px;
 }
-
 .homepage-container .homepage-header span {
   display: flex;
   font-style: normal;
@@ -104,44 +101,38 @@ h6 {
   align-items: center;
   margin-left: 20px;
   -webkit-animation-name: flip-logo;
-  animation-name: flip-logo;
+          animation-name: flip-logo;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+          animation-duration: 1s;
 }
-
 @-webkit-keyframes flip-logo {
   to {
     transform: rotate(360deg);
   }
 }
-
 @keyframes flip-logo {
   to {
     transform: rotate(360deg);
   }
 }
-
 .homepage-container .homepage-header .menu-bars {
   margin-right: 15px;
   transition: all 1s linear;
 }
-
 .homepage-container .homepage-header .hide-element {
   display: none;
 }
-
 .homepage-container .homepage-header .menu-close {
   margin-right: 15px;
   z-index: 99;
 }
-
 .homepage-container .homepage-header nav.mobile-nav {
   display: flex;
   position: absolute;
   top: 0;
   left: -100%;
   flex-direction: column;
-  height: 80vh;
+  height: 97vh;
   background-color: #fff;
   border-radius: 0 0 40px 40px;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -149,12 +140,10 @@ h6 {
   opacity: 0;
   transition: all 0.4s ease-in-out;
 }
-
 .homepage-container .homepage-header nav.mobile-nav ul {
   list-style-type: none;
-  margin-top: 172px;
+  margin-top: 108px;
 }
-
 .homepage-container .homepage-header nav.mobile-nav ul li {
   font-style: normal;
   font-weight: 600;
@@ -162,20 +151,20 @@ h6 {
   line-height: 44px;
   padding-bottom: 40px;
 }
-
 .homepage-container .homepage-header nav.mobile-nav ul li a {
   text-decoration: none;
+  color: #3A4A42;
 }
-
+.homepage-container .homepage-header nav.mobile-nav ul li a:hover {
+  color: #3A4A42;
+}
 .homepage-container .homepage-header nav.show-mobile-nav {
   left: 0;
   opacity: 100%;
 }
-
 .homepage-container .homepage-header-large-screen {
   display: none;
 }
-
 .homepage-container .homepage-section {
   display: flex;
   flex-direction: column;
@@ -188,7 +177,6 @@ h6 {
   justify-content: space-evenly;
   margin: 0 20px;
 }
-
 .homepage-container .homepage-section .homepage-h1 {
   font-style: normal;
   font-weight: 700;
@@ -201,11 +189,9 @@ h6 {
   margin: 0 auto;
   background-color: #fff;
 }
-
 .homepage-container .homepage-section .homepage-h1 span {
   color: #36b37e;
 }
-
 .homepage-container .homepage-section p {
   font-style: normal;
   font-weight: 400;
@@ -216,7 +202,6 @@ h6 {
   margin-left: 20px;
   margin-right: 20px;
 }
-
 .homepage-container .homepage-section .social-media-list {
   display: flex;
   width: 50%;
@@ -225,7 +210,6 @@ h6 {
   list-style-type: none;
   padding: 10px;
 }
-
 .homepage-container .homepage-section .scroll-button {
   margin-top: 40px;
   width: 40px;
@@ -239,7 +223,6 @@ h6 {
   display: flex;
   flex-direction: column;
 }
-
 .project-page .recent-work {
   display: flex;
   flex-direction: column;
@@ -247,7 +230,6 @@ h6 {
   align-items: center;
   margin: 50px 0;
 }
-
 .project-page .recent-work h2 {
   font-weight: 700;
   font-size: 40px;
@@ -255,7 +237,6 @@ h6 {
   text-align: center;
   color: #172b4d;
 }
-
 .project-page .recent-work .underline {
   width: 48px;
   height: 4px;
@@ -263,14 +244,12 @@ h6 {
   border-radius: 24px;
   margin-top: 20px;
 }
-
 .project-page .grid-card-display {
   display: grid;
   grid-gap: 20px;
   padding: 10px 0;
   margin: 0 auto;
 }
-
 .project-page .grid-card-display .project-card {
   display: flex;
   flex-direction: column;
@@ -280,21 +259,17 @@ h6 {
   background: #ebf0ee;
   border-radius: 8px;
 }
-
 .project-page .grid-card-display .project-card .project-card-image {
   padding: 10px 10px;
   height: 100%;
   margin: 0 auto;
 }
-
 .project-page .grid-card-display .project-card .project-card-image img {
   transition: all 0.3s ease-in-out;
 }
-
 .project-page .grid-card-display .project-card .project-card-image img:hover {
   transform: scale(1.1);
 }
-
 .project-page .grid-card-display .project-card .card-details {
   display: flex;
   flex-direction: column;
@@ -302,7 +277,6 @@ h6 {
   background: #fff;
   border-radius: 8px;
 }
-
 .project-page .grid-card-display .project-card .card-details .card-heading {
   font-style: normal;
   font-weight: 600;
@@ -311,14 +285,12 @@ h6 {
   margin-top: 10px;
   color: #3a4a42;
 }
-
 .project-page .grid-card-display .project-card .card-details .card-languages {
   flex-basis: 0;
   height: auto;
   margin: 0 10px;
   max-width: 315px;
 }
-
 .project-page .grid-card-display .project-card .card-details .card-languages .language-list {
   display: flex;
   justify-content: center;
@@ -329,7 +301,6 @@ h6 {
   height: 80px;
   list-style-type: none;
 }
-
 .project-page .grid-card-display .project-card .card-details .card-languages .language-list li {
   padding: 8px 12px;
   background: #ebf0ee;
@@ -341,7 +312,6 @@ h6 {
   text-align: center;
   color: #3a4a42;
 }
-
 .project-page .grid-card-display .project-card .card-details .project-card-button {
   width: 122px;
   height: 48px;
@@ -360,11 +330,9 @@ h6 {
   color: #fff;
   white-space: nowrap;
 }
-
 .project-page .grid-card-display .project-card .card-details .project-card-button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
-
 .project-page .grid-card-display .project-card .card-details .project-card-button:active {
   background: #008552;
 }
@@ -388,11 +356,9 @@ h6 {
   width: 80vw;
   align-items: center;
 }
-
 .modal-card .modal-card-image {
   padding: 10px 10px;
 }
-
 .modal-card .modal-card-image .icon-close {
   color: #fff;
   padding: 5px;
@@ -401,12 +367,10 @@ h6 {
   cursor: pointer;
   background-color: rgba(248, 80, 80, 0.594);
 }
-
 .modal-card .modal-card-image .modal-image {
   width: 320px;
   height: auto;
 }
-
 .modal-card .modal-details {
   display: flex;
   flex-direction: column;
@@ -414,7 +378,6 @@ h6 {
   background: #fff;
   border-radius: 8px;
 }
-
 .modal-card .modal-details .modal-heading {
   font-style: normal;
   font-weight: 600;
@@ -423,14 +386,12 @@ h6 {
   margin-top: 10px;
   color: #3a4a42;
 }
-
 .modal-card .modal-details .modal-languages {
   flex-basis: 0;
   height: auto;
   max-width: 315px;
   margin: 10px 10px;
 }
-
 .modal-card .modal-details .modal-languages .modal-language-list {
   display: flex;
   justify-content: center;
@@ -441,7 +402,6 @@ h6 {
   height: 80px;
   list-style-type: none;
 }
-
 .modal-card .modal-details .modal-languages .modal-language-list .modal-li {
   padding: 8px 12px;
   background: #ebf0ee;
@@ -453,13 +413,11 @@ h6 {
   text-align: center;
   color: #3a4a42;
 }
-
 .modal-card .modal-details .modal-button-container {
   display: flex;
   justify-content: space-around;
   margin: 15px 0;
 }
-
 .modal-card .modal-details .modal-button-container .modal-button {
   width: 148px;
   height: 48px;
@@ -479,11 +437,9 @@ h6 {
   white-space: nowrap;
   text-decoration: none;
 }
-
 .modal-card .modal-details .modal-button-container .modal-button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
-
 .modal-card .modal-details .modal-button-container .modal-button:active {
   background: #008552;
 }
@@ -493,7 +449,6 @@ h6 {
   flex-direction: column;
   margin: 30px 0;
 }
-
 .about-me-page .about-me-div {
   display: flex;
   flex-direction: column;
@@ -506,7 +461,6 @@ h6 {
   background-repeat: no-repeat;
   margin: 0 25px;
 }
-
 .about-me-page .about-me-div h2 {
   font-style: normal;
   font-weight: 700;
@@ -514,7 +468,6 @@ h6 {
   line-height: 52px;
   margin: 10px 0;
 }
-
 .about-me-page .about-me-div p {
   font-style: normal;
   font-weight: 400;
@@ -524,7 +477,6 @@ h6 {
   background-color: #fff;
   display: inline-block;
 }
-
 .about-me-page .about-me-div .resume-button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -546,22 +498,18 @@ h6 {
   color: #fff;
   white-space: nowrap;
 }
-
 .about-me-page .about-me-div .resume-button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
-
 .about-me-page .about-me-div .resume-button:active {
   background: #008552;
 }
-
 .about-me-page .grid-skill-display {
   display: grid;
   grid-gap: 20px;
   padding: 10px 0;
   margin: 50px auto;
 }
-
 .about-me-page .grid-skill-display .skill-card {
   display: flex;
   flex-direction: column;
@@ -573,14 +521,12 @@ h6 {
   justify-content: space-between;
   padding: 20px 0;
 }
-
 .about-me-page .grid-skill-display .skill-card .framework-logo-div {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
-
 .about-me-page .grid-skill-display .skill-card .framework-logo-div .framework-logo {
   width: 80px;
   height: 80px;
@@ -591,7 +537,6 @@ h6 {
   justify-content: center;
   align-items: center;
 }
-
 .about-me-page .grid-skill-display .skill-card .skill-card-heading {
   font-style: normal;
   font-weight: 600;
@@ -600,7 +545,6 @@ h6 {
   margin-top: 10px;
   color: #344563;
 }
-
 .about-me-page .grid-skill-display .skill-card .skill-card-details {
   display: flex;
   flex: 1 1 0;
@@ -611,13 +555,11 @@ h6 {
   margin-top: 20px;
   align-items: center;
 }
-
 .about-me-page .grid-skill-display .skill-card .skill-card-details .skill-card-languages {
   margin: 10px 10px;
   height: auto;
   max-width: 315px;
 }
-
 .about-me-page .grid-skill-display .skill-card .skill-card-details .skill-card-languages .skill-language-list {
   display: flex;
   justify-content: center;
@@ -629,7 +571,6 @@ h6 {
   padding: 0;
   list-style-type: none;
 }
-
 .about-me-page .grid-skill-display .skill-card .skill-card-details .skill-card-languages .skill-language-list li {
   padding: 12px;
   background: #fff;
@@ -645,7 +586,6 @@ h6 {
 .contact-form-page {
   height: 100%;
 }
-
 .contact-form-page .form-div .form-title {
   font-weight: 700;
   font-size: 40px;
@@ -655,7 +595,6 @@ h6 {
   margin: 0 24px;
   background-color: #fff;
 }
-
 .contact-form-page .form-div form {
   margin-top: 58px;
   display: flex;
@@ -670,7 +609,6 @@ h6 {
   background-size: auto;
   background-position: right bottom;
 }
-
 .contact-form-page .form-div form label.hidden-label {
   border: 0;
   clip: rect(0 0 0 0);
@@ -681,7 +619,6 @@ h6 {
   position: absolute;
   width: 1px;
 }
-
 .contact-form-page .form-div form .form-field {
   margin-bottom: 24px;
   width: 327px;
@@ -690,52 +627,42 @@ h6 {
   border: 1px solid #d0d9d4;
   border-radius: 4px;
 }
-
 .contact-form-page .form-div form .form-field::-moz-placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #6b778c;
 }
-
 .contact-form-page .form-div form .form-field:-ms-input-placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #6b778c;
 }
-
 .contact-form-page .form-div form .form-field::placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #6b778c;
 }
-
 .contact-form-page .form-div form .form-field:not(:focus):not(:-moz-placeholder-shown):valid {
   box-shadow: 0 0 2px 1px rgb(14, 137, 14);
 }
-
 .contact-form-page .form-div form .form-field:not(:focus):not(:-ms-input-placeholder):valid {
   box-shadow: 0 0 2px 1px rgb(14, 137, 14);
 }
-
 .contact-form-page .form-div form .form-field:not(:focus):not(:placeholder-shown):valid {
   box-shadow: 0 0 2px 1px rgb(14, 137, 14);
 }
-
 .contact-form-page .form-div form .form-field:invalid:not(:focus):not(:-moz-placeholder-shown) {
   box-shadow: 0 0 5px 1px rgb(243, 82, 82);
 }
-
 .contact-form-page .form-div form .form-field:invalid:not(:focus):not(:-ms-input-placeholder) {
   box-shadow: 0 0 5px 1px rgb(243, 82, 82);
 }
-
 .contact-form-page .form-div form .form-field:invalid:not(:focus):not(:placeholder-shown) {
   box-shadow: 0 0 5px 1px rgb(243, 82, 82);
 }
-
 .contact-form-page .form-div form textarea {
   margin-bottom: 24px;
   width: 327px;
@@ -744,52 +671,42 @@ h6 {
   border: 1px solid #60c095;
   border-radius: 4px;
 }
-
 .contact-form-page .form-div form textarea::-moz-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #091e42;
 }
-
 .contact-form-page .form-div form textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #091e42;
 }
-
 .contact-form-page .form-div form textarea::placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #091e42;
 }
-
 .contact-form-page .form-div form textarea:not(:-moz-placeholder-shown):valid:not(:focus) {
   box-shadow: 0 0 2px 1px rgb(14, 137, 14);
 }
-
 .contact-form-page .form-div form textarea:not(:-ms-input-placeholder):valid:not(:focus) {
   box-shadow: 0 0 2px 1px rgb(14, 137, 14);
 }
-
 .contact-form-page .form-div form textarea:not(:placeholder-shown):valid:not(:focus) {
   box-shadow: 0 0 2px 1px rgb(14, 137, 14);
 }
-
 .contact-form-page .form-div form textarea:invalid:not(:-moz-placeholder-shown):not(:focus) {
   box-shadow: 0 0 5px 1px rgb(243, 82, 82);
 }
-
 .contact-form-page .form-div form textarea:invalid:not(:-ms-input-placeholder):not(:focus) {
   box-shadow: 0 0 5px 1px rgb(243, 82, 82);
 }
-
 .contact-form-page .form-div form textarea:invalid:not(:placeholder-shown):not(:focus) {
   box-shadow: 0 0 5px 1px rgb(243, 82, 82);
 }
-
 .contact-form-page .form-div form .form-button {
   width: 129px;
   height: 48px;
@@ -804,15 +721,12 @@ h6 {
   text-align: center;
   border: none;
 }
-
 .contact-form-page .form-div form .form-button:hover {
   box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
 }
-
 .contact-form-page .form-div form .form-button:active {
   background: #008552;
 }
-
 .contact-form-page .footer-social-media {
   margin-top: 46px;
   margin-bottom: 100px;
@@ -820,7 +734,6 @@ h6 {
   flex-direction: column;
   align-items: center;
 }
-
 .contact-form-page .footer-social-media .footer-social-media-list {
   display: flex;
   width: 50%;
@@ -829,7 +742,6 @@ h6 {
   list-style-type: none;
   padding: 0;
 }
-
 .contact-form-page .footer-social-media .footer-email {
   text-decoration: none;
   margin-top: 20px;
@@ -849,18 +761,15 @@ h6 {
     background-position: 50% 50%;
     min-height: 65vh;
   }
-
   .homepage-container .homepage-header {
     display: none;
   }
-
   .homepage-container .homepage-header-large-screen {
     display: flex;
     justify-content: center;
     padding: 8px;
     margin-top: 10px;
   }
-
   .homepage-container .homepage-header-large-screen nav a {
     text-decoration: none;
     color: #344563;
@@ -870,17 +779,14 @@ h6 {
     font-weight: 600;
     transition: color 0.2s ease-in-out;
   }
-
   .homepage-container .homepage-header-large-screen nav a:hover {
     color: #9836b3;
   }
-
   .homepage-container .homepage-section {
     background: none;
     margin: 0 130px;
     justify-content: center;
   }
-
   .homepage-container .homepage-section .homepage-h1 {
     font-style: normal;
     font-weight: 800;
@@ -890,52 +796,43 @@ h6 {
     letter-spacing: 0.37px;
     color: #172b4d;
     -webkit-animation: title-animation;
-    animation: title-animation;
+            animation: title-animation;
     -webkit-animation-duration: 4s;
-    animation-duration: 4s;
+            animation-duration: 4s;
   }
-
   @-webkit-keyframes title-animation {
     from {
       color: green;
     }
-
     to {
       color: #091e42;
     }
   }
-
   @keyframes title-animation {
     from {
       color: green;
     }
-
     to {
       color: #091e42;
     }
   }
-
   .homepage-container .homepage-section p {
     margin-left: auto;
     margin-right: auto;
   }
-
   .homepage-container .homepage-section .social-media-list {
     width: 40%;
     margin-top: 40px;
   }
-
   .project-page .grid-card-display {
     width: 97%;
     justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
   }
-
   .project-page .grid-card-display .project-card .project-card-image {
     margin: auto;
   }
-
   .modal-card {
     position: fixed;
     top: 50%;
@@ -946,26 +843,21 @@ h6 {
     overflow: scroll;
     width: 70vw;
   }
-
   .modal-card .modal-card-image .icon-close {
     color: #000;
     background-color: transparent;
   }
-
   .modal-card .modal-card-image .icon-close:hover {
     color: #f00;
   }
-
   .modal-card .modal-card-image .modal-image {
     width: 700px;
     height: 450px;
   }
-
   .modal-card .modal-details {
     background: #fff;
     border-radius: 8px;
   }
-
   .modal-card .modal-details .modal-heading {
     font-style: normal;
     font-weight: 600;
@@ -976,14 +868,12 @@ h6 {
     align-self: flex-start;
     color: #3a4a42;
   }
-
   .modal-card .modal-details .modal-languages {
     align-self: flex-start;
     flex-basis: 0;
     height: auto;
     margin: 10px 10px;
   }
-
   .modal-card .modal-details .modal-languages .modal-language-list {
     display: flex;
     justify-content: center;
@@ -994,7 +884,6 @@ h6 {
     height: 80px;
     list-style-type: none;
   }
-
   .modal-card .modal-details .modal-languages .modal-language-list .modal-li {
     padding: 8px 12px;
     background: #ebf0ee;
@@ -1006,49 +895,40 @@ h6 {
     text-align: center;
     color: #3a4a42;
   }
-
   .modal-card .modal-details p {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
   }
-
   .modal-card .modal-details .modal-button-container {
     position: absolute;
     right: 10px;
     bottom: 140px;
     gap: 0 10px;
   }
-
   .modal-card .modal-details .modal-button-container .modal-button:hover {
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   }
-
   .modal-card .modal-details .modal-button-container .modal-button:active {
     background: #008552;
   }
-
   .about-me-page .about-me-div {
     background-image: url(../Assets/Images/aboutme-background-desktop.svg);
     background-position: 50% 50%;
     background-size: contain;
   }
-
   .about-me-page .about-me-div p {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
   }
-
   .about-me-page .grid-skill-display {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
-
   .about-me-page .grid-skill-display .skill-card {
     height: 352px;
   }
-
   .contact-form-page {
     background-image: url(../Assets/Images/contact-background-desktop.svg);
     background-repeat: no-repeat;
@@ -1059,90 +939,72 @@ h6 {
     justify-content: space-between;
     height: 70%;
   }
-
   .contact-form-page .form-div {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
   .contact-form-page .form-div .form-title {
     font-size: 25px;
     width: 50%;
   }
-
   .contact-form-page .form-div form {
     width: 40%;
     align-items: flex-start;
     margin-right: 50px;
     background-image: none;
   }
-
   .contact-form-page .form-div form .form-field {
     width: 100%;
   }
-
   .contact-form-page .form-div form textarea {
     width: 100%;
   }
-
   .contact-form-page .footer-social-media {
     border-top: 1px solid;
     width: 100%;
     margin-bottom: 0;
   }
-
   .contact-form-page .footer-social-media .footer-social-media-list {
     padding: 20px 0;
     width: 25%;
   }
-
   .contact-form-page .footer-social-media .footer-email {
     display: none;
   }
 }
-
 @media (min-width: 992px) {
   .homepage-container {
     background-position: unset;
     min-height: 100vh;
   }
-
   .homepage-container .homepage-section {
     margin: 0 260px;
   }
-
   .homepage-container .homepage-section .homepage-h1 {
     font-size: 48px;
   }
-
   .homepage-container .homepage-section p {
     width: 75%;
   }
-
   .homepage-container .homepage-section .social-media-list {
     width: 30%;
   }
-
   .homepage-container .homepage-section .scroll-button {
     bottom: 4px;
   }
-
   .project-page .grid-card-display {
     grid-gap: 24px 30px;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(340px, 360px));
   }
-
   .about-me-page .about-me-div {
     background-size: cover;
   }
-
   .about-me-page .grid-skill-display {
     grid-gap: 32px 24px;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
   .contact-form-page {
     background-position: unset;
     display: flex;
@@ -1150,45 +1012,37 @@ h6 {
     justify-content: space-between;
     height: 100%;
   }
-
   .contact-form-page .form-div {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
   .contact-form-page .form-div .form-title {
     font-size: 30px;
     width: 30%;
   }
-
   .contact-form-page .form-div form {
     width: 40%;
     align-items: flex-start;
     margin-left: 40px;
     margin-right: 40px;
   }
-
   .contact-form-page .form-div form .form-field {
     width: 75%;
   }
-
   .contact-form-page .form-div form textarea {
     width: 75%;
   }
-
   .contact-form-page .footer-social-media {
     border: 1px solid;
     width: 100%;
     margin-bottom: 0;
   }
-
   .contact-form-page .footer-social-media .footer-social-media-list {
     padding: 20px 0;
     width: 25%;
   }
-
   .contact-form-page .footer-social-media .footer-email {
     display: none;
   }
-}
+}/*# sourceMappingURL=style.css.map */
