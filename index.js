@@ -140,3 +140,18 @@ for (let i = 0; i < linkItems.length; i += 1) {
 const form = document.getElementById('contact-form');
 const emailInput = form.elements.email;
 const errorField = document.getElementById('error-message');
+
+function isLowerCase(email) {
+  return email === email.toLowerCase();
+}
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailValue = emailInput.value;
+  if (isLowerCase(emailValue)) {
+    errorField.innerText = '';
+    form.submit();
+    form.reset();
+  } else {
+    errorField.innerText = 'Please type email in lower case*';
+  }
+});
