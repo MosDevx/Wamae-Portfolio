@@ -134,3 +134,9 @@ for (let i = 0; i < linkItems.length; i += 1) {
     menuBars.classList.toggle('hide-element');
   });
 }
+
+// validation of email inputt
+
+const form = document.getElementById('contact-form');
+const emailInput = form.elements.email;
+const errorField = document.getElementById('error-message');
