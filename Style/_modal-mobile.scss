@@ -1,19 +1,39 @@
 .modal-card {
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height:fit-content;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 0 0;
+  margin: 40px auto;
+  padding:0 10px;
   border: 1px solid #d0d9d4;
-  background: #ebf0ee;
+  background: #fff;
   border-radius: 8px;
+  width:80vw;
+  align-items:center;
 
   .modal-card-image {
-    // flex: 1 1 0;
     padding: 10px 10px;
-    height: 100%;
+  
 
+    .icon-close{
+      color:#fff;
+      padding:5px;
+      position: absolute;
+      right:5%;
+      cursor:pointer;
+      // background-color:rgba(248, 80, 80, 0.594);
+      // filter:blur(10px);
+
+    
+    }
     img {
+      
       // width:100px;
+      // height:auto;
       transition: all 0.3s ease-in-out;
 
       // &:hover {
@@ -32,8 +52,8 @@
     .modal-heading {
       font-style: normal;
       font-weight: 600;
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 32px;
+      line-height: 44px;
       margin-top: 10px;
       color: $text-project-card;
     }
@@ -43,6 +63,7 @@
       flex-basis: 0;
       height: auto;
       max-width: 315px;
+      margin:10px 10px;
 
       .modal-language-list {
         display: flex;
@@ -53,6 +74,7 @@
         padding: 0;
         height: 80px;
         list-style-type: none;
+        
 
         li {
           padding: 8px 12px;
@@ -67,9 +89,12 @@
         }
       }
     }
-
+    .modal-button-container{
+      display:flex;
+      justify-content: space-around;
+      margin:15px 0;
     .modal-button {
-      width: 122px;
+      width: 148px;
       height: 48px;
       padding: 12px;
       margin-bottom: 10px;
@@ -85,6 +110,7 @@
       line-height: 24px;
       color: #fff;
       white-space: nowrap;
+      text-decoration: none;
 
       &:hover {
         box-shadow: 0 8px 16px $button-hover-shadow;
@@ -94,5 +120,6 @@
         background: $button-active;
       }
     }
+  }
   }
 }

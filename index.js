@@ -48,31 +48,65 @@ projects.forEach((project, index) => {
   ulOriginal.replaceWith(ulElement);
 });
 
-//get list of project buttons & add event listener
+// get list of project buttons & add event listener
 
 const projectButtonList = document.querySelectorAll('project-card-button');
 
-//where modal parent will be attached
-const modalContainer = document.getElementById('modal-container')
+// where modal parent will be attached
+const modalContainer = document.getElementById('modal-container');
 
 // open a modal and add it to html. function called by button event listener
-function openModal(projectIndex){
+function openModal(projectIndex) {
   const project = projects[projectIndex];
-    // dynamically generate  the ul containing tech list
-    const ulElement = document.createElement('ul');
-    ulElement.classList.add('language-list');
-    project.techList.forEach((item) => {
-      const liElement = document.createElement('li');
-  
-      liElement.innerHTML = `${item}`;
-      ulElement.appendChild(liElement);
-    });
+  // dynamically generate  the ul containing tech list
+  const ulElement = document.createElement('ul');
+  ulElement.classList.add('language-list');
+  project.techList.forEach((item) => {
+    const liElement = document.createElement('li');
 
-    const content = `
-    
-    `
+    liElement.innerHTML = `${item}`;
+    ulElement.appendChild(liElement);
+  });
 
+  const content = `
+    <section class="modal-card">
+    <div class="modal-card-image">
+      <i id="close-icon" class="fa-solid fa-xmark icon-close fa-2xl"></i>
+      <img src="${project.imageUrl}" alt="${project.imageAlt}" />
+    </div>
+
+    <div class="modal-details">
+      <h3 class="modal-heading">
+     ${project.name}
+      </h3>
+      <div class="modal-languages">
+          <ul id="original-ul">
+          </ul>
+      </div>
+      <p>${project.description}</p>
+      <div class="modal-button-container">
+        <a href="${project.linkToLive}" class="modal-button"><span>See Live  </span><i class="fa-solid fa-lg fa-arrow-up-right-from-square"></i></a>
+        <a href="${project.linkToSource}" class="modal-button"><span>See Source  </span><i class="fa-brands fa-lg fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+    `;
+  modalContainer.innerHTML = content;
+  const ulOriginal = document.getElementById('original-ul');
+  original - ul.replaceWith(ulElement);
+
+  // get a refeerence to the close button
+  const closeIcon = document.getElementById('close-icon');
+  closeIcon.addEventListener('click', () => {
+    modalContainer.innerHTML = '';
+  });
 }
+
+// add eventlistener to project card buttons
+projectButtonList.forEach((button) => {
+  button.add;
+});
+
 // code to handle opening of mobile nav menu
 menuBars.addEventListener('click', () => {
   menuBars.classList.toggle('hide-element');

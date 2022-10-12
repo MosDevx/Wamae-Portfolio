@@ -353,6 +353,7 @@ $screen-extra-large-min:1200px;
           margin: 10px auto;
           flex-basis: 0;
           height: auto;
+          margin: 0 10px;
           max-width: 315px;
 
           .language-list {
@@ -410,6 +411,10 @@ $screen-extra-large-min:1200px;
   }
 }
 //End portfolio Section
+
+//styling for modals
+@import "modal-mobile";
+
 
 // About me page
 .about-me-page {
