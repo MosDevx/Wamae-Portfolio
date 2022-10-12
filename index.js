@@ -39,7 +39,7 @@ projects.forEach((project, index) => {
     <div class="card-languages">
         <ul id ="ul-${index}"></ul>
     </div>
-    <button class="project-card-button">See Project</button>
+    <button data-id="${index}" class="project-card-button">See Project</button>
   </div>
 </section>
   `;
@@ -48,6 +48,31 @@ projects.forEach((project, index) => {
   ulOriginal.replaceWith(ulElement);
 });
 
+//get list of project buttons & add event listener
+
+const projectButtonList = document.querySelectorAll('project-card-button');
+
+//where modal parent will be attached
+const modalContainer = document.getElementById('modal-container')
+
+// open a modal and add it to html. function called by button event listener
+function openModal(projectIndex){
+  const project = projects[projectIndex];
+    // dynamically generate  the ul containing tech list
+    const ulElement = document.createElement('ul');
+    ulElement.classList.add('language-list');
+    project.techList.forEach((item) => {
+      const liElement = document.createElement('li');
+  
+      liElement.innerHTML = `${item}`;
+      ulElement.appendChild(liElement);
+    });
+
+    const content = `
+    
+    `
+
+}
 // code to handle opening of mobile nav menu
 menuBars.addEventListener('click', () => {
   menuBars.classList.toggle('hide-element');
