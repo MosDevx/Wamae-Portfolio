@@ -1,0 +1,117 @@
+.modal-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: -40px auto;
+  padding: 0 10px;
+  border: 1px solid #d0d9d4;
+  background: #fff;
+  border-radius: 8px;
+  width: 80vw;
+  align-items: center;
+
+  .modal-card-image {
+    padding: 10px 10px;
+
+    .icon-close {
+      color: #fff;
+      padding: 5px;
+      position: absolute;
+      right: 5%;
+      cursor: pointer;
+      background-color: rgba(248, 80, 80, 0.594);
+      // filter:blur(10px);
+    }
+
+    .modal-image {
+      width: 320px;
+      height: auto;
+    }
+  }
+
+  .modal-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #fff;
+    border-radius: 8px;
+
+    .modal-heading {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 44px;
+      margin-top: 10px;
+      color: $text-project-card;
+    }
+
+    .modal-languages {
+      flex-basis: 0;
+      height: auto;
+      max-width: 315px;
+      margin: 10px 10px;
+
+      .modal-language-list {
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+        gap: 0 10px;
+        padding: 0;
+        height: 80px;
+        list-style-type: none;
+
+        .modal-li {
+          padding: 8px 12px;
+          background: #ebf0ee;
+          border-radius: 4px;
+          font-size: 12px;
+          line-height: 16px;
+          font-style: normal;
+          font-weight: 600;
+          text-align: center;
+          color: $text-project-card;
+        }
+      }
+    }
+
+    .modal-button-container {
+      display: flex;
+      justify-content: space-around;
+      margin: 15px 0;
+
+      .modal-button {
+        width: 148px;
+        height: 48px;
+        padding: 12px;
+        margin-bottom: 10px;
+        background: $button-enable;
+        border-radius: 4px;
+        border: 0;
+        align-self: center;
+        letter-spacing: 0.03em;
+        text-align: center;
+        font-weight: 500;
+        font-size: 17px;
+        font-style: normal;
+        line-height: 24px;
+        color: #fff;
+        white-space: nowrap;
+        text-decoration: none;
+
+        &:hover {
+          box-shadow: 0 8px 16px $button-hover-shadow;
+        }
+
+        &:active {
+          background: $button-active;
+        }
+      }
+    }
+  }
+}

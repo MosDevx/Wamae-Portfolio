@@ -179,7 +179,7 @@ $screen-extra-large-min:1200px;
       top: 0;
       left: -100%;
       flex-direction: column;
-      height: 80vh;
+      height: 97vh;
       background-color: #fff;
       border-radius: 0 0 40px 40px;
       box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -189,7 +189,7 @@ $screen-extra-large-min:1200px;
 
       ul {
         list-style-type: none;
-        margin-top: 172px;
+        margin-top: 108px;
 
         li {
           font-style: normal;
@@ -200,6 +200,11 @@ $screen-extra-large-min:1200px;
 
           a {
             text-decoration: none;
+            color: #3a4a42;
+
+            &:hover {
+              color: #3a4a42;
+            }
           }
         }
       }
@@ -322,6 +327,7 @@ $screen-extra-large-min:1200px;
         // flex: 1 1 0;
         padding: 10px 10px;
         height: 100%;
+        margin: 0 auto;
 
         img {
           // width:100px;
@@ -350,9 +356,9 @@ $screen-extra-large-min:1200px;
         }
 
         .card-languages {
-          margin: 10px auto;
           flex-basis: 0;
           height: auto;
+          margin: 0 10px;
           max-width: 315px;
 
           .language-list {
@@ -410,6 +416,9 @@ $screen-extra-large-min:1200px;
   }
 }
 //End portfolio Section
+
+//styling for modals
+@import "modal-mobile";
 
 // About me page
 .about-me-page {
@@ -804,6 +813,9 @@ $screen-extra-large-min:1200px;
   }
 
   //end portfolio page
+
+  // modal desktop
+  @import "modal-desktop";
 
   //About me page
   .about-me-page {
