@@ -1,9 +1,33 @@
 const menuBars = document.querySelector('.menu-bars');
 const menuClose = document.querySelector('.menu-close');
 const navMenu = document.querySelector('.mobile-nav');
-const linkItemsList = document.querySelectorAll('.linkItem');
+const mobileLinkItemList = document.querySelectorAll('.linkItem');
 const desktopNavLinkList = document.querySelectorAll('desktop-nav-links');
 const src = './Assets/Data/projects.json';
+
+// ! Unnecessary code duplication next two blocks. find a better method
+// code to handle opening of mobile nav menu
+menuBars.addEventListener('click', () => {
+  menuBars.classList.toggle('hide-element');
+  menuClose.classList.toggle('hide-element');
+  navMenu.classList.toggle('show-mobile-nav');
+});
+
+menuClose.addEventListener('click', () => {
+  menuBars.classList.toggle('hide-element');
+  menuClose.classList.toggle('hide-element');
+  navMenu.classList.toggle('show-mobile-nav');
+});
+
+// hides the nav drawer when a nav item is clicked
+
+mobileLinkItemList.forEach((linkItem)=>{
+  linkItem.addEventListener('click', () => {
+    navMenu.classList.remove('show-mobile-nav');
+    menuClose.classList.toggle('hide-element');
+    menuBars.classList.toggle('hide-element');
+  });
+});
 
 // import file containing project details
 const response = await fetch(src);
@@ -26,7 +50,6 @@ projects.forEach((project, index) => {
 
 const sectionList = document.querySelectorAll('body > section');
 
-// ! Unnecessary code duplication next two blocks. find a better method
   const content = `
   <section class="project-card">
   <div class="project-card-image">
@@ -117,27 +140,6 @@ projectButtonList.forEach((button) => {
   });
 });
 
-// code to handle opening of mobile nav menu
-menuBars.addEventListener('click', () => {
-  menuBars.classList.toggle('hide-element');
-  menuClose.classList.toggle('hide-element');
-  navMenu.classList.toggle('show-mobile-nav');
-});
-
-menuClose.addEventListener('click', () => {
-  menuBars.classList.toggle('hide-element');
-  menuClose.classList.toggle('hide-element');
-  navMenu.classList.toggle('show-mobile-nav');
-});
-
-// hides the nav drawer when a nav item is clicked
-for (let i = 0; i < linkItems.length; i += 1) {
-  linkItems[i].addEventListener('click', () => {
-    navMenu.classList.remove('show-mobile-nav');
-    menuClose.classList.toggle('hide-element');
-    menuBars.classList.toggle('hide-element');
-  });
-}
 
 // validation of email inputt
 
