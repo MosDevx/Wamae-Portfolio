@@ -1,7 +1,8 @@
 const menuBars = document.querySelector('.menu-bars');
 const menuClose = document.querySelector('.menu-close');
 const navMenu = document.querySelector('.mobile-nav');
-const linkItems = document.querySelectorAll('.linkItem');
+const linkItemsList = document.querySelectorAll('.linkItem');
+const desktopNavLinkList = document.querySelectorAll('desktop-nav-links');
 const src = './Assets/Data/projects.json';
 
 // import file containing project details
@@ -23,6 +24,9 @@ projects.forEach((project, index) => {
     ulElement.appendChild(liElement);
   });
 
+const sectionList = document.querySelectorAll('body > section');
+
+// ! Unnecessary code duplication next two blocks. find a better method
   const content = `
   <section class="project-card">
   <div class="project-card-image">
@@ -154,4 +158,31 @@ form.addEventListener('submit', (event) => {
   } else {
     errorField.innerText = 'Please type email in lower case*';
   }
+});
+
+// underlining correct nav link based on current visible section
+
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+
+window.addEventListener('scroll', () => {
+  console.log(vh);
+
+  sectionList.forEach((section) => {
+    const rect = section.getBoundingClientRect();
+    // console.log(`The section ${section.getAttribute('id')} is ${rect.top}px from top`);
+    // console.log(`The section ${section.getAttribute('id')} is ${rect.bottom}px from bottom`);
+
+    if (rect.top <= vh / 2 && rect.bottom >= vh / 2) {
+      const sectionId = section.getAttribute('id');
+      console.log(`Section in view ${sectionId}`);
+
+      desktopNavLinkList.forEach((navLink) => {
+        if (sectionId == navLink.getAttribute('href')) {
+         console.log("Reached");
+          navLink.classList.add('nav-underline');
+        }
+        navLink.classList.remove('nav-underline');
+      });
+    }
+  });
 });

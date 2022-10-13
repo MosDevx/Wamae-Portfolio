@@ -740,9 +740,13 @@ $screen-extra-large-min:1200px;
 
     .homepage-header-large-screen {
       display: flex;
+      position:fixed;
       justify-content: center;
       padding: 8px;
-      margin-top: 10px;
+      margin-top: 0px;
+      // background-color: yellow;
+      width:100vw;
+      z-index: 2;
 
       nav {
         a {
@@ -757,6 +761,10 @@ $screen-extra-large-min:1200px;
           &:hover {
             color: #9836b3;
           }
+        }
+
+        .nav-underline{
+          color:#f00 !important;
         }
       }
     }

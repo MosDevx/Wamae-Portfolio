@@ -867,7 +867,9 @@ h6 {
     display: flex;
     justify-content: center;
     padding: 8px;
-    margin-top: 10px;
+    margin-top: 0px;
+    width: 100vw;
+    z-index: 2;
   }
 
   .homepage-container .homepage-header-large-screen nav a {
