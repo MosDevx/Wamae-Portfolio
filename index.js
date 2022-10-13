@@ -98,7 +98,7 @@ function openModal(projectIndex) {
   const originalUl = document.getElementById('original-ul');
   originalUl.replaceWith(ulElement);
 
-  // get a refeerence to the close button
+  // get a reference to the close icon button on modal 
   const closeIcon = document.getElementById('close-icon');
   closeIcon.addEventListener('click', () => {
     modalContainer.innerHTML = '';
