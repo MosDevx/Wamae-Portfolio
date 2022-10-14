@@ -362,9 +362,9 @@ h6 {
 }
 .modal-card .modal-image-div .icon-close {
   color: #fff;
-  padding: 5px;
+  padding: 10px;
   position: absolute;
-  right: 5%;
+  right: 4%;
   cursor: pointer;
   background-color: rgba(248, 80, 80, 0.594);
 }
@@ -373,20 +373,25 @@ h6 {
   height: auto;
 }
 .modal-card .modal-image-div .modal-nav-button {
-  border: none;
-  padding: 0;
+  border: 0;
+  padding: 10px;
   margin: 0;
-  background-color: transparent;
+  line-height: 0px;
+  background-color: rgba(255, 255, 255, 0.651);
   font-size: 40px;
   position: absolute;
-  top: 35%;
+  top: 33%;
   cursor: pointer;
+  transition: color 0.2s ease-out;
+}
+.modal-card .modal-image-div .modal-nav-button:hover {
+  color: #36b37e;
 }
 .modal-card .modal-image-div .modal-left-button {
-  left: 40px;
+  left: 5%;
 }
 .modal-card .modal-image-div .modal-right-button {
-  right: 40px;
+  right: 5%;
 }
 .modal-card .modal-details {
   display: flex;
@@ -440,7 +445,7 @@ h6 {
   height: 48px;
   padding: 12px;
   margin-bottom: 10px;
-  background: #36b37e;
+  background-color: #36b37e;
   border-radius: 4px;
   border: 0;
   align-self: center;
@@ -459,6 +464,10 @@ h6 {
 }
 .modal-card .modal-details .modal-button-container .modal-button:active {
   background: #008552;
+}
+.modal-card .modal-details .modal-button-container .modal-button a {
+  text-decoration: none;
+  color: #fff;
 }
 .modal-card .modal-details .modal-navigation-buttons {
   display: flex;
@@ -880,6 +889,7 @@ h6 {
   .modal-card .modal-image-div .icon-close {
     color: #000;
     background-color: transparent;
+    transition: color 0.2s ease-out;
   }
   .modal-card .modal-image-div .icon-close:hover {
     color: #f00;

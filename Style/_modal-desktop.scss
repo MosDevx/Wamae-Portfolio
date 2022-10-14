@@ -12,6 +12,7 @@
     .icon-close {
       color: #000;
       background-color: transparent;
+      transition: color 0.2s ease-out;
 
       &:hover {
         color: #f00;

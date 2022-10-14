@@ -22,9 +22,9 @@
 
     .icon-close {
       color: #fff;
-      padding: 5px;
+      padding: 10px;
       position: absolute;
-      right: 5%;
+      right: 4%;
       cursor: pointer;
       background-color: rgba(248, 80, 80, 0.594);
       // filter:blur(10px);
@@ -35,21 +35,26 @@
       height: auto;
     }
     .modal-nav-button{
-      border:none;
-      padding:0;
+      border:0;
+      padding:10px;
       margin:0;
-      background-color: transparent;
+      line-height:0px;
+      background-color: rgba(255, 255, 255, 0.651);
       font-size: 40px;
       position:absolute;
-      top:35%;
+      top:33%;
       cursor: pointer;
+      transition: color 0.2s ease-out;
+      &:hover{
+        color:$primary;
+      }
     }
     .modal-left-button{
-      left:40px;
+      left:5%;
 
     }
     .modal-right-button{
-      right:40px;
+      right:5%;
       // display: none;
     }
   }
@@ -110,7 +115,7 @@
         height: 48px;
         padding: 12px;
         margin-bottom: 10px;
-        background: $button-enable;
+        background-color: $button-enable;
         border-radius: 4px;
         border: 0;
         align-self: center;
@@ -130,6 +135,11 @@
 
         &:active {
           background: $button-active;
+        }
+
+        a{
+          text-decoration: none;
+          color:#fff;
         }
       }
     }

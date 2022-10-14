@@ -103,8 +103,8 @@ function openModal(projectIndex) {
       <i  class="fa-solid fa-xmark icon-close fa-2xl"></i>
       </div>
       <img class="modal-image" src="${project.imageUrlModal}" alt="${project.imageAlt}" />
-      <button class="modal-nav-button modal-left-button"><i class="fa-solid fa-circle-chevron-left"></i></button>
-      <button class="modal-nav-button modal-right-button"><i class="fa-solid fa-circle-chevron-right"></i></button>
+      <button class="modal-nav-button modal-left-button"><i class="fa-solid fa-angle-left"></i></button>
+      <button class="modal-nav-button modal-right-button"><i class="fa-solid fa-angle-right"></i></i></button>
     </div>
 
     <div class="modal-details">
@@ -117,8 +117,10 @@ function openModal(projectIndex) {
       </div>
       <p>${project.description}</p>
       <div class="modal-button-container">
-        <a href="${project.linkToLive}" target="_blank" class="modal-button"><span>See Live  </span><i class="fa-solid fa-lg fa-arrow-up-right-from-square"></i></a>
-        <a href="${project.linkToSource}" target="_blank" class="modal-button"><span>See Source  </span><i class="fa-brands fa-lg fa-github"></i></a>
+        <button class="modal-button"><a href="${project.linkToLive}" target="_blank" ><span>See Live  </span><i class="fa-solid fa-lg fa-arrow-up-right-from-square"></i></a></button>
+        <button class="modal-button"><a href="${project.linkToSource}" target="_blank" ><span>See Source  </span><i class="fa-brands fa-lg fa-github"></i></a></button>
+     
+  
       </div>
       
     </div>
@@ -140,7 +142,6 @@ function openModal(projectIndex) {
   const modalRight = document.querySelector('.modal-right-button');
   
   if (projectIndex === 0) {
-    console.log("if left called");
     modalLeft.style.display="none"
   } else {
     modalLeft.addEventListener('click', () => {
