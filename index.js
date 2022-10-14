@@ -43,7 +43,7 @@ projects.forEach((project, index) => {
   </div>
 </section>
   `;
-  projectsContainer.innerHTML += content;
+  projectsContainer.innerHTML = content;
   const ulOriginal = document.getElementById(`ul-${index}`);
   ulOriginal.replaceWith(ulElement);
 });
