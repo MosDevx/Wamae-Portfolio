@@ -740,31 +740,31 @@ $screen-extra-large-min:1200px;
 
     .homepage-header-large-screen {
       display: flex;
-      position:fixed;
+      // position:fixed;
+      top:0;
+      left:0;
       justify-content: center;
       padding: 8px;
       margin-top: 0px;
       // background-color: yellow;
+      // background-color:rgba(255, 255, 255, 0.824);
       width:100vw;
       z-index: 2;
 
       nav {
         a {
-          text-decoration: none;
-          color: #344563;
+          // text-decoration: none;
+          // color: #344563;
           padding: 5px;
           margin: 0 30px;
           font-size: 20px;
           font-weight: 600;
           transition: color 0.2s ease-in-out;
-
+          color:red;
           &:hover {
             color: #9836b3;
-          }
-        }
-
-        .nav-underline{
-          color:#f00 !important;
+            
+      
         }
       }
     }

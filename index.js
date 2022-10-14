@@ -2,7 +2,7 @@ const menuBars = document.querySelector('.menu-bars');
 const menuClose = document.querySelector('.menu-close');
 const navMenu = document.querySelector('.mobile-nav');
 const mobileLinkItemList = document.querySelectorAll('.linkItem');
-const desktopNavLinkList = document.querySelectorAll('desktop-nav-links');
+const desktopNavLinkList = document.querySelectorAll('.desktop-nav-link');
 const src = './Assets/Data/projects.json';
 
 // ! Unnecessary code duplication next two blocks. find a better method
@@ -21,7 +21,7 @@ menuClose.addEventListener('click', () => {
 
 // hides the nav drawer when a nav item is clicked
 
-mobileLinkItemList.forEach((linkItem)=>{
+mobileLinkItemList.forEach((linkItem) => {
   linkItem.addEventListener('click', () => {
     navMenu.classList.remove('show-mobile-nav');
     menuClose.classList.toggle('hide-element');
@@ -39,16 +39,16 @@ const projectsContainer = document.getElementById('grid-card-display');
 
 projects.forEach((project, index) => {
   // dynamically generate  the ul containing tech list
+
   const ulElement = document.createElement('ul');
   ulElement.classList.add('language-list');
+ 
   project.techList.forEach((item) => {
     const liElement = document.createElement('li');
 
     liElement.innerHTML = `${item}`;
     ulElement.appendChild(liElement);
   });
-
-const sectionList = document.querySelectorAll('body > section');
 
   const content = `
   <section class="project-card">
@@ -71,6 +71,7 @@ const sectionList = document.querySelectorAll('body > section');
 </section>
   `;
   projectsContainer.innerHTML += content;
+
   const ulOriginal = document.getElementById(`ul-${index}`);
   ulOriginal.replaceWith(ulElement);
 });
@@ -141,7 +142,7 @@ projectButtonList.forEach((button) => {
 });
 
 
-// validation of email inputt
+// validation of email input
 
 const form = document.getElementById('contact-form');
 const emailInput = form.elements.email;
@@ -150,9 +151,11 @@ const errorField = document.getElementById('error-message');
 function isLowerCase(email) {
   return email === email.toLowerCase();
 }
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const emailValue = emailInput.value;
+ 
   if (isLowerCase(emailValue)) {
     errorField.innerText = '';
     form.submit();
@@ -162,12 +165,16 @@ form.addEventListener('submit', (event) => {
   }
 });
 
+
+
+
 // underlining correct nav link based on current visible section
+const sectionList = document.querySelectorAll('body > section');
 
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
 window.addEventListener('scroll', () => {
-  console.log(vh);
+  // console.log(vh);
 
   sectionList.forEach((section) => {
     const rect = section.getBoundingClientRect();
@@ -176,12 +183,13 @@ window.addEventListener('scroll', () => {
 
     if (rect.top <= vh / 2 && rect.bottom >= vh / 2) {
       const sectionId = section.getAttribute('id');
-      console.log(`Section in view ${sectionId}`);
-
+      // console.log(sectionId);
+      // console.log(`Section in view ${sectionId}`);
+      // console.log(desktopNavLinkList);
       desktopNavLinkList.forEach((navLink) => {
-        if (sectionId == navLink.getAttribute('href')) {
-         console.log("Reached");
+        if (sectionId === navLink.getAttribute('href').replace('#', '')) {
           navLink.classList.add('nav-underline');
+          console.log("hey there")
         }
         navLink.classList.remove('nav-underline');
       });
