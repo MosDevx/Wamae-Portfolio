@@ -769,9 +769,15 @@ h6 {
   }
   .homepage-container .homepage-header-large-screen {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
     justify-content: center;
     padding: 8px;
-    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.509);
+    margin-top: 0px;
+    width: 100vw;
+    z-index: 2;
   }
   .homepage-container .homepage-header-large-screen nav a {
     text-decoration: none;
@@ -784,6 +790,9 @@ h6 {
   }
   .homepage-container .homepage-header-large-screen nav a:hover {
     color: #9836b3;
+  }
+  .homepage-container .homepage-header-large-screen nav .underline-current-nav {
+    color: red;
   }
   .homepage-container .homepage-section {
     background: none;
