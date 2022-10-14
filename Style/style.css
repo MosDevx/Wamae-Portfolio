@@ -792,7 +792,8 @@ h6 {
     color: #9836b3;
   }
   .homepage-container .homepage-header-large-screen nav .underline-current-nav {
-    color: red;
+    transition: all 0.3s;
+    border-bottom: 5px solid red;
   }
   .homepage-container .homepage-section {
     background: none;

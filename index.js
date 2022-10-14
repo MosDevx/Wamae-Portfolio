@@ -42,7 +42,7 @@ projects.forEach((project, index) => {
 
   const ulElement = document.createElement('ul');
   ulElement.classList.add('language-list');
- 
+
   project.techList.forEach((item) => {
     const liElement = document.createElement('li');
 
@@ -126,7 +126,7 @@ function openModal(projectIndex) {
   const originalUl = document.getElementById('original-ul');
   originalUl.replaceWith(ulElement);
 
-  // get a reference to the close icon button on modal 
+  // get a reference to the close icon button on modal
   const closeIcon = document.getElementById('close-icon');
   closeIcon.addEventListener('click', () => {
     modalContainer.innerHTML = '';
@@ -141,7 +141,6 @@ projectButtonList.forEach((button) => {
   });
 });
 
-
 // validation of email input
 
 const form = document.getElementById('contact-form');
@@ -155,7 +154,7 @@ function isLowerCase(email) {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const emailValue = emailInput.value;
- 
+
   if (isLowerCase(emailValue)) {
     errorField.innerText = '';
     form.submit();
@@ -164,9 +163,6 @@ form.addEventListener('submit', (event) => {
     errorField.innerText = 'Please type email in lower case*';
   }
 });
-
-
-
 
 // underlining correct nav link based on current visible section
 const sectionList = document.querySelectorAll('body > section');
@@ -188,11 +184,11 @@ window.addEventListener('scroll', () => {
       // console.log(desktopNavLinkList);
       desktopNavLinkList.forEach((navLink) => {
         if (sectionId === navLink.getAttribute('href').replace('#', '')) {
-       
+          console.log('herre');
           navLink.classList.add('underline-current-nav');
-     
+        } else {
+          navLink.classList.remove('underline-current-nav');
         }
-        navLink.classList.remove('underline-current-nav');
       });
     }
   });
