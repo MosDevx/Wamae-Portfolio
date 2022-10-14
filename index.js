@@ -2,7 +2,6 @@ const menuBars = document.querySelector('.menu-bars');
 const menuClose = document.querySelector('.menu-close');
 const navMenu = document.querySelector('.mobile-nav');
 const mobileLinkItemList = document.querySelectorAll('.linkItem');
-const desktopNavLinkList = document.querySelectorAll('.desktop-nav-link');
 const src = './Assets/Data/projects.json';
 
 // ! Unnecessary code duplication next two blocks. find a better method
@@ -166,22 +165,20 @@ form.addEventListener('submit', (event) => {
 
 // underlining correct nav link based on current visible section
 const sectionList = document.querySelectorAll('body > section');
+const desktopNavLinkList = document.querySelectorAll('.desktop-nav-link');
 
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
 window.addEventListener('scroll', () => {
-  // console.log(vh);
 
   sectionList.forEach((section) => {
     const rect = section.getBoundingClientRect();
-    // console.log(`The section ${section.getAttribute('id')} is ${rect.top}px from top`);
-    // console.log(`The section ${section.getAttribute('id')} is ${rect.bottom}px from bottom`);
-
+    
+    //checking if top of section is above halfway point of screen && checking thaat bottom of section 
+    // is below halfway point of screen
     if (rect.top <= vh / 2 && rect.bottom >= vh / 2) {
       const sectionId = section.getAttribute('id');
-      // console.log(sectionId);
-      // console.log(`Section in view ${sectionId}`);
-      // console.log(desktopNavLinkList);
+     
       desktopNavLinkList.forEach((navLink) => {
         if (sectionId === navLink.getAttribute('href').replace('#', '')) {
           navLink.classList.add('underline-current-nav');
