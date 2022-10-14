@@ -98,11 +98,13 @@ function openModal(projectIndex) {
   });
   const content = `
     <section class="modal-card">
-    <div class="modal-card-image">
+    <div class="modal-image-div">
       <div id="close-icon">
       <i  class="fa-solid fa-xmark icon-close fa-2xl"></i>
       </div>
       <img class="modal-image" src="${project.imageUrlModal}" alt="${project.imageAlt}" />
+      <button class="modal-nav-button modal-left-button"><i class="fa-solid fa-circle-chevron-left"></i></button>
+      <button class="modal-nav-button modal-right-button"><i class="fa-solid fa-circle-chevron-right"></i></button>
     </div>
 
     <div class="modal-details">
@@ -118,24 +120,49 @@ function openModal(projectIndex) {
         <a href="${project.linkToLive}" target="_blank" class="modal-button"><span>See Live  </span><i class="fa-solid fa-lg fa-arrow-up-right-from-square"></i></a>
         <a href="${project.linkToSource}" target="_blank" class="modal-button"><span>See Source  </span><i class="fa-brands fa-lg fa-github"></i></a>
       </div>
+      
     </div>
   </section>
     `;
+    // get reference to dummy techlist ul and replace with dynamic techlist ul
   modalContainer.innerHTML = content;
   const originalUl = document.getElementById('original-ul');
   originalUl.replaceWith(ulElement);
 
-  // get a reference to the close icon button on modal
+  // get a reference to the close icon button on modal and an event listener to close it.
   const closeIcon = document.getElementById('close-icon');
   closeIcon.addEventListener('click', () => {
     modalContainer.innerHTML = '';
   });
+
+  // get ref to left/right nav button add event listeners to navigate
+  const modalLeft = document.querySelector('.modal-left-button');
+  const modalRight = document.querySelector('.modal-right-button');
+  
+  if (projectIndex === 0) {
+    console.log("if left called");
+    modalLeft.style.display="none"
+  } else {
+    modalLeft.addEventListener('click', () => {
+      openModal(projectIndex-1);
+    });
+  }
+  if (projectIndex === projects.length -1) {
+    modalRight.style.display="none"
+  } else {
+    modalRight.addEventListener('click', (e)=>{
+      openModal(projectIndex+1);
+    });
+     
+  }
+
+
 }
 
 // add eventlistener to project card buttons
 projectButtonList.forEach((button) => {
   button.addEventListener('click', () => {
-    const projectId = button.dataset.id;
+    const projectId = parseInt(button.dataset.id);
     openModal(projectId);
   });
 });

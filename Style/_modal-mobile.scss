@@ -14,9 +14,11 @@
   border-radius: 8px;
   width: 80vw;
   align-items: center;
+  z-index: 2;
 
-  .modal-card-image {
+  .modal-image-div {
     padding: 10px 10px;
+    
 
     .icon-close {
       color: #fff;
@@ -31,6 +33,24 @@
     .modal-image {
       width: 320px;
       height: auto;
+    }
+    .modal-nav-button{
+      border:none;
+      padding:0;
+      margin:0;
+      background-color: transparent;
+      font-size: 40px;
+      position:absolute;
+      top:35%;
+      cursor: pointer;
+    }
+    .modal-left-button{
+      left:40px;
+
+    }
+    .modal-right-button{
+      right:40px;
+      // display: none;
     }
   }
 
@@ -112,6 +132,11 @@
           background: $button-active;
         }
       }
+    }
+
+    .modal-navigation-buttons{
+      display:flex;
+      justify-content: space-between;
     }
   }
 }

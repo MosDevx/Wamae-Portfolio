@@ -355,11 +355,12 @@ h6 {
   border-radius: 8px;
   width: 80vw;
   align-items: center;
+  z-index: 2;
 }
-.modal-card .modal-card-image {
+.modal-card .modal-image-div {
   padding: 10px 10px;
 }
-.modal-card .modal-card-image .icon-close {
+.modal-card .modal-image-div .icon-close {
   color: #fff;
   padding: 5px;
   position: absolute;
@@ -367,9 +368,25 @@ h6 {
   cursor: pointer;
   background-color: rgba(248, 80, 80, 0.594);
 }
-.modal-card .modal-card-image .modal-image {
+.modal-card .modal-image-div .modal-image {
   width: 320px;
   height: auto;
+}
+.modal-card .modal-image-div .modal-nav-button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  font-size: 40px;
+  position: absolute;
+  top: 35%;
+  cursor: pointer;
+}
+.modal-card .modal-image-div .modal-left-button {
+  left: 40px;
+}
+.modal-card .modal-image-div .modal-right-button {
+  right: 40px;
 }
 .modal-card .modal-details {
   display: flex;
@@ -442,6 +459,10 @@ h6 {
 }
 .modal-card .modal-details .modal-button-container .modal-button:active {
   background: #008552;
+}
+.modal-card .modal-details .modal-navigation-buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-me-page {
@@ -856,14 +877,14 @@ h6 {
     overflow: scroll;
     width: 70vw;
   }
-  .modal-card .modal-card-image .icon-close {
+  .modal-card .modal-image-div .icon-close {
     color: #000;
     background-color: transparent;
   }
-  .modal-card .modal-card-image .icon-close:hover {
+  .modal-card .modal-image-div .icon-close:hover {
     color: #f00;
   }
-  .modal-card .modal-card-image .modal-image {
+  .modal-card .modal-image-div .modal-image {
     width: 700px;
     height: 450px;
   }
