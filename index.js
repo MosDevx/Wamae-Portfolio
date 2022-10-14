@@ -189,8 +189,7 @@ window.addEventListener('scroll', () => {
       desktopNavLinkList.forEach((navLink) => {
         if (sectionId === navLink.getAttribute('href').replace('#', '')) {
           navLink.classList.add('nav-underline');
-          console.log("hey there")
-        }
+git l        }
         navLink.classList.remove('nav-underline');
       });
     }
