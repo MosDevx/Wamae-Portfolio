@@ -184,7 +184,6 @@ window.addEventListener('scroll', () => {
       // console.log(desktopNavLinkList);
       desktopNavLinkList.forEach((navLink) => {
         if (sectionId === navLink.getAttribute('href').replace('#', '')) {
-          console.log('herre');
           navLink.classList.add('underline-current-nav');
         } else {
           navLink.classList.remove('underline-current-nav');
