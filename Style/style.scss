@@ -98,6 +98,9 @@ $screen-medium-min:768px;
 $screen-large-min:992px;
 $screen-extra-large-min:1200px;
 
+//import components 
+@import "default-button";
+
 //mixin for media-queries
 
 @mixin small {
@@ -386,30 +389,12 @@ $screen-extra-large-min:1200px;
         }
 
         .project-card-button {
+          @extend %base-button-style;
           width: 122px;
           height: 48px;
-          padding: 12px;
           margin-bottom: 10px;
-          background: $button-enable;
-          border-radius: 4px;
-          border: 0;
           align-self: center;
-          letter-spacing: 0.03em;
-          text-align: center;
-          font-weight: 500;
-          font-size: 17px;
-          font-style: normal;
-          line-height: 24px;
-          color: #fff;
-          white-space: nowrap;
 
-          &:hover {
-            box-shadow: 0 8px 16px $button-hover-shadow;
-          }
-
-          &:active {
-            background: $button-active;
-          }
         }
       }
     }
@@ -459,29 +444,10 @@ $screen-extra-large-min:1200px;
     .resume-button {
       width: fit-content;
       height: 48px;
-      padding: 12px;
       margin-top: 10px;
       margin-bottom: 10px;
-      background: $button-enable;
-      border-radius: 4px;
-      border: 0;
       align-self: center;
-      letter-spacing: 0.03em;
-      text-align: center;
-      font-weight: 500;
-      font-size: 17px;
-      font-style: normal;
-      line-height: 24px;
-      color: #fff;
-      white-space: nowrap;
 
-      &:hover {
-        box-shadow: 0 8px 16px $button-hover-shadow;
-      }
-
-      &:active {
-        background: $button-active;
-      }
     }
   }
 
@@ -665,29 +631,13 @@ $screen-extra-large-min:1200px;
       #error-message {
         color: rgb(249, 91, 0);
       }
-
+      .form-button-div{
       .form-button {
-        width: 129px;
-        height: 48px;
-        background-color: $button-enable;
-        color: #fff;
-        border-radius: 4px;
-        padding: 12px;
-        font-weight: 500;
-        font-size: 17px;
-        line-height: 24px;
-        letter-spacing: 0.03em;
-        text-align: center;
-        border: none;
-
-        &:hover {
-          box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
-        }
-
-        &:active {
-          background: $button-active;
-        }
+        @extend %base-button-style;
+        width:129px;
+        height:48px;
       }
+    }
     }
   }
 
@@ -1008,6 +958,15 @@ $screen-extra-large-min:1200px;
 
         textarea {
           width: 75%;
+        }
+        .form-button-div{
+          background-color: blue;
+          width:450px;
+          // display: flex;
+          // height: 400px;
+          .form-button{
+            // background-color: yellow;
+          }
         }
       }
     }

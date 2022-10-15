@@ -78,6 +78,28 @@ h6 {
   isolation: isolate;
 }
 
+.contact-form-page .form-div form .form-button-div .form-button, .project-page .grid-card-display .project-card .card-details .project-card-button {
+  background-color: #36b37e;
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.contact-form-page .form-div form .form-button-div .form-button:hover, .project-page .grid-card-display .project-card .card-details .project-card-button:hover {
+  box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+}
+.contact-form-page .form-div form .form-button-div .form-button:active, .project-page .grid-card-display .project-card .card-details .project-card-button:active {
+  background: #008552;
+}
+
 .homepage-container {
   display: flex;
   flex-direction: column;
@@ -315,26 +337,8 @@ h6 {
 .project-page .grid-card-display .project-card .card-details .project-card-button {
   width: 122px;
   height: 48px;
-  padding: 12px;
   margin-bottom: 10px;
-  background: #36b37e;
-  border-radius: 4px;
-  border: 0;
   align-self: center;
-  letter-spacing: 0.03em;
-  text-align: center;
-  font-weight: 500;
-  font-size: 17px;
-  font-style: normal;
-  line-height: 24px;
-  color: #fff;
-  white-space: nowrap;
-}
-.project-page .grid-card-display .project-card .card-details .project-card-button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-}
-.project-page .grid-card-display .project-card .card-details .project-card-button:active {
-  background: #008552;
 }
 
 .modal-overlay {
@@ -553,27 +557,9 @@ h6 {
   width: -moz-fit-content;
   width: fit-content;
   height: 48px;
-  padding: 12px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background: #36b37e;
-  border-radius: 4px;
-  border: 0;
   align-self: center;
-  letter-spacing: 0.03em;
-  text-align: center;
-  font-weight: 500;
-  font-size: 17px;
-  font-style: normal;
-  line-height: 24px;
-  color: #fff;
-  white-space: nowrap;
-}
-.about-me-page .about-me-div .resume-button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-}
-.about-me-page .about-me-div .resume-button:active {
-  background: #008552;
 }
 .about-me-page .grid-skill-display {
   display: grid;
@@ -781,25 +767,9 @@ h6 {
 .contact-form-page .form-div form #error-message {
   color: rgb(249, 91, 0);
 }
-.contact-form-page .form-div form .form-button {
+.contact-form-page .form-div form .form-button-div .form-button {
   width: 129px;
   height: 48px;
-  background-color: #36b37e;
-  color: #fff;
-  border-radius: 4px;
-  padding: 12px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  border: none;
-}
-.contact-form-page .form-div form .form-button:hover {
-  box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
-}
-.contact-form-page .form-div form .form-button:active {
-  background: #008552;
 }
 .contact-form-page .footer-social-media {
   margin-top: 46px;
@@ -1131,6 +1101,10 @@ h6 {
   }
   .contact-form-page .form-div form textarea {
     width: 75%;
+  }
+  .contact-form-page .form-div form .form-button-div {
+    background-color: blue;
+    width: 450px;
   }
   .contact-form-page .footer-social-media {
     border: 1px solid;
