@@ -80,28 +80,29 @@ projects.forEach((project, index) => {
 const projectButtonList = document.querySelectorAll('.project-card-button');
 // where modal parent will be attached
 const modalContainer = document.getElementById('modal-container');
-const modalOverlay = document.getElementById('modal-overlay')
-const body  = document.body
+const modalOverlay = document.getElementById('modal-overlay');
+const { body } = document;
 
-function showModal(){
-    modalContainer.classList.add('show-modal-container')
-  modalOverlay.classList.add('show-modal-overlay')
-  body.style.overflow='hidden'
+function showModal() {
+  modalContainer.classList.add('show-modal-container');
+  modalOverlay.classList.add('show-modal-overlay');
+  body.style.overflow = 'hidden';
 }
 
-function hideModal(){
-  modalContainer.classList.remove('show-modal-container')
- 
-  modalOverlay.classList.remove('show-modal-overlay')
-  body.style.overflow= 'auto';
+function hideModal() {
+  modalContainer.classList.remove('show-modal-container');
+
+  modalOverlay.classList.remove('show-modal-overlay');
+  body.style.overflow = 'auto';
 }
-  
-//add an event listener to close the modal ,when the overlay isclicked
-modalOverlay.addEventListener('click',()=>{
+
+// add an event listener to close the modal ,when the overlay isclicked
+modalOverlay.addEventListener('click', () => {
   hideModal();
-})
+});
 
-// open a modal and add it to html. function called by button event listener,& right and left buttons of modal.
+// open a modal and add it to html. function called by button event listener,& right and
+// left buttons of modal.
 
 function openModal(projectIndex) {
   const project = projects[projectIndex];
@@ -147,48 +148,42 @@ function openModal(projectIndex) {
   </section>
     `;
     // get reference to dummy techlist ul and replace with dynamic techlist ul
-  
-    modalContainer.innerHTML = content;
-    const originalUl = document.getElementById('original-ul');
-    originalUl.replaceWith(ulElement);
 
-    showModal();
+  modalContainer.innerHTML = content;
+  const originalUl = document.getElementById('original-ul');
+  originalUl.replaceWith(ulElement);
+
+  showModal();
   // get a reference to the close icon button on modal and an event listener to close it.
   const closeIcon = document.getElementById('close-icon');
   closeIcon.addEventListener('click', () => {
-  hideModal() 
+    hideModal();
   });
-  
- 
 
   // get ref to left/right nav button add event listeners to navigate
   const modalLeft = document.querySelector('.modal-left-button');
   const modalRight = document.querySelector('.modal-right-button');
-  
+
   if (projectIndex === 0) {
-    modalLeft.style.display="none"
+    modalLeft.style.display = 'none';
   } else {
     modalLeft.addEventListener('click', () => {
-      openModal(projectIndex-1);
+      openModal(projectIndex - 1);
     });
   }
-  if (projectIndex === projects.length -1) {
-    modalRight.style.display="none"
+  if (projectIndex === projects.length - 1) {
+    modalRight.style.display = 'none';
   } else {
-    modalRight.addEventListener('click', (e)=>{
-      openModal(projectIndex+1);
-  
+    modalRight.addEventListener('click', () => {
+      openModal(projectIndex + 1);
     });
-     
   }
-
-
 }
 
 // add eventlistener to project card buttons
 projectButtonList.forEach((button) => {
   button.addEventListener('click', () => {
-    const projectId = parseInt(button.dataset.id);
+    const projectId = parseInt(button.dataset.id, 10);
     openModal(projectId);
   });
 });
@@ -223,15 +218,14 @@ const desktopNavLinkList = document.querySelectorAll('.desktop-nav-link');
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
 window.addEventListener('scroll', () => {
-
   sectionList.forEach((section) => {
     const rect = section.getBoundingClientRect();
-    
-    //checking if top of section is above halfway point of screen && checking thaat bottom of section 
-    // is below halfway point of screen
+
+    // check if top of section is above halfway point of screen && check
+    // that bottom of section is below halfway point of screen
     if (rect.top <= vh / 2 && rect.bottom >= vh / 2) {
       const sectionId = section.getAttribute('id');
-     
+
       desktopNavLinkList.forEach((navLink) => {
         if (sectionId === navLink.getAttribute('href').replace('#', '')) {
           navLink.classList.add('underline-current-nav');
