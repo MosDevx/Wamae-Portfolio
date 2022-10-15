@@ -214,10 +214,26 @@ form.addEventListener('submit', (event) => {
 // underlining correct nav link based on current visible section
 const sectionList = document.querySelectorAll('body > section');
 const desktopNavLinkList = document.querySelectorAll('.desktop-nav-link');
-
+const desktopHeader = document.getElementById('desktop-header');
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
-window.addEventListener('scroll', () => {
+// function that hides the navbar when scrolling down, reappears when scrolling up
+let lastScrollStop = 0;
+
+function hideNavBar() {
+  const scrollOffset = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollOffset > lastScrollStop) {
+    // downscroll
+    desktopHeader.classList.add('hide-header');
+  } else {
+    // upsscroll
+    desktopHeader.classList.remove('hide-header');
+  }
+  lastScrollStop = scrollOffset <= 0 ? 0 : scrollOffset;
+}
+
+// changes the current underlined navlink bassed on section in view on desktop view.
+function changeNavHighlight() {
   sectionList.forEach((section) => {
     const rect = section.getBoundingClientRect();
 
@@ -235,4 +251,8 @@ window.addEventListener('scroll', () => {
       });
     }
   });
+}
+window.addEventListener('scroll', () => {
+  changeNavHighlight();
+  hideNavBar();
 });

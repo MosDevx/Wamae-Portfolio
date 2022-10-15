@@ -745,10 +745,11 @@ $screen-extra-large-min:1200px;
       left: 0;
       justify-content: center;
       padding: 8px;
-      background-color: rgba(255, 255, 255, 0.509);
+      background-color: rgba(255, 255, 255, 0.89);
       margin-top: 0;
       width: 100vw;
       z-index: 2;
+      transition: top 0.1s ease-in-out;
 
       nav {
         a {
@@ -770,6 +771,11 @@ $screen-extra-large-min:1200px;
           border-bottom: 5px solid red;
         }
       }
+    }
+
+    .hide-header{
+      top:-50px;
+      transition: 0.3s ease-in-out;
     }
 
     .homepage-section {
