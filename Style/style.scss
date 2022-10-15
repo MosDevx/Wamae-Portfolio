@@ -970,6 +970,7 @@ $screen-extra-large-min:1200px;
             // width:100px;
             // right:-300px;
             // transform: translatex(-120px);
+            transition: transform 0.15s ease-out;
           }
         }
       }

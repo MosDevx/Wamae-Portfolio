@@ -1106,6 +1106,9 @@ h6 {
     position: relative;
     width: 450px;
   }
+  .contact-form-page .form-div form .form-button-div .form-button {
+    transition: transform 0.15s ease-out;
+  }
   .contact-form-page .footer-social-media {
     border: 1px solid;
     width: 100%;
