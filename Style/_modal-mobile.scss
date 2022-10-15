@@ -65,7 +65,7 @@
 
     .icon-close {
       color: #fff;
-      padding: 10px;
+      padding: 7px;
       position: absolute;
       right: 4%;
       cursor: pointer;
@@ -83,11 +83,12 @@
       margin:0;
       line-height:0px;
       background-color: rgba(255, 255, 255, 0.651);
-      font-size: 40px;
+      font-size: 25px;
       position:absolute;
-      top:33%;
+      top:50%;
       cursor: pointer;
       transition: color 0.2s ease-out;
+      color:$primary;
       &:hover{
         color:$primary;
       }

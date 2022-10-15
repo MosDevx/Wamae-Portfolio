@@ -127,6 +127,7 @@ function openModal(projectIndex) {
   </section>
     `;
     // get reference to dummy techlist ul and replace with dynamic techlist ul
+  
   modalContainer.innerHTML = content;
   const originalUl = document.getElementById('original-ul');
   originalUl.replaceWith(ulElement);

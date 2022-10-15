@@ -10,6 +10,7 @@
 
   .modal-image-div {
     .icon-close {
+      padding:10px;
       color: #000;
       background-color: transparent;
       transition: color 0.2s ease-out;
@@ -22,6 +23,19 @@
     .modal-image {
       width: 700px;
       height: 450px;
+    }
+    .modal-nav-button{
+      font-size:40px;
+      top:33%;
+      color:black;
+    }
+    .modal-left-button{
+      left:5%;
+
+    }
+    .modal-right-button{
+      right:5%;
+      // display: none;
     }
   }
 
