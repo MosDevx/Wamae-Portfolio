@@ -256,3 +256,88 @@ window.addEventListener('scroll', () => {
   changeNavHighlight();
   hideNavBar();
 });
+
+// making a dodgy form submit button: it dodges the mouse till the form inputs are correct
+
+const formButtonDiv = document.getElementById('form-button-div');
+const formButton = document.getElementById('form-button');
+
+const formButtonDivRect = formButtonDiv.getBoundingClientRect();
+const formButtonDivWidth = formButtonDivRect.width;
+const formButtonRect = formButton.getBoundingClientRect();
+const formButtonWidth = formButtonRect.width;
+
+function isFormValid() {
+  return false;
+}
+
+function getRandomValue(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function buttonDodger() {
+  //! get positon of element after a transform. using it but important for future use
+  const compStyles = window.getComputedStyle(formButton);
+  const currTransform = new DOMMatrix(compStyles.getPropertyValue('transform'));
+  // console.log('Computed position is', currTransform.m41);
+
+  const buttonLeftBorder = formButton.offsetLeft + currTransform.m41;
+  console.log('Button start position:', buttonLeftBorder);
+
+  const buttonRightBorder = buttonLeftBorder + formButtonWidth;
+
+  if ((buttonRightBorder + formButtonWidth) < formButtonDivWidth) {
+    // move button to right
+    console.log('move right');
+    const availableFlexSpace = formButtonDivWidth - (buttonRightBorder + formButtonWidth);
+    const newPosition = formButtonWidth + getRandomValue(0, availableFlexSpace) + buttonLeftBorder;
+    formButton.style.transform = `translateX(${newPosition}px)`;
+  } else if ((buttonLeftBorder - formButtonWidth) >= 0) {
+    // move button to left
+    console.log('move left');
+    const availableFlexSpace = buttonLeftBorder - formButtonWidth;
+    const newPosition = buttonLeftBorder - formButtonWidth - getRandomValue(0, availableFlexSpace);
+    formButton.style.transform = `translateX(${newPosition}px)`;
+  }
+}
+
+function buttonDodge() {
+  //! get positon of element after a transform Not using it but important for future use
+  const compStyles = window.getComputedStyle(formButton);
+  const currTransform = new DOMMatrix(compStyles.getPropertyValue('transform'));
+  console.log('Computed position is', currTransform.m41);
+
+  let buttonPositionStart = formButton.offsetLeft;
+  const buttonPositionEnd = buttonPositionStart + formButtonWidth;
+  // check if there is free space on right
+
+  console.log('original position', buttonPositionStart);
+  if ((buttonPositionEnd + formButtonWidth) < formButtonDivWidth) {
+    // move right
+    // const availableFlexSpace = formButtonDivWidth - (buttonPositionEnd + formButtonWidth);
+    const moveDistance = formButtonWidth;
+    // + getRandomValue(0, availableFlexSpace);
+    // console.log("right flex space", availableFlexSpace);
+    buttonPositionStart += moveDistance;
+    console.log('Right ', moveDistance);
+    formButton.style.transform = `translateX(${moveDistance}px)`;
+  } else if ((buttonPositionStart - formButtonWidth) >= 0) {
+    // move left
+    console.log('here left');
+    const availableFlexSpace = buttonPositionStart - formButtonWidth;
+    console.log('left flex space', availableFlexSpace);
+    const moveDistance = formButtonWidth;
+    //  + getRandomValue(0, availableFlexSpace);
+    buttonPositionStart -= moveDistance;
+    console.log('Left ', moveDistance);
+    formButton.style.transform = `translateX(-${moveDistance}px)`;
+  }
+}
+
+formButton.addEventListener('mouseover', () => {
+  if (!isFormValid()) {
+    buttonDodger();
+  } else {
+    form.submit();
+  }
+});

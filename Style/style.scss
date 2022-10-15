@@ -961,12 +961,15 @@ $screen-extra-large-min:1200px;
           width: 75%;
         }
         .form-button-div{
-          background-color: blue;
+          position:relative;
+          // background-color: blue;
           width:450px;
-          // display: flex;
-          // height: 400px;
           .form-button{
+            // position: relative;
             // background-color: yellow;
+            // width:100px;
+            // right:-300px;
+            // transform: translatex(-120px);
           }
         }
       }

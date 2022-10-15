@@ -1103,7 +1103,7 @@ h6 {
     width: 75%;
   }
   .contact-form-page .form-div form .form-button-div {
-    background-color: blue;
+    position: relative;
     width: 450px;
   }
   .contact-form-page .footer-social-media {
