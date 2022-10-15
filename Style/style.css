@@ -429,10 +429,10 @@ h6 {
   color: #36b37e;
 }
 .modal-card .modal-image-div .modal-left-button {
-  left: 5px;
+  left: 5%;
 }
 .modal-card .modal-image-div .modal-right-button {
-  right: 5px;
+  right: 5%;
 }
 .modal-card .modal-details {
   display: flex;

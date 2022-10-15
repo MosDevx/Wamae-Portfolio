@@ -78,11 +78,31 @@ projects.forEach((project, index) => {
 // get list of project buttons & add event listener
 
 const projectButtonList = document.querySelectorAll('.project-card-button');
-
 // where modal parent will be attached
 const modalContainer = document.getElementById('modal-container');
 const modalOverlay = document.getElementById('modal-overlay')
-// open a modal and add it to html. function called by button event listener
+const body  = document.body
+
+function showModal(){
+    modalContainer.classList.add('show-modal-container')
+  modalOverlay.classList.add('show-modal-overlay')
+  body.style.overflow='hidden'
+}
+
+function hideModal(){
+  modalContainer.classList.remove('show-modal-container')
+ 
+  modalOverlay.classList.remove('show-modal-overlay')
+  body.style.overflow= 'auto';
+}
+  
+//add an event listener to close the modal ,when the overlay isclicked
+modalOverlay.addEventListener('click',()=>{
+  hideModal();
+})
+
+// open a modal and add it to html. function called by button event listener,& right and left buttons of modal.
+
 function openModal(projectIndex) {
   const project = projects[projectIndex];
 
@@ -128,27 +148,18 @@ function openModal(projectIndex) {
     `;
     // get reference to dummy techlist ul and replace with dynamic techlist ul
   
-  modalContainer.innerHTML = content;
-  const originalUl = document.getElementById('original-ul');
-  originalUl.replaceWith(ulElement);
-  modalContainer.classList.add('show-modal-container')
-  modalOverlay.classList.add('show-modal-overlay')
-  
+    modalContainer.innerHTML = content;
+    const originalUl = document.getElementById('original-ul');
+    originalUl.replaceWith(ulElement);
+
+    showModal();
   // get a reference to the close icon button on modal and an event listener to close it.
   const closeIcon = document.getElementById('close-icon');
   closeIcon.addEventListener('click', () => {
-    modalContainer.classList.remove('show-modal-container')
-   
-    modalOverlay.classList.remove('show-modal-overlay')
+  hideModal() 
   });
   
-  //add an event listener to close the modal containe rwhen its clicked
-  
-  modalOverlay.addEventListener('click',()=>{
-    modalContainer.classList.remove('show-modal-container')
-   
-    modalOverlay.classList.remove('show-modal-overlay')
-  })
+ 
 
   // get ref to left/right nav button add event listeners to navigate
   const modalLeft = document.querySelector('.modal-left-button');
@@ -166,8 +177,7 @@ function openModal(projectIndex) {
   } else {
     modalRight.addEventListener('click', (e)=>{
       openModal(projectIndex+1);
-      // e.stopImmediatePropagation()
-      // e.stopPropagation()
+  
     });
      
   }
