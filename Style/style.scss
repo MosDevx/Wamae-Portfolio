@@ -442,6 +442,7 @@ $screen-extra-large-min:1200px;
     }
 
     .resume-button {
+      @extend %base-button-style;
       width: fit-content;
       height: 48px;
       margin-top: 10px;
