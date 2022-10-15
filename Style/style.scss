@@ -281,7 +281,6 @@ $screen-extra-large-min:1200px;
 
 //portfolio section
 .project-page {
-
   display: flex;
   flex-direction: column;
 
@@ -308,7 +307,6 @@ $screen-extra-large-min:1200px;
       margin-top: 20px;
     }
   }
-
 
   .grid-card-display {
     display: grid;
@@ -742,18 +740,17 @@ $screen-extra-large-min:1200px;
 
     .homepage-header-large-screen {
       display: flex;
-      position:fixed;
-      top:0;
-      left:0;
+      position: fixed;
+      top: 0;
+      left: 0;
       justify-content: center;
       padding: 8px;
       background-color: rgba(255, 255, 255, 0.509);
-      margin-top: 0px;
-      width:100vw;
+      margin-top: 0;
+      width: 100vw;
       z-index: 2;
 
       nav {
-        
         a {
           text-decoration: none;
           color: #344563;
@@ -762,19 +759,19 @@ $screen-extra-large-min:1200px;
           font-size: 20px;
           font-weight: 600;
           transition: color 0.2s ease-in-out;
-          
-          
+
           &:hover {
             color: #9836b3;
           }
         }
-        .underline-current-nav{
+
+        .underline-current-nav {
           transition: all 0.3s;
           border-bottom: 5px solid red;
         }
       }
     }
-    
+
     .homepage-section {
       background: none;
       margin: 0 130px;

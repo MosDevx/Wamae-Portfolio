@@ -1,29 +1,30 @@
-.modal-overlay{
-  position:fixed;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%) scale(0);
-  // transform: scale(0.5);
-  
-  width:100vw;
-  height:100vh;
-  // background-color: #fd9c0049;
-  backdrop-filter: blur(200px);
-  // display: none;
-  z-index:2;
-  transition: all 0.33s ease-in-out;
-}
-.show-modal-overlay{
+.modal-overlay {
   position: fixed;
   top: 50%;
   left: 50%;
-  width:100vw;
-  height:100vh;
-  transform: translate(-50%, -50%) scale(1);
-  transition:all 0.4s ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+  // transform: scale(0.5);
+
+  width: 100vw;
+  height: 100vh;
+  // background-color: #fd9c0049;
+  backdrop-filter: blur(200px);
+  // display: none;
+  z-index: 2;
+  transition: all 0.33s ease-in-out;
 }
 
-.modal-container{
+.show-modal-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.4s ease-in-out;
+}
+
+.modal-container {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -32,20 +33,19 @@
   z-index: 4;
 }
 
-.show-modal-container{
+.show-modal-container {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition:all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .modal-card {
-
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);        
+  transform: translate(-50%, -50%);
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -61,7 +61,6 @@
 
   .modal-image-div {
     padding: 10px 10px;
-    
 
     .icon-close {
       color: #fff;
@@ -77,28 +76,31 @@
       width: 320px;
       height: auto;
     }
-    .modal-nav-button{
-      border:0;
-      padding:10px;
-      margin:0;
-      line-height:0px;
+
+    .modal-nav-button {
+      border: 0;
+      padding: 10px;
+      margin: 0;
+      line-height: 0px;
       background-color: rgba(255, 255, 255, 0.651);
       font-size: 25px;
-      position:absolute;
-      top:50%;
+      position: absolute;
+      top: 50%;
       cursor: pointer;
       transition: color 0.2s ease-out;
-      color:$primary;
-      &:hover{
-        color:$primary;
+      color: $primary;
+
+      &:hover {
+        color: $primary;
       }
     }
-    .modal-left-button{
-      left:5%;
 
+    .modal-left-button {
+      left: 5%;
     }
-    .modal-right-button{
-      right:5%;
+
+    .modal-right-button {
+      right: 5%;
       // display: none;
     }
   }
@@ -181,15 +183,15 @@
           background: $button-active;
         }
 
-        a{
+        .modal-link {
           text-decoration: none;
-          color:#fff;
+          color: #fff;
         }
       }
     }
 
-    .modal-navigation-buttons{
-      display:flex;
+    .modal-navigation-buttons {
+      display: flex;
       justify-content: space-between;
     }
   }

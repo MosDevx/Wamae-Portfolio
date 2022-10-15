@@ -138,8 +138,8 @@ function openModal(projectIndex) {
       </div>
       <p>${project.description}</p>
       <div class="modal-button-container">
-        <button class="modal-button"><a href="${project.linkToLive}" target="_blank" ><span>See Live  </span><i class="fa-solid fa-lg fa-arrow-up-right-from-square"></i></a></button>
-        <button class="modal-button"><a href="${project.linkToSource}" target="_blank" ><span>See Source  </span><i class="fa-brands fa-lg fa-github"></i></a></button>
+        <button class="modal-button"><a class="modal-link" href="${project.linkToLive}" target="_blank" ><span>See Live  </span><i class="fa-solid fa-lg fa-arrow-up-right-from-square"></i></a></button>
+        <button class="modal-button"><a class="modal-link" href="${project.linkToSource}" target="_blank" ><span>See Source  </span><i class="fa-brands fa-lg fa-github"></i></a></button>
      
   
       </div>
