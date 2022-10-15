@@ -337,6 +337,46 @@ h6 {
   background: #008552;
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100vw;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px);
+  z-index: 2;
+  transition: all 0.33s ease-in-out;
+}
+
+.show-modal-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.4s ease-in-out;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.33s ease-in-out;
+  z-index: 4;
+}
+
+.show-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.4s ease-in-out;
+}
+
 .modal-card {
   position: fixed;
   top: 50%;
@@ -355,7 +395,7 @@ h6 {
   border-radius: 8px;
   width: 80vw;
   align-items: center;
-  z-index: 2;
+  z-index: 4;
 }
 .modal-card .modal-image-div {
   padding: 10px 10px;
@@ -441,7 +481,7 @@ h6 {
   margin: 15px 0;
 }
 .modal-card .modal-details .modal-button-container .modal-button {
-  width: 148px;
+  width: 140px;
   height: 48px;
   padding: 12px;
   margin-bottom: 10px;
@@ -877,11 +917,7 @@ h6 {
     margin: auto;
   }
   .modal-card {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
+    padding: 15px;
     margin: 0 auto;
     overflow: scroll;
     width: 70vw;
@@ -943,10 +979,11 @@ h6 {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
+    padding: 5px;
   }
   .modal-card .modal-details .modal-button-container {
     position: absolute;
-    right: 10px;
+    right: 15px;
     bottom: 140px;
     gap: 0 10px;
   }

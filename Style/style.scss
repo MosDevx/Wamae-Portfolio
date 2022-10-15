@@ -281,6 +281,7 @@ $screen-extra-large-min:1200px;
 
 //portfolio section
 .project-page {
+
   display: flex;
   flex-direction: column;
 
@@ -307,6 +308,7 @@ $screen-extra-large-min:1200px;
       margin-top: 20px;
     }
   }
+
 
   .grid-card-display {
     display: grid;

@@ -1,8 +1,51 @@
-.modal-card {
+.modal-overlay{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  // transform: scale(0.5);
+  
+  width:100vw;
+  height:100vh;
+  // background-color: #fd9c0049;
+  backdrop-filter: blur(200px);
+  // display: none;
+  z-index:2;
+  transition: all 0.33s ease-in-out;
+}
+.show-modal-overlay{
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  width:100vw;
+  height:100vh;
+  transform: translate(-50%, -50%) scale(1);
+  transition:all 0.4s ease-in-out;
+}
+
+.modal-container{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.33s ease-in-out;
+  z-index: 4;
+}
+
+.show-modal-container{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition:all 0.4s ease-in-out;
+}
+
+.modal-card {
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);        
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -14,7 +57,7 @@
   border-radius: 8px;
   width: 80vw;
   align-items: center;
-  z-index: 2;
+  z-index: 4;
 
   .modal-image-div {
     padding: 10px 10px;
@@ -111,7 +154,7 @@
       margin: 15px 0;
 
       .modal-button {
-        width: 148px;
+        width: 140px;
         height: 48px;
         padding: 12px;
         margin-bottom: 10px;
