@@ -1,17 +1,19 @@
 .modal-card {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
+  // position: fixed;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  padding: 15px;
   margin: 0 auto;
   overflow: scroll;
   width: 70vw;
 
-  .modal-card-image {
+  .modal-image-div {
     .icon-close {
+      padding: 10px;
       color: #000;
       background-color: transparent;
+      transition: color 0.2s ease-out;
 
       &:hover {
         color: #f00;
@@ -21,6 +23,21 @@
     .modal-image {
       width: 700px;
       height: 450px;
+    }
+
+    .modal-nav-button {
+      font-size: 40px;
+      top: 33%;
+      color: black;
+    }
+
+    .modal-left-button {
+      left: 5%;
+    }
+
+    .modal-right-button {
+      right: 5%;
+      // display: none;
     }
   }
 
@@ -76,11 +93,12 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 30px;
+      padding: 5px;
     }
 
     .modal-button-container {
       position: absolute;
-      right: 10px;
+      right: 15px;
       bottom: 140px;
       gap: 0 10px;
 

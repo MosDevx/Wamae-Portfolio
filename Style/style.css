@@ -79,6 +79,30 @@ h6 {
   isolation: isolate;
 }
 
+.btn {
+  background-color: #36b37e;
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+}
+
+.btn:active {
+  background: #008552;
+}
+
 .homepage-container {
   display: flex;
   flex-direction: column;
@@ -350,28 +374,48 @@ h6 {
 .project-page .grid-card-display .project-card .card-details .project-card-button {
   width: 122px;
   height: 48px;
-  padding: 12px;
   margin-bottom: 10px;
-  background: #36b37e;
-  border-radius: 4px;
-  border: 0;
   align-self: center;
-  letter-spacing: 0.03em;
-  text-align: center;
-  font-weight: 500;
-  font-size: 17px;
-  font-style: normal;
-  line-height: 24px;
-  color: #fff;
-  white-space: nowrap;
 }
 
-.project-page .grid-card-display .project-card .card-details .project-card-button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+.modal-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100vw;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(200px);
+  backdrop-filter: blur(200px);
+  z-index: 2;
+  transition: all 0.33s ease-in-out;
 }
 
-.project-page .grid-card-display .project-card .card-details .project-card-button:active {
-  background: #008552;
+.show-modal-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.4s ease-in-out;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.33s ease-in-out;
+  z-index: 4;
+}
+
+.show-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.4s ease-in-out;
 }
 
 .modal-card {
@@ -392,24 +436,51 @@ h6 {
   border-radius: 8px;
   width: 80vw;
   align-items: center;
+  z-index: 4;
 }
 
-.modal-card .modal-card-image {
+.modal-card .modal-image-div {
   padding: 10px 10px;
 }
 
-.modal-card .modal-card-image .icon-close {
+.modal-card .modal-image-div .icon-close {
   color: #fff;
-  padding: 5px;
+  padding: 7px;
   position: absolute;
-  right: 5%;
+  right: 4%;
   cursor: pointer;
   background-color: rgba(248, 80, 80, 0.594);
 }
 
-.modal-card .modal-card-image .modal-image {
+.modal-card .modal-image-div .modal-image {
   width: 320px;
   height: auto;
+}
+
+.modal-card .modal-image-div .modal-nav-button {
+  border: 0;
+  padding: 10px;
+  margin: 0;
+  line-height: 0px;
+  background-color: rgba(255, 255, 255, 0.651);
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transition: color 0.2s ease-out;
+  color: #36b37e;
+}
+
+.modal-card .modal-image-div .modal-nav-button:hover {
+  color: #36b37e;
+}
+
+.modal-card .modal-image-div .modal-left-button {
+  left: 5%;
+}
+
+.modal-card .modal-image-div .modal-right-button {
+  right: 5%;
 }
 
 .modal-card .modal-details {
@@ -466,23 +537,9 @@ h6 {
 }
 
 .modal-card .modal-details .modal-button-container .modal-button {
-  width: 148px;
+  width: 140px;
   height: 48px;
-  padding: 12px;
   margin-bottom: 10px;
-  background: #36b37e;
-  border-radius: 4px;
-  border: 0;
-  align-self: center;
-  letter-spacing: 0.03em;
-  text-align: center;
-  font-weight: 500;
-  font-size: 17px;
-  font-style: normal;
-  line-height: 24px;
-  color: #fff;
-  white-space: nowrap;
-  text-decoration: none;
 }
 
 .modal-card .modal-details .modal-button-container .modal-button:hover {
@@ -491,6 +548,16 @@ h6 {
 
 .modal-card .modal-details .modal-button-container .modal-button:active {
   background: #008552;
+}
+
+.modal-card .modal-details .modal-button-container .modal-button .modal-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.modal-card .modal-details .modal-navigation-buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-me-page {
@@ -535,29 +602,9 @@ h6 {
   width: -moz-fit-content;
   width: fit-content;
   height: 48px;
-  padding: 12px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background: #36b37e;
-  border-radius: 4px;
-  border: 0;
   align-self: center;
-  letter-spacing: 0.03em;
-  text-align: center;
-  font-weight: 500;
-  font-size: 17px;
-  font-style: normal;
-  line-height: 24px;
-  color: #fff;
-  white-space: nowrap;
-}
-
-.about-me-page .about-me-div .resume-button:hover {
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-}
-
-.about-me-page .about-me-div .resume-button:active {
-  background: #008552;
 }
 
 .about-me-page .grid-skill-display {
@@ -799,27 +846,9 @@ h6 {
   color: rgb(249, 91, 0);
 }
 
-.contact-form-page .form-div form .form-button {
+.contact-form-page .form-div form .form-button-div .form-button {
   width: 129px;
   height: 48px;
-  background-color: #36b37e;
-  color: #fff;
-  border-radius: 4px;
-  padding: 12px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  border: none;
-}
-
-.contact-form-page .form-div form .form-button:hover {
-  box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
-}
-
-.contact-form-page .form-div form .form-button:active {
-  background: #008552;
 }
 
 .contact-form-page .footer-social-media {
@@ -865,9 +894,18 @@ h6 {
 
   .homepage-container .homepage-header-large-screen {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
     justify-content: center;
     padding: 8px;
-    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.89);
+    margin-top: 0;
+    width: 100vw;
+    z-index: 2;
+    transition: top 0.1s ease-in-out;
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
   }
 
   .homepage-container .homepage-header-large-screen nav a {
@@ -882,6 +920,16 @@ h6 {
 
   .homepage-container .homepage-header-large-screen nav a:hover {
     color: #9836b3;
+  }
+
+  .homepage-container .homepage-header-large-screen nav .underline-current-nav {
+    transition: all 0.3s;
+    border-bottom: 5px solid red;
+  }
+
+  .homepage-container .hide-header {
+    top: -50px;
+    transition: 0.3s ease-in-out;
   }
 
   .homepage-container .homepage-section {
@@ -946,28 +994,40 @@ h6 {
   }
 
   .modal-card {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
+    padding: 15px;
     margin: 0 auto;
     overflow: scroll;
     width: 70vw;
   }
 
-  .modal-card .modal-card-image .icon-close {
+  .modal-card .modal-image-div .icon-close {
+    padding: 10px;
     color: #000;
     background-color: transparent;
+    transition: color 0.2s ease-out;
   }
 
-  .modal-card .modal-card-image .icon-close:hover {
+  .modal-card .modal-image-div .icon-close:hover {
     color: #f00;
   }
 
-  .modal-card .modal-card-image .modal-image {
+  .modal-card .modal-image-div .modal-image {
     width: 700px;
     height: 450px;
+  }
+
+  .modal-card .modal-image-div .modal-nav-button {
+    font-size: 40px;
+    top: 33%;
+    color: black;
+  }
+
+  .modal-card .modal-image-div .modal-left-button {
+    left: 5%;
+  }
+
+  .modal-card .modal-image-div .modal-right-button {
+    right: 5%;
   }
 
   .modal-card .modal-details {
@@ -1020,11 +1080,12 @@ h6 {
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
+    padding: 5px;
   }
 
   .modal-card .modal-details .modal-button-container {
     position: absolute;
-    right: 10px;
+    right: 15px;
     bottom: 140px;
     gap: 0 10px;
   }
@@ -1184,6 +1245,15 @@ h6 {
 
   .contact-form-page .form-div form textarea {
     width: 75%;
+  }
+
+  .contact-form-page .form-div form .form-button-div {
+    position: relative;
+    width: 450px;
+  }
+
+  .contact-form-page .form-div form .form-button-div .form-button {
+    transition: transform 0.15s ease-out;
   }
 
   .contact-form-page .footer-social-media {

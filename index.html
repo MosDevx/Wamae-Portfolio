@@ -41,7 +41,7 @@
   </head>
 
   <body>
-    <div class="homepage-container">
+    <section class="homepage-container" id="homepage">
       <header class="homepage-header">
         <span>Welcome</span>
         <div class="menu-bars"><i class="fa-solid fa-bars fa-2x"></i></div>
@@ -53,18 +53,19 @@
             <li><a class="linkItem" href="#portfolio">Portfolio</a></li>
             <li><a class="linkItem" href="#about-me">About</a></li>
             <li><a class="linkItem" href="#contact">Contact</a></li>
+
           </ul>
         </nav>
       </header>
 
       <!-- header for large screens -->
-      <header class="homepage-header-large-screen">
+      <header class="homepage-header-large-screen" id="desktop-header">
         <nav>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#about-me">About</a>
-          <a href="#contact">Contact</a>
+          <a class="desktop-nav-link nav-underline" href="#portfolio">Portfolio</a>
+          <a class="desktop-nav-link" href="#about-me">About</a>
+          <a class="desktop-nav-link" href="#contact">Contact</a>
         </nav>
-      </header>
+      </header      >
 
       <section class="homepage-section">
         <article>
@@ -111,7 +112,7 @@
           /></a>
         </div>
       </section>
-    </div>
+    </section>
 
   
     <section class="project-page" id="portfolio">
@@ -123,9 +124,11 @@
         <div class="underline"></div>
       </div>
       
-      <div id="modal-container"></div>
+      <div class="modal-container" id="modal-container"></div>
+      <div class="modal-overlay" id="modal-overlay"></div>
 
       <div class="grid-card-display" id="grid-card-display">
+        
       </div>
     </section>
   
@@ -139,7 +142,7 @@
           of my work and experience! If you like what you see and have a project
           you need coded, don’t hesitate to contact me.
         </p>
-        <button class="resume-button">Get My Resume</button>
+        <button class="btn resume-button">Get My Resume</button>
       </div>
 
       <div class="grid-skill-display">
@@ -248,7 +251,10 @@
             maxlength="500"
           ></textarea>
           <small id="error-message"></small>  
-          <input type="submit" class="form-button" value="Get in Touch" />
+          <div class="form-button-div" id="form-button-div">
+            
+            <input type="submit" class="btn form-button" id="form-button" value="Get in Touch" />
+          </div>
         </form>
       </div>
 
