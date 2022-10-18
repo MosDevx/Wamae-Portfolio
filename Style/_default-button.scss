@@ -1,24 +1,23 @@
-%base-button-style{
-	
-	background-color: $button-enable;
-	color: #fff;
-	border-radius: 4px;
-	padding: 12px;
-	font-weight: 500;
-	font-size: 17px;
-	font-style:normal;
-	line-height: 24px;
-	letter-spacing: 0.03em;
-	text-align: center;
-	border: 0;
-	cursor:pointer;
-	white-space: nowrap;
+%base-button-style {
+  background-color: $button-enable;
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 17px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
 
-	&:hover {
-		box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
-	}
+  &:hover {
+    box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+  }
 
-	&:active {
-		background: $button-active;
-	}
+  &:active {
+    background: $button-active;
+  }
 }

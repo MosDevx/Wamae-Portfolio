@@ -65,7 +65,7 @@ projects.forEach((project, index) => {
     <div class="card-languages">
         <ul id ="ul-${index}"></ul>
     </div>
-    <button data-id="${index}" class="project-card-button">See Project</button>
+    <button data-id="${index}" class="btn project-card-button">See Project</button>
   </div>
 </section>
   `;
@@ -138,8 +138,8 @@ function openModal(projectIndex) {
       </div>
       <p>${project.description}</p>
       <div class="modal-button-container">
-        <button class="modal-button"><a class="modal-link" href="${project.linkToLive}" target="_blank" ><span>See Live  </span><i class="fa-solid fa-lg fa-arrow-up-right-from-square"></i></a></button>
-        <button class="modal-button"><a class="modal-link" href="${project.linkToSource}" target="_blank" ><span>See Source  </span><i class="fa-brands fa-lg fa-github"></i></a></button>
+        <button class="btn modal-button"><a class="modal-link" href="${project.linkToLive}" target="_blank" ><span>See Live  </span><i class="fa-solid fa-lg fa-arrow-up-right-from-square"></i></a></button>
+        <button class="btn modal-button"><a class="modal-link" href="${project.linkToSource}" target="_blank" ><span>See Source  </span><i class="fa-brands fa-lg fa-github"></i></a></button>
      
   
       </div>
@@ -296,7 +296,6 @@ function buttonDodger() {
     formButton.style.transform = `translateX(${newPosition}px)`;
   }
 }
-
 
 formButton.addEventListener('mouseover', () => {
   if (!isFormValid()) {

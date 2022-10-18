@@ -98,7 +98,7 @@ $screen-medium-min:768px;
 $screen-large-min:992px;
 $screen-extra-large-min:1200px;
 
-//import components 
+//import components
 @import "default-button";
 
 //mixin for media-queries
@@ -128,7 +128,9 @@ $screen-extra-large-min:1200px;
 }
 
 //End Scss Variable and Mixins
-
+.btn {
+  @extend %base-button-style;
+}
 // Homepage
 .homepage-container {
   display: flex;
@@ -389,12 +391,10 @@ $screen-extra-large-min:1200px;
         }
 
         .project-card-button {
-          @extend %base-button-style;
           width: 122px;
           height: 48px;
           margin-bottom: 10px;
           align-self: center;
-
         }
       }
     }
@@ -442,13 +442,11 @@ $screen-extra-large-min:1200px;
     }
 
     .resume-button {
-      @extend %base-button-style;
       width: fit-content;
       height: 48px;
       margin-top: 10px;
       margin-bottom: 10px;
       align-self: center;
-
     }
   }
 
@@ -632,13 +630,13 @@ $screen-extra-large-min:1200px;
       #error-message {
         color: rgb(249, 91, 0);
       }
-      .form-button-div{
-      .form-button {
-        @extend %base-button-style;
-        width:129px;
-        height:48px;
+
+      .form-button-div {
+        .form-button {
+          width: 129px;
+          height: 48px;
+        }
       }
-    }
     }
   }
 
@@ -701,6 +699,7 @@ $screen-extra-large-min:1200px;
       width: 100vw;
       z-index: 2;
       transition: top 0.1s ease-in-out;
+      backdrop-filter: blur(100px);
 
       nav {
         a {
@@ -724,8 +723,8 @@ $screen-extra-large-min:1200px;
       }
     }
 
-    .hide-header{
-      top:-50px;
+    .hide-header {
+      top: -50px;
       transition: 0.3s ease-in-out;
     }
 
@@ -960,11 +959,13 @@ $screen-extra-large-min:1200px;
         textarea {
           width: 75%;
         }
-        .form-button-div{
-          position:relative;
+
+        .form-button-div {
+          position: relative;
           // background-color: blue;
-          width:450px;
-          .form-button{
+          width: 450px;
+
+          .form-button {
             // position: relative;
             // background-color: yellow;
             // width:100px;
