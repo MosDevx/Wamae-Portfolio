@@ -2,14 +2,14 @@
 "projects":[
 	{
 		"id":"0",
-		"name":"Evolve Body Fitness",
-		"techList":["Ruby on Rails","Css","Javascript","Html"],
-		"imageUrl":"./Assets/Images/gym-fit.png",
+		"name":"Annual Writers Meetup",
+		"techList":["Css","Javascript","Html"],
+		"imageUrl":"./Assets/Images/capstone.png",
 		"imageAlt":"Gym Website",
-		"imageUrlModal":"./Assets/Images/gym-big.jpg",
-		"description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
-		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
-		"linkToSource":"https://github.com/"
+		"imageUrlModal":"./Assets/Images/capstone.png",
+		"description":"The 2022 Annual Writers Meetup is a conference gathering the best creatives in the globe for a discussion on literature, the impact of stories in our society and much more.",
+		"linkToLive":"https://mosdevx.github.io/web-dev-capstone/src/homepage.html",
+		"linkToSource":"https://github.com/MosDevx/web-dev-capstone"
 	},
 	{
 		"id":"1",
