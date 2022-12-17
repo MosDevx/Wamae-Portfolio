@@ -192,10 +192,19 @@ projectButtonList.forEach((button) => {
 
 const form = document.getElementById('contact-form');
 const emailInput = form.elements.email;
+const nameInput = form.elements.name;
+const messageInput = form.elements.message;
 const errorField = document.getElementById('error-message');
 
 function isLowerCase(email) {
   return email === email.toLowerCase();
+}
+
+function isFormValid() {
+  if (emailInput.value && nameInput.value && messageInput.value) {
+    return true;
+  }
+  return false;
 }
 
 form.addEventListener('submit', (event) => {
@@ -267,10 +276,6 @@ const formButtonDivWidth = formButtonDivRect.width;
 const formButtonRect = formButton.getBoundingClientRect();
 const formButtonWidth = formButtonRect.width;
 
-function isFormValid() {
-  return false;
-}
-
 function getRandomValue(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -299,8 +304,12 @@ function buttonDodger() {
 
 formButton.addEventListener('mouseover', () => {
   if (!isFormValid()) {
+    errorField.innerHTML = ' *Please fill in all the fields :)';
+    setTimeout(() => {
+      errorField.innerHTML = '';
+    }, 4000);
     buttonDodger();
   } else {
-    form.submit();
+    errorField.innerHTML = '';
   }
 });
