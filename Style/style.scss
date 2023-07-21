@@ -36,6 +36,7 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-image: url(../Assets/Images/realblack.jpg);
 }
 
 /*
@@ -157,7 +158,7 @@ $screen-extra-large-min:1200px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(../Assets/Images/realblack.jpg);
+  // background-image: url(../Assets/Images/realblack.jpg);
 
   .homepage-header {
     display: flex;
@@ -190,6 +191,7 @@ $screen-extra-large-min:1200px;
     .menu-bars {
       margin-left: auto;
       margin-right: 15px;
+      padding-right: 10px;
       transition: all 1s linear;
       color: $text-main;
     }
@@ -205,6 +207,7 @@ $screen-extra-large-min:1200px;
       margin-right: 15px;
       z-index: 99;
       color: $text-main;
+      padding-right: 10px;
       
     }
 
@@ -224,8 +227,7 @@ $screen-extra-large-min:1200px;
       transition: all 0.4s ease-in-out;
 
       
-/* From https://css.glass */
-/* From https://css.glass */
+//glass effect for menu
 background: rgba(255, 255, 255, 0.46);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -277,6 +279,8 @@ backdrop-filter: blur(6.9px);
     justify-content: space-evenly;
     margin: 0 20px;
 
+    
+
     .homepage-h1 {
       font-style: normal;
       font-weight: 700;
@@ -286,6 +290,8 @@ backdrop-filter: blur(6.9px);
       width: fit-content;
       margin: 0 auto;
       // background-color: #fff;
+
+      
 
       span {
         color: $primary;
@@ -328,6 +334,7 @@ backdrop-filter: blur(6.9px);
 .project-page {
   display: flex;
   flex-direction: column;
+  // background-color: transparent;
 
   .recent-work {
     display: flex;
@@ -569,7 +576,7 @@ backdrop-filter: blur(6.9px);
               font-style: normal;
               font-weight: 600;
               text-align: center;
-              color: $primary;
+              color: $text-main;
             }
           }
         }
@@ -781,14 +788,14 @@ backdrop-filter: blur(6.9px);
         text-align: center;
         letter-spacing: 0.37px;
         color: $text-main;
-        animation: title-animation;
-        animation-duration: 4s;
+        // animation: title-animation;
+        // animation-duration: 4s;
       }
 
-      @keyframes title-animation {
-        from { color: green; }
-        to { color: #091e42; }
-      }
+      // @keyframes title-animation {
+      //   from { color: green; }
+      //   to { color: #091e42; }
+      // }
 
       p {
         margin-left: auto;
