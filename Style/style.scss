@@ -229,7 +229,7 @@ $screen-extra-large-min:1200px;
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-image: url(../Assets/Images/header-illustration-mobile.svg);
+    background-image: url(../Assets/Images/realblack.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
@@ -677,7 +677,7 @@ $screen-extra-large-min:1200px;
 @include medium {
   //homepage
   .homepage-container {
-    background-image: url(../Assets/Images/homepage-background-desktop.svg);
+    background-image: url(../Assets/Images/realblack.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -791,7 +791,7 @@ $screen-extra-large-min:1200px;
   //About me page
   .about-me-page {
     .about-me-div {
-      background-image: url(../Assets/Images/aboutme-background-desktop.svg);
+      // background-image: url(../Assets/Images/aboutme-background-desktop.svg);
       background-position: 50% 50%;
       background-size: contain;
 
@@ -818,7 +818,7 @@ $screen-extra-large-min:1200px;
 
   //Contact page
   .contact-form-page {
-    background-image: url(../Assets/Images/contact-background-desktop.svg);
+    // background-image: url(../Assets/Images/contact-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
