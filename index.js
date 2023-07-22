@@ -1,5 +1,4 @@
-// import anime from "/node_modules/animejs/lib/anime.es";
-import anime from 'animejs/lib/anime.es.js';
+// import anime from "./node_modules/animejs/lib/anime.es";
 const menuBars = document.querySelector('.menu-bars');
 const menuClose = document.querySelector('.menu-close');
 const navMenu = document.querySelector('.mobile-nav');
@@ -318,11 +317,3 @@ formButton.addEventListener('mouseover', () => {
 
 
 // HANDLING EFFECTS AND ANIMATIONS
-
-anime({
-  targets: 'div',
-  translateX: 250,
-  rotate: '1turn',
-  backgroundColor: '#FFF',
-  duration: 800
-});
