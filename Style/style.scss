@@ -36,7 +36,10 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  // background-image: url(../Assets/Images/realblack.jpg);
+  background-image: url(../Assets/Images/realblack-mobile.jpg);
+  background-position: center;
+  // background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*
@@ -611,7 +614,6 @@ backdrop-filter: blur(6.9px);
       margin-right: auto;
       padding: 24px;
       align-items: center;
-      background-image: url(../Assets/Images/illustration-contact-form.svg);
       background-repeat: no-repeat;
       background-size: auto;
       background-position: right bottom;
@@ -724,8 +726,12 @@ backdrop-filter: blur(6.9px);
 
 @include medium {
   //homepage
-  .homepage-container {
+  body{
+
     background-image: url(../Assets/Images/realblack.jpg);
+
+  }
+  .homepage-container {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;

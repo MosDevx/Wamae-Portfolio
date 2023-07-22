@@ -33,6 +33,9 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-image: url(../Assets/Images/realblack-mobile.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 /*
@@ -642,7 +645,6 @@ h6 {
   margin-right: auto;
   padding: 24px;
   align-items: center;
-  background-image: url(../Assets/Images/illustration-contact-form.svg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right bottom;
@@ -755,8 +757,10 @@ h6 {
 }
 
 @media (min-width: 768px) {
-  .homepage-container {
+  body {
     background-image: url(../Assets/Images/realblack.jpg);
+  }
+  .homepage-container {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
