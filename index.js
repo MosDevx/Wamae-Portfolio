@@ -1,3 +1,5 @@
+// import anime from "/node_modules/animejs/lib/anime.es";
+import anime from 'animejs/lib/anime.es.js';
 const menuBars = document.querySelector('.menu-bars');
 const menuClose = document.querySelector('.menu-close');
 const navMenu = document.querySelector('.mobile-nav');
@@ -281,7 +283,7 @@ function getRandomValue(min, max) {
 }
 
 function buttonDodger() {
-  //! get positon of element after a transform. using it but important for future use
+  //! get position of element after a transform. using it but important for future use
   const compStyles = window.getComputedStyle(formButton);
   const currTransform = new DOMMatrix(compStyles.getPropertyValue('transform'));
 
@@ -312,4 +314,15 @@ formButton.addEventListener('mouseover', () => {
   } else {
     errorField.innerHTML = '';
   }
+});
+
+
+// HANDLING EFFECTS AND ANIMATIONS
+
+anime({
+  targets: 'div',
+  translateX: 250,
+  rotate: '1turn',
+  backgroundColor: '#FFF',
+  duration: 800
 });

@@ -480,6 +480,7 @@ backdrop-filter: blur(6.9px);
       font-size: 40px;
       line-height: 52px;
       margin: 10px 0;
+      color:$text-main;
     }
 
     p {
@@ -748,17 +749,19 @@ backdrop-filter: blur(6.9px);
       left: 0;
       justify-content: center;
       padding: 8px;
-      background-color: rgba(255, 255, 255, 0.89);
+      // background-color: rgba(255, 255, 255, 0.89);
       margin-top: 0;
       width: 100vw;
       z-index: 2;
       transition: top 0.1s ease-in-out;
-      backdrop-filter: blur(100px);
+      // backdrop-filter: blur(100px);
+      /* From https://css.glass */
+
 
       nav {
         a {
           text-decoration: none;
-          color: #344563;
+          color: #ffffff;
           padding: 5px;
           margin: 0 30px;
           font-size: 20px;
@@ -766,7 +769,7 @@ backdrop-filter: blur(6.9px);
           transition: color 0.2s ease-in-out;
 
           &:hover {
-            color: #9836b3;
+            color: #ffbf00;
           }
         }
 

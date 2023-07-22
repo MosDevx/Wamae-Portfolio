@@ -527,6 +527,7 @@ h6 {
   font-size: 40px;
   line-height: 52px;
   margin: 10px 0;
+  color: #ff9500;
 }
 .about-me-page .about-me-div p {
   font-style: normal;
@@ -776,17 +777,15 @@ h6 {
     left: 0;
     justify-content: center;
     padding: 8px;
-    background-color: rgba(255, 255, 255, 0.89);
     margin-top: 0;
     width: 100vw;
     z-index: 2;
     transition: top 0.1s ease-in-out;
-    -webkit-backdrop-filter: blur(100px);
-            backdrop-filter: blur(100px);
+    /* From https://css.glass */
   }
   .homepage-container .homepage-header-large-screen nav a {
     text-decoration: none;
-    color: #344563;
+    color: #ffffff;
     padding: 5px;
     margin: 0 30px;
     font-size: 20px;
@@ -794,7 +793,7 @@ h6 {
     transition: color 0.2s ease-in-out;
   }
   .homepage-container .homepage-header-large-screen nav a:hover {
-    color: #9836b3;
+    color: #ffbf00;
   }
   .homepage-container .homepage-header-large-screen nav .underline-current-nav {
     transition: all 0.3s;
