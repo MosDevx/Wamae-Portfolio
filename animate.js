@@ -43,13 +43,23 @@ homepageTL.fromTo('.jobtitle-span', {
 homepageTL.fromTo('.intro-text', {opacity:0,scale:0}, 
 {
 	opacity: 1,
-	duration:1,
-	scale:1.4,
+	duration:1.3,
+	scale:1.3,
 },
-'<2.8'
+'<2.4'
 )
 
-homepageTL.to('.intro-text',{scale:1,duration:1,ease:'elastic.out(0.9,0.3)'},'<0.4')
+homepageTL.to('.intro-text',{scale:1,duration:1,ease:'elastic.out(0.9,0.3)'},'<0.6')
+
+
+homepageTL.to('.name-span',{
+
+	keyframes:{
+		color:['#443322','#129126','#102796']
+	},
+	duration:3,
+	repeat:-1
+})
 
 // gsap.to('.about-me-div',{
 // 		scrollTrigger: '.about-me-div',
