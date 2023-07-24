@@ -26,6 +26,7 @@ body {
   scroll-behavior: smooth;
   height: 100%;
   font-family: 'Inter', sans-serif;
+  // overflow-x:hidden;
 }
 
 /*
@@ -461,6 +462,7 @@ backdrop-filter: blur(6.9px);
   display: flex;
   flex-direction: column;
   margin: 30px 0;
+  overflow-x: hidden;
 
   .about-me-div {
     display: flex;
