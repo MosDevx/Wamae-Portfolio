@@ -202,19 +202,26 @@ h6 {
   text-align: center;
   justify-content: space-evenly;
   margin: 0 20px;
+  z-index: -1;
 }
 .homepage-container .homepage-section .homepage-h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
   line-height: 52px;
   color: #ff9500;
   width: -moz-fit-content;
   width: fit-content;
+  height: auto;
   margin: 0 auto;
 }
-.homepage-container .homepage-section .homepage-h1 span {
+.homepage-container .homepage-section .homepage-h1 .greeting-span {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.homepage-container .homepage-section .homepage-h1 .jobtitle-span {
   color: #ffffff;
+  font-size: 28px;
+  line-height: 30px;
 }
 .homepage-container .homepage-section p {
   font-style: normal;
@@ -818,6 +825,14 @@ h6 {
     letter-spacing: 0.37px;
     color: #ff9500;
   }
+  .homepage-container .homepage-section .homepage-h1 .greeting-span {
+    font-size: 60px;
+  }
+  .homepage-container .homepage-section .homepage-h1 .jobtitle-span {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 30px;
+  }
   .homepage-container .homepage-section p {
     margin-left: auto;
     margin-right: auto;
@@ -991,11 +1006,10 @@ h6 {
   .homepage-container .homepage-section {
     margin: 0 260px;
   }
-  .homepage-container .homepage-section .homepage-h1 {
-    font-size: 48px;
-  }
   .homepage-container .homepage-section p {
     width: 75%;
+    font-size: 24px;
+    line-height: 38px;
   }
   .homepage-container .homepage-section .social-media-list {
     width: 30%;

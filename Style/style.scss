@@ -282,23 +282,32 @@ backdrop-filter: blur(6.9px);
     text-align: center;
     justify-content: space-evenly;
     margin: 0 20px;
+    z-index: -1;
 
     
 
     .homepage-h1 {
       font-style: normal;
       font-weight: 700;
-      font-size: 40px;
+      // font-size: 40px;
       line-height: 52px;
       color: $text-main;
       width: fit-content;
+      height: auto;
       margin: 0 auto;
-      // background-color: #fff;
+      // z-index: 0;
+      // background-color: hsl(0, 36%, 80%);
 
       
-
-      span {
+      .greeting-span{
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+      .jobtitle-span {
         color: $primary;
+        font-size: 28px;
+        line-height: 30px;
+     
       }
     }
 
@@ -802,6 +811,15 @@ backdrop-filter: blur(6.9px);
         color: $text-main;
         // animation: title-animation;
         // animation-duration: 4s;
+        .greeting-span{
+          font-size: 60px;
+        }
+        .jobtitle-span {
+          color: $primary;
+          font-size: 30px;
+          line-height: 30px;
+       
+        }
       }
 
       // @keyframes title-animation {
@@ -941,11 +959,13 @@ backdrop-filter: blur(6.9px);
       margin: 0 260px;
 
       .homepage-h1 {
-        font-size: 48px;
+        // font-size: 48px;
       }
 
       p {
         width: 75%;
+        font-size:24px;
+        line-height: 38px;
       }
 
       .social-media-list {
