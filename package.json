@@ -27,6 +27,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "animejs": "^3.2.1"
+    "@studio-freight/lenis": "^1.0.19"
   }
 }
