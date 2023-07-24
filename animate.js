@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // gsap.set('.greeting-span', {x:-300,opacity:1})
 
-let homepageTL = gsap.timeline({defaults: {duration:2.5,ease:'elastic.out(1, 0.6)'}})
+let homepageTL = gsap.timeline({defaults: {duration:3,ease:'elastic.out(0.7, 0.6)'}})
 
 homepageTL.fromTo('.greeting-span', {
 	x: '-25vw',
@@ -39,6 +39,17 @@ homepageTL.fromTo('.jobtitle-span', {
 },
 '<0.6'
 );
+
+homepageTL.fromTo('.intro-text', {opacity:0,scale:0}, 
+{
+	opacity: 1,
+	duration:1,
+	scale:1.4,
+},
+'<2.8'
+)
+
+homepageTL.to('.intro-text',{scale:1,duration:1,ease:'elastic.out(0.9,0.3)'},'<0.4')
 
 // gsap.to('.about-me-div',{
 // 		scrollTrigger: '.about-me-div',
