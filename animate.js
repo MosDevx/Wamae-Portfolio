@@ -15,13 +15,30 @@ gsap.registerPlugin(ScrollTrigger);
 
 // gsap.set('.greeting-span', {x:-300,opacity:1})
 
-gsap.fromTo('.greeting-span', {x:'-50vw', opacity:0},{
+let homepageTL = gsap.timeline({defaults: {duration:2.5,ease:'elastic.out(1, 0.6)'}})
 
-	x:0,
-	duration:2,
-	opacity:1,
+homepageTL.fromTo('.greeting-span', {
+	x: '-25vw',
+	opacity: 0,
+}, {
+
+	x: 0,
+	// duration: 1.5,
+	opacity: 1,
 	// zIndex:-1
-})
+});
+homepageTL.fromTo('.jobtitle-span', {
+	x: '25vw',
+	opacity: 0,
+}, {
+
+	x: 0,
+	// duration: 1.5,
+	opacity: 1,
+	// zIndex:-1
+},
+'<0.6'
+);
 
 // gsap.to('.about-me-div',{
 // 		scrollTrigger: '.about-me-div',

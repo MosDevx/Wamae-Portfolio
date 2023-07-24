@@ -203,6 +203,8 @@ h6 {
   justify-content: space-evenly;
   margin: 0 20px;
   z-index: -1;
+  overflow-x: hidden;
+  border: #d0d9d4;
 }
 .homepage-container .homepage-section .homepage-h1 {
   font-style: normal;
