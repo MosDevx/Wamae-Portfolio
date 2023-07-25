@@ -220,6 +220,13 @@ h6 {
   font-size: 50px;
   margin-bottom: 20px;
 }
+.homepage-container .homepage-section .homepage-h1 .greeting-span .name-span {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+  -webkit-fill-text-color: transparent;
+  background-image: linear-gradient(to right, rgb(254, 202, 202), rgb(252, 165, 165), rgb(254, 240, 138));
+}
 .homepage-container .homepage-section .homepage-h1 .jobtitle-span {
   color: #ffffff;
   font-size: 28px;
@@ -228,7 +235,7 @@ h6 {
 .homepage-container .homepage-section p {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   color: #ff9500;
   margin-top: 40px;
@@ -828,7 +835,7 @@ h6 {
     color: #ff9500;
   }
   .homepage-container .homepage-section .homepage-h1 .greeting-span {
-    font-size: 60px;
+    font-size: 48px;
   }
   .homepage-container .homepage-section .homepage-h1 .jobtitle-span {
     color: #ffffff;
@@ -1008,9 +1015,12 @@ h6 {
   .homepage-container .homepage-section {
     margin: 0 260px;
   }
+  .homepage-container .homepage-section article {
+    margin-top: 40px;
+  }
   .homepage-container .homepage-section p {
     width: 75%;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 38px;
   }
   .homepage-container .homepage-section .social-media-list {

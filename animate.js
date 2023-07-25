@@ -52,12 +52,15 @@ homepageTL.fromTo('.intro-text', {opacity:0,scale:0},
 homepageTL.to('.intro-text',{scale:1,duration:1,ease:'elastic.out(0.9,0.3)'},'<0.6')
 
 
-homepageTL.to('.name-span',{
+gsap.to('.name-span',{
 
 	keyframes:{
-		color:['#443322','#129126','#102796']
+		backgroundImage:['linear-gradient(to right, rgb(236, 72, 153), rgb(239, 68, 68), rgb(234, 179, 8))','linear-gradient(to right top, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60))','linear-gradient(to right, rgb(153, 246, 228), rgb(217, 249, 157))'],
+		easeEach: "slow(0.7, 0.7, false)",
 	},
-	duration:3,
+	duration:4,
+	ease: "sine.inOut",
+	yoyo:true,
 	repeat:-1
 })
 
@@ -70,9 +73,6 @@ homepageTL.to('.name-span',{
 
 const lenis = new Lenis()
 
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
 
 function raf(time) {
   lenis.raf(time)

@@ -298,6 +298,7 @@ backdrop-filter: blur(6.9px);
       width: fit-content;
       height: auto;
       margin: 0 auto;
+      
       // z-index: 0;
       // background-color: hsl(0, 36%, 80%);
 
@@ -305,6 +306,16 @@ backdrop-filter: blur(6.9px);
       .greeting-span{
         font-size: 50px;
         margin-bottom: 20px;
+     
+
+        .name-span{
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: rgba(0, 0, 0, 0.2);
+          -webkit-fill-text-color : transparent;
+          background-image: linear-gradient(to right, rgb(254, 202, 202), rgb(252, 165, 165), rgb(254, 240, 138));
+       
+        }
       }
       .jobtitle-span {
         color: $primary;
@@ -317,7 +328,7 @@ backdrop-filter: blur(6.9px);
     p {
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 28px;
       color: $text-main;
       margin-top: 40px;
@@ -812,10 +823,11 @@ backdrop-filter: blur(6.9px);
         text-align: center;
         letter-spacing: 0.37px;
         color: $text-main;
+        // margin-top: 70px;
         // animation: title-animation;
         // animation-duration: 4s;
         .greeting-span{
-          font-size: 60px;
+          font-size: 48px;
         }
         .jobtitle-span {
           color: $primary;
@@ -960,14 +972,16 @@ backdrop-filter: blur(6.9px);
 
     .homepage-section {
       margin: 0 260px;
-
-      .homepage-h1 {
-        // font-size: 48px;
+      
+      article{
+        
+        margin-top:40px;
       }
+   
 
       p {
         width: 75%;
-        font-size:24px;
+        font-size:22px;
         line-height: 38px;
       }
 
