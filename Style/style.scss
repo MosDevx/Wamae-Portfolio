@@ -283,7 +283,7 @@ backdrop-filter: blur(6.9px);
     justify-content: space-evenly;
     margin: 0 20px;
     z-index: -1;
-    overflow-x:hidden;
+    overflow:hidden;
     border: #d0d9d4 ;
     // background-color: #e1efea;
 
@@ -334,6 +334,7 @@ backdrop-filter: blur(6.9px);
       margin-top: 40px;
       margin-left: 20px;
       margin-right: 20px;
+      font-kerning:none;
     }
 
     .social-media-list {
@@ -831,7 +832,7 @@ backdrop-filter: blur(6.9px);
         }
         .jobtitle-span {
           color: $primary;
-          font-size: 30px;
+          font-size: 38px;
           line-height: 30px;
        
         }

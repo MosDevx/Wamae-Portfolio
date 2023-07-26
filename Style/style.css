@@ -203,7 +203,7 @@ h6 {
   justify-content: space-evenly;
   margin: 0 20px;
   z-index: -1;
-  overflow-x: hidden;
+  overflow: hidden;
   border: #d0d9d4;
 }
 .homepage-container .homepage-section .homepage-h1 {
@@ -241,6 +241,7 @@ h6 {
   margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
+  font-kerning: none;
 }
 .homepage-container .homepage-section .social-media-list {
   display: flex;
@@ -839,7 +840,7 @@ h6 {
   }
   .homepage-container .homepage-section .homepage-h1 .jobtitle-span {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 38px;
     line-height: 30px;
   }
   .homepage-container .homepage-section p {
