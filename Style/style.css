@@ -220,7 +220,7 @@ h6 {
   font-size: 50px;
   margin-bottom: 20px;
 }
-.homepage-container .homepage-section .homepage-h1 .greeting-span .name-span {
+.homepage-container .homepage-section .homepage-h1 .greeting-span .name-span div {
   background-clip: text;
   -webkit-background-clip: text;
   color: rgba(0, 0, 0, 0.2);
