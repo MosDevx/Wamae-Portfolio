@@ -122,7 +122,7 @@ h6 {
 }
 
 .dark-theme {
-  color: white;
+  color: white !important;
 }
 
 .homepage-container {

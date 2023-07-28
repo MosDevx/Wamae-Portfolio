@@ -102,7 +102,7 @@ function completeIntroText(){
 
 const homepageBreakTL = gsap.timeline()
 
-homepageBreakTL.to(introText.words,
+gsap.to(introText.words,
 	{
 	x:"random(-300,300)",
 	y:"random(-100,400)",
@@ -138,7 +138,7 @@ homepageBreakTL.to(introText.words,
 const greetingText = new SplitType('.greeting-span',{types:'words'})
 const jobTitleText = new SplitType('.jobtitle-span',{types:'words'})
 
-homepageBreakTL.to([jobTitleText.words, greetingText.words],{
+gsap.to([jobTitleText.words, greetingText.words],{
 	x:"random(-100,100)",
 	y:"random(-100,100)",
 	rotation:"random(0,360)",
