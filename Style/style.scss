@@ -157,6 +157,10 @@ $screen-extra-large-min:1200px;
 .btn {
   @extend %base-button-style;
 }
+
+.dark-theme{
+  color:white;
+}
 // Homepage
 .homepage-container {
   display: flex;

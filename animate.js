@@ -64,8 +64,9 @@ homepageTL.to(introText.words,{
 	x:0,
 	y:0,
 	opacity:1,
-	duration:2
-})
+	duration:3
+},
+'<1.4')
 
 // homepageTL.fromTo(introText.words,
 // 	{
@@ -85,31 +86,6 @@ homepageTL.to(introText.words,{
 // },
 // '<0.6')
 
-gsap.to(introText.words,
-	{
-	x:"random(-300,300)",
-	y:"random(-100,400)",
-	rotation:"random(0,360)",
-	duration:4,
-	scale:'random(0.8,1.2)',
-	// stagger:0.1,
-	// yoyo:true,
-	repeat:-1,
-	repeatRefresh:true,
-	ease:"power1.inOut",
-	onReverseComplete:completeIntroText,
-	scrollTrigger:{
-		trigger:'.intro-text',
-		// markers:true,
-		start: '30 30%',
-		end:'bottom 5%',
-		toggleActions:'play reverse none none'
-
-	}
-})
-
-
-
 function completeIntroText(){
 	// introText.revert()
 	console.log("Called")
@@ -118,26 +94,64 @@ function completeIntroText(){
 		y:0,
 		rotation:0,
 		scale:1,
-		duration:1
+		duration:2,
+		ease:'elastic.out(0.7,0.6)'
 	})
 	// introText.revert()
 }
 
+const homepageBreakTL = gsap.timeline()
 
-//skew the name and title texts when scrolling down
+homepageBreakTL.to(introText.words,
+	{
+	x:"random(-300,300)",
+	y:"random(-100,400)",
+	rotation:"random(0,360)",
+	duration:4,
+	scale:'random(0.5,1.4)',
+	// stagger:0.1,
+	// yoyo:true,
+	repeat:-1,
+	repeatRefresh:true,
+	ease:"power1.inOut",
+	// onReverseComplete:completeIntroText,
+	scrollTrigger:{
+		onEnterBack: () => completeIntroText(),
+		
+		trigger:'.intro-text',
+		markers:true,
+		start: '30 40%',
+		// pin:true,
+		end:'+=100px 55%',
+		toggleActions:'play none reset none '
+
+	}
+})
+
+
+
+
+
+
+//rotate , transform the name and title texts when scrolling down
 
 const greetingText = new SplitType('.greeting-span',{types:'words'})
 const jobTitleText = new SplitType('.jobtitle-span',{types:'words'})
 
-gsap.to([jobTitleText.words, greetingText.words],{
-
+homepageBreakTL.to([jobTitleText.words, greetingText.words],{
+	x:"random(-100,100)",
+	y:"random(-100,100)",
 	rotation:"random(0,360)",
-	duration: 3,
+	repeatRefresh:true,
+	duration: 6,
+	ease:'elastic.out(0.7,0.6)',
 	scrollTrigger:{
 		trigger:'.greeting-span',
 		start:'top 10%',
-		scrub:1,
-		markers:true
+		scrub:1.5,
+		
+		// markers:true,
+		// pin:true
 	}
 
 }) 

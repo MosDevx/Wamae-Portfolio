@@ -121,6 +121,10 @@ h6 {
   background-color: #f97316;
 }
 
+.dark-theme {
+  color: white;
+}
+
 .homepage-container {
   display: flex;
   flex-direction: column;
