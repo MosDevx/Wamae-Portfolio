@@ -2,7 +2,7 @@
 
 # Wamae-Portfolio
 
-> Portfolio Project To Showcase Projects
+> My Portfolio Website showcasing the best of my work.
 
 
 ## Built With
