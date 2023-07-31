@@ -119,7 +119,7 @@ gsap.to(introText.words,
 		onEnterBack: () => completeIntroText(),
 		
 		trigger:'.intro-text',
-		markers:true,
+		// markers:true,
 		start: '30 40%',
 		// pin:true,
 		end:'+=100px 55%',
