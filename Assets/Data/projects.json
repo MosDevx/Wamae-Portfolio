@@ -2,10 +2,10 @@
 "projects":[
 	{
 		"id":"0",
-		"name":"Annual Writers Meetup",
-		"techList":["Css","Javascript","Html"],
+		"name":"Vespa Reservation",
+		"techList":["React","Ruby on Rails","PostgreSQL"],
 		"imageUrl":"./Assets/Images/capstone.png",
-		"imageAlt":"Gym Website",
+		"imageAlt":"Vespa Reservation",
 		"imageUrlModal":"./Assets/Images/capstone.png",
 		"description":"The 2022 Annual Writers Meetup is a conference gathering the best creatives in the globe for a discussion on literature, the impact of stories in our society and much more.",
 		"linkToLive":"https://mosdevx.github.io/web-dev-capstone/src/homepage.html",
