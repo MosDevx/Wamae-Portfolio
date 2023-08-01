@@ -4,70 +4,37 @@
 		"id":"0",
 		"name":"Vespa Reservation",
 		"techList":["React","Ruby on Rails","PostgreSQL"],
-		"imageUrl":"./Assets/Images/capstone.png",
+		"imageUrl":"./Assets/Images/vespa-project.png",
 		"imageAlt":"Vespa Reservation",
-		"imageUrlModal":"./Assets/Images/capstone.png",
-		"description":"A online reservation ",
+		"imageUrlModal":"./Assets/Images/vespa-project.png",
+		"description":"A fullstack online reservation application. Allows CRUD, JWT authentication, reservations ",
 		"linkToLive":"https://vespa-reservation.onrender.com/home",
 		"linkToSource":"https://github.com/Thoth1111/Fullstack-Capstone-Project"
 	},
+
+	
 	{
 		"id":"1",
-		"name":"Nairobi Art Gallery",
-		"techList":["Php","Css","Javascript"],
-		"imageUrl":"./Assets/Images/art-printing.png",
+		"name":"Space Missions",
+		"techList":["React","TailwindCSS","HTML"],
+		"imageUrl":"./Assets/Images/space-project.png",
 		"imageAlt":"Gallery Website",
-		"imageUrlModal":"./Assets/Images/art-gallery-big.jpeg",
-		"description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+		"imageUrlModal":"./Assets/Images/space-project.png",
+		"description":"",
 		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
 		"linkToSource":"https://github.com/"
 	},
 	{
 		"id":"2",
-		"name":"Personal Organizer",
-		"techList":["Ruby on Rails","Css","Javascript","Html"],
-		"imageUrl":"./Assets/Images/organizer.png",
-		"imageAlt":"Organizer Website",
-		"imageUrlModal":"./Assets/Images/organizer-big.jpg",
-		"description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
-		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
-		"linkToSource":"https://github.com/"
-	},
-	{
-		"id":"3",
-		"name":"Evolve Body Fitness",
-		"techList":["Ruby on Rails","Css","Javascript","Html"],
-		"imageUrl":"./Assets/Images/gym-fit.png",
-		"imageAlt":"Gym Website",
-		"imageUrlModal":"./Assets/Images/gym-big.jpg",
-		"description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
-		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
-		"linkToSource":"https://github.com/"
-	},
-	{
-		"id":"4",
-		"name":"Nairobi Art Gallery",
-		"techList":["Php","Css","Javascript"],
-		"imageUrl":"./Assets/Images/art-printing.png",
-		"imageAlt":"Art Website",
-		"imageUrlModal":"./Assets/Images/art-gallery-big.jpeg",
-		"description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
-		"linkToSource":"https://github.com/"
-	},
-	{
-		"id":"5",
-		"name":"Personal Organizer",
-		"techList":["Ruby on Rails","Css","Javascript","Html"],
-		"imageUrl":"./Assets/Images/organizer.png",
-		"imageAlt":"Organizer Website",
-		"imageUrlModal":"./Assets/Images/organizer-big.jpg",
-		"description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+		"name":"Annual Writers Meetup",
+		"techList":["TailwindCss","Javascript","Html"],
+		"imageUrl":"./Assets/Images/capstone.png",
+		"imageAlt":"Conference Website",
+		"imageUrlModal":"./Assets/Images/capstone.png",
+		"description":"",
 		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
 		"linkToSource":"https://github.com/"
 	}
 ]
-
-
 
 }
