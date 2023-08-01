@@ -7,9 +7,9 @@
 		"imageUrl":"./Assets/Images/capstone.png",
 		"imageAlt":"Vespa Reservation",
 		"imageUrlModal":"./Assets/Images/capstone.png",
-		"description":"The 2022 Annual Writers Meetup is a conference gathering the best creatives in the globe for a discussion on literature, the impact of stories in our society and much more.",
-		"linkToLive":"https://mosdevx.github.io/web-dev-capstone/src/homepage.html",
-		"linkToSource":"https://github.com/MosDevx/web-dev-capstone"
+		"description":"A online reservation ",
+		"linkToLive":"https://vespa-reservation.onrender.com/home",
+		"linkToSource":"https://github.com/Thoth1111/Fullstack-Capstone-Project"
 	},
 	{
 		"id":"1",
