@@ -21,7 +21,7 @@
 html,
 body {
   scroll-behavior: auto;
-  height: 100%;
+  height: auto;
   font-family: "Inter", sans-serif;
 }
 
@@ -876,7 +876,7 @@ h6 {
     color: #000;
     background-color: transparent;
     transition: color 0.2s ease-out;
-    background-color: #f00;
+    background-color: rgb(249, 101, 101);
   }
   .modal-card .modal-image-div .icon-close:hover {
     color: #f00;
@@ -897,6 +897,10 @@ h6 {
     right: 5%;
   }
   .modal-card .modal-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
     background: #fff;
     border-radius: 8px;
   }
@@ -904,14 +908,16 @@ h6 {
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
+    text-align: center;
     line-height: 44px;
     margin-top: 5px;
     margin-left: 5px;
     align-self: flex-start;
     color: #3a4a42;
+    align-self: center;
   }
   .modal-card .modal-details .modal-languages {
-    align-self: flex-start;
+    align-self: center;
     flex-basis: 0;
     height: auto;
     margin: 5px 5px;
@@ -946,6 +952,7 @@ h6 {
   .modal-card .modal-details .modal-button-container {
     right: 15px;
     bottom: 45px;
+    gap: 0 10px;
   }
   .modal-card .modal-details .modal-button-container .modal-button:hover {
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);

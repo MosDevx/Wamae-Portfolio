@@ -186,9 +186,4 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
-lenis.stop()
-
-document.addEventListener('DOMContentLoaded',()=>{
-	lenis.start();
-})
 

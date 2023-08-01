@@ -322,3 +322,8 @@ formButton.addEventListener('mouseover', () => {
 
 
 // HANDLING EFFECTS AND ANIMATIONS
+
+
+document.addEventListener('DOMContentLoaded',()=>{
+	lenis.start();
+})
