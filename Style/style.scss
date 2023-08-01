@@ -491,6 +491,7 @@ backdrop-filter: blur(6.9px);
   flex-direction: column;
   margin: 30px 0;
   overflow-x: hidden;
+  background-color: transparent;
 
   .about-me-div {
     display: flex;
@@ -519,7 +520,8 @@ backdrop-filter: blur(6.9px);
       font-size: 20px;
       line-height: 32px;
       margin: 10px 0;
-      background-color: #fff;
+      // background-color: #fff;
+      color:$text-main;
       display: inline-block;
     }
 
@@ -633,7 +635,7 @@ backdrop-filter: blur(6.9px);
       text-align: center;
       color: $text-main;
       margin: 0 24px;
-      background-color: #fff;
+      // background-color: #fff;
     }
 
     form {

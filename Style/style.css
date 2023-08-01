@@ -531,6 +531,7 @@ h6 {
   flex-direction: column;
   margin: 30px 0;
   overflow-x: hidden;
+  background-color: transparent;
 }
 .about-me-page .about-me-div {
   display: flex;
@@ -557,7 +558,7 @@ h6 {
   font-size: 20px;
   line-height: 32px;
   margin: 10px 0;
-  background-color: #fff;
+  color: #ff9500;
   display: inline-block;
 }
 .about-me-page .about-me-div .resume-button {
@@ -657,7 +658,6 @@ h6 {
   text-align: center;
   color: #ff9500;
   margin: 0 24px;
-  background-color: #fff;
 }
 .contact-form-page .form-div form {
   margin-top: 58px;
@@ -868,21 +868,22 @@ h6 {
     padding: 15px;
     margin: 0 auto;
     overflow-y: scroll;
-    height: 95vh;
-    width: 70vw;
+    height: 100vh;
+    width: 60vw;
   }
   .modal-card .modal-image-div .icon-close {
     padding: 10px;
     color: #000;
     background-color: transparent;
     transition: color 0.2s ease-out;
+    background-color: #f00;
   }
   .modal-card .modal-image-div .icon-close:hover {
     color: #f00;
   }
   .modal-card .modal-image-div .modal-image {
-    width: 700px;
-    height: 450px;
+    width: 600px;
+    height: 350px;
   }
   .modal-card .modal-image-div .modal-nav-button {
     font-size: 40px;
@@ -904,8 +905,8 @@ h6 {
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
     align-self: flex-start;
     color: #3a4a42;
   }
@@ -913,7 +914,7 @@ h6 {
     align-self: flex-start;
     flex-basis: 0;
     height: auto;
-    margin: 10px 10px;
+    margin: 5px 5px;
   }
   .modal-card .modal-details .modal-languages .modal-language-list {
     display: flex;
@@ -943,10 +944,8 @@ h6 {
     padding: 5px;
   }
   .modal-card .modal-details .modal-button-container {
-    position: absolute;
     right: 15px;
     bottom: 45px;
-    gap: 0 10px;
   }
   .modal-card .modal-details .modal-button-container .modal-button:hover {
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
