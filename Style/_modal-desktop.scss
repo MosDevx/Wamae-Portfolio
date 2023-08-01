@@ -5,7 +5,8 @@
   // transform: translate(-50%, -50%);
   padding: 15px;
   margin: 0 auto;
-  overflow: scroll;
+  overflow-y: scroll;
+  height:95vh;
   width: 70vw;
 
   .modal-image-div {
@@ -99,7 +100,7 @@
     .modal-button-container {
       position: absolute;
       right: 15px;
-      bottom: 140px;
+      bottom: 45px;
       gap: 0 10px;
 
       .modal-button {
