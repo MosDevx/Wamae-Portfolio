@@ -419,7 +419,7 @@ backdrop-filter: blur(6.9px);
           transition: all 0.3s ease-in-out;
 
           &:hover {
-            transform: scale(1.1);
+            // transform: scale(1.1);
           }
         }
       }
@@ -545,8 +545,8 @@ backdrop-filter: blur(6.9px);
       flex-direction: column;
       text-align: center;
       margin: 0 0;
-      border: 1px solid #d0d9d4;
-      background: #ebf0ee;
+      // border: 1px solid $text-main;
+      // background: #ebf0ee;
       border-radius: 8px;
       justify-content: space-between;
       padding: 20px 0;
@@ -575,7 +575,7 @@ backdrop-filter: blur(6.9px);
         font-size: 24px;
         line-height: 32px;
         margin-top: 10px;
-        color: #344563;
+        color: white;
       }
 
       .skill-card-details {
