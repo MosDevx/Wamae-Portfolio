@@ -785,6 +785,7 @@ backdrop-filter: blur(6.9px);
 
     .homepage-header {
       display: none;
+      
     }
 
     .homepage-header-large-screen {
@@ -799,8 +800,13 @@ backdrop-filter: blur(6.9px);
       width: 100vw;
       z-index: 2;
       transition: top 0.1s ease-in-out;
-      // backdrop-filter: blur(100px);
-      /* From https://css.glass */
+  
+background: rgba(255, 255, 255, 0.1);
+// border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(10px);
+// border: 1px solid rgba(255, 255, 255, 0.3);
 
 
       nav {
@@ -820,7 +826,7 @@ backdrop-filter: blur(6.9px);
 
         .underline-current-nav {
           transition: all 0.3s;
-          border-bottom: 5px solid red;
+          border-bottom: 5px solid $text-main;
         }
       }
     }

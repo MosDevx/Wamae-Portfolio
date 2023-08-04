@@ -801,7 +801,10 @@ h6 {
     width: 100vw;
     z-index: 2;
     transition: top 0.1s ease-in-out;
-    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
   }
   .homepage-container .homepage-header-large-screen nav a {
     text-decoration: none;
@@ -817,7 +820,7 @@ h6 {
   }
   .homepage-container .homepage-header-large-screen nav .underline-current-nav {
     transition: all 0.3s;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid #ff9500;
   }
   .homepage-container .hide-header {
     top: -50px;
