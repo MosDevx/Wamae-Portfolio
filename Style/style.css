@@ -431,7 +431,6 @@ h6 {
   position: absolute;
   right: 4%;
   cursor: pointer;
-  background-color: rgba(248, 80, 80, 0.594);
 }
 .modal-card .modal-image-div .modal-image {
   width: 320px;
@@ -867,7 +866,7 @@ h6 {
   .modal-card {
     padding: 15px;
     margin: 0 auto;
-    overflow-y: scroll;
+    overflow-y: none;
     height: 100vh;
     width: 60vw;
   }
@@ -876,7 +875,6 @@ h6 {
     color: #000;
     background-color: transparent;
     transition: color 0.2s ease-out;
-    background-color: rgb(249, 101, 101);
   }
   .modal-card .modal-image-div .icon-close:hover {
     color: #f00;
@@ -893,8 +891,14 @@ h6 {
   .modal-card .modal-image-div .modal-left-button {
     left: 5%;
   }
+  .modal-card .modal-image-div .modal-left-button:hover {
+    color: #008552;
+  }
   .modal-card .modal-image-div .modal-right-button {
     right: 5%;
+  }
+  .modal-card .modal-image-div .modal-right-button:hover {
+    color: #008552;
   }
   .modal-card .modal-details {
     display: flex;
