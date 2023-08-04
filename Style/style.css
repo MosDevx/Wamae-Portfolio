@@ -1092,7 +1092,7 @@ h6 {
     transition: transform 0.15s ease-out;
   }
   .contact-form-page .footer-social-media {
-    border: 1px solid;
+    border: 2px solid;
     width: 100%;
     margin-bottom: 0;
   }
