@@ -39,7 +39,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-image: url(../Assets/Images/realblack-mobile2.jpg);
   background-position: center;
-  // background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
 }
 
@@ -752,6 +752,19 @@ backdrop-filter: blur(6.9px);
   }
 }
 //End form Section
+
+.layered-design-page{
+  height: 100vh;
+  background-color: yellow;
+
+  .layer1{
+    .layer2{
+      .layer3{
+
+      }
+    }
+  }
+}
 
 //START MEDIA QUERIES
 
