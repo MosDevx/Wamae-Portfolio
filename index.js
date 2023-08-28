@@ -310,13 +310,18 @@ function buttonDodger() {
 
 formButton.addEventListener('mouseover', () => {
   if (!isFormValid()) {
-    errorField.innerHTML = ' *Please fill in all the fields :)';
+    // errorField.textContent = ' *Please fill in all the fields :)';
+    errorField.style.visibility='visible'
     setTimeout(() => {
-      errorField.innerHTML = '';
+      // errorField.textContent = '';
+      // errorField.classList.add('hidden');
+      errorField.style.visibility='hidden'
     }, 4000);
     buttonDodger();
   } else {
-    errorField.innerHTML = '';
+    // errorField.textContent = '';
+    // errorField.classList.add('hidden');
+    errorField.style.visibility='hidden'
   }
 });
 

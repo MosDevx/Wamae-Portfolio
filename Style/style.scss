@@ -577,7 +577,7 @@ backdrop-filter: blur(6.9px);
         font-size: 24px;
         line-height: 32px;
         margin-top: 10px;
-        color: white;
+        color: $text-main;
       }
 
       .skill-card-details {
@@ -606,16 +606,17 @@ backdrop-filter: blur(6.9px);
             padding: 0;
             list-style-type: none;
 
+
             li {
               padding: 12px;
-              background: #fff;
+              background: #ebf0ee;
               border-radius: 8px;
               font-size: 12px;
               line-height: 16px;
               font-style: normal;
               font-weight: 600;
               text-align: center;
-              color: $text-main;
+              color: black;
             }
           }
         }
@@ -713,7 +714,10 @@ backdrop-filter: blur(6.9px);
       }
 
       #error-message {
+        visibility: hidden;
         color: rgb(249, 91, 0);
+        margin:20px;
+        // background: #000;
       }
 
       .form-button-div {
