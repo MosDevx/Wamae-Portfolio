@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 //Start css reset
 
@@ -25,7 +27,7 @@ html,
 body {
   scroll-behavior: auto;
   height: auto;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   // overflow-x:hidden;
 }
 
@@ -253,14 +255,40 @@ backdrop-filter: blur(6.9px);
           line-height: 44px;
           padding-bottom: 40px;
 
+          // background-clip: text;
+          // -webkit-background-clip: text;
+          // // color: rgba(0, 0, 0, 0.2);
+          // -webkit-fill-text-color : transparent;
+
           a {
             text-decoration: none;
-            color:black;
+            // color:black;
+         
 
             &:hover {
-              color:black;
+              // color:black;
+        
             }
           }
+
+        }
+        span{
+
+          background-clip: text;
+        -webkit-background-clip: text;
+        color: rgba(0, 0, 0, 0.2);
+        -webkit-fill-text-color : transparent;
+        }
+        .li-1{
+          background-image: linear-gradient(to right, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39));
+        }
+        .li-2{
+          background-image: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+          
+        }
+        .li-3{
+
+          background-image: linear-gradient(to right, rgb(239, 68, 68), rgb(153, 27, 27));
         }
       }
     }
@@ -633,7 +661,7 @@ backdrop-filter: blur(6.9px);
   .form-div {
     .form-title {
       font-weight: 700;
-      font-size: 40px;
+      font-size: 30px;
       line-height: 52px;
       text-align: center;
       color: $text-main;
@@ -1072,6 +1100,7 @@ backdrop-filter: blur(5px);
       .form-title {
         font-size: 30px;
         width: 30%;
+        margin-top:-40px;
       }
 
       form {

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -22,7 +22,7 @@ html,
 body {
   scroll-behavior: auto;
   height: auto;
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*
@@ -184,10 +184,21 @@ h6 {
 }
 .homepage-container .homepage-header nav.mobile-nav ul li a {
   text-decoration: none;
-  color: black;
 }
-.homepage-container .homepage-header nav.mobile-nav ul li a:hover {
-  color: black;
+.homepage-container .homepage-header nav.mobile-nav ul span {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+  -webkit-fill-text-color: transparent;
+}
+.homepage-container .homepage-header nav.mobile-nav ul .li-1 {
+  background-image: linear-gradient(to right, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39));
+}
+.homepage-container .homepage-header nav.mobile-nav ul .li-2 {
+  background-image: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+}
+.homepage-container .homepage-header nav.mobile-nav ul .li-3 {
+  background-image: linear-gradient(to right, rgb(239, 68, 68), rgb(153, 27, 27));
 }
 .homepage-container .homepage-header nav.show-mobile-nav {
   left: 0;
@@ -649,7 +660,7 @@ h6 {
 }
 .contact-form-page .form-div .form-title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 52px;
   text-align: center;
   color: #ff9500;
@@ -1078,6 +1089,7 @@ h6 {
   .contact-form-page .form-div .form-title {
     font-size: 30px;
     width: 30%;
+    margin-top: -40px;
   }
   .contact-form-page .form-div form {
     width: 40%;

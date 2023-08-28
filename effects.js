@@ -1,1 +1,1 @@
-console.log("Effectcts loaded")
+console.log('Effectcts loaded');
