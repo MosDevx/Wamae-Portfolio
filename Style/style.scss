@@ -286,12 +286,13 @@ backdrop-filter: blur(6.9px);
     text-align: center;
     justify-content: space-evenly;
     margin: 0 20px;
-    z-index: -1;
+    // z-index: -1;
     overflow:hidden;
     border: #d0d9d4 ;
-    // background-color: #e1efea;
+    // background-color: #0ce297;
 
-    
+    article{
+      z-index: -1;
 
     .homepage-h1 {
       font-style: normal;
@@ -328,7 +329,7 @@ backdrop-filter: blur(6.9px);
      
       }
     }
-
+  }
     p {
       font-style: normal;
       font-weight: 400;
@@ -349,6 +350,7 @@ backdrop-filter: blur(6.9px);
       list-style-type: none;
       padding: 10px;
       // background-color:#008552;
+      // z-index: 10;
     }
 
     .scroll-button {

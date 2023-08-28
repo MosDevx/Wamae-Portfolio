@@ -206,11 +206,13 @@ h6 {
   text-align: center;
   justify-content: space-evenly;
   margin: 0 20px;
-  z-index: -1;
   overflow: hidden;
   border: #d0d9d4;
 }
-.homepage-container .homepage-section .homepage-h1 {
+.homepage-container .homepage-section article {
+  z-index: -1;
+}
+.homepage-container .homepage-section article .homepage-h1 {
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
@@ -220,18 +222,18 @@ h6 {
   height: auto;
   margin: 0 auto;
 }
-.homepage-container .homepage-section .homepage-h1 .greeting-span {
+.homepage-container .homepage-section article .homepage-h1 .greeting-span {
   font-size: 50px;
   margin-bottom: 20px;
 }
-.homepage-container .homepage-section .homepage-h1 .greeting-span .name-span div {
+.homepage-container .homepage-section article .homepage-h1 .greeting-span .name-span div {
   background-clip: text;
   -webkit-background-clip: text;
   color: rgba(0, 0, 0, 0.2);
   -webkit-fill-text-color: transparent;
   background-image: linear-gradient(to right, rgb(254, 202, 202), rgb(252, 165, 165), rgb(254, 240, 138));
 }
-.homepage-container .homepage-section .homepage-h1 .jobtitle-span {
+.homepage-container .homepage-section article .homepage-h1 .jobtitle-span {
   color: #ffffff;
   font-size: 28px;
   line-height: 30px;
