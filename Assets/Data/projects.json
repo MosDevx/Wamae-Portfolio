@@ -37,14 +37,14 @@
 	},
 	{
 		"id":"3",
-		"name":"Annual Writers Meetup",
-		"techList":["TailwindCss","Javascript","Html"],
-		"imageUrl":"./Assets/Images/capstone.png",
-		"imageAlt":"Conference Website",
-		"imageUrlModal":"./Assets/Images/capstone.png",
+		"name":"MovieBase",
+		"techList":["Sass","Javascript","Html","Webpack"],
+		"imageUrl":"./Assets/Images/moviebase.png",
+		"imageAlt":"MovieBase",
+		"imageUrlModal":"./Assets/Images/moviebase.png",
 		"description":"",
-		"linkToLive":"https://mosdevx.github.io/web-dev-capstone/src/homepage.html",
-		"linkToSource":"https://github.com/MosDevx/web-dev-capstone"
+		"linkToLive":"https://mosdevx.github.io/MovieApiProject/dist/index.html",
+		"linkToSource":"https://github.com/MosDevx/MovieApiProject"
 	}
 
 ]
