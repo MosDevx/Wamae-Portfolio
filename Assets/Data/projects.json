@@ -34,7 +34,19 @@
 		"description":"",
 		"linkToLive":"https://mosdevx.github.io/web-dev-capstone/src/homepage.html",
 		"linkToSource":"https://github.com/MosDevx/web-dev-capstone"
+	},
+	{
+		"id":"3",
+		"name":"Annual Writers Meetup",
+		"techList":["TailwindCss","Javascript","Html"],
+		"imageUrl":"./Assets/Images/capstone.png",
+		"imageAlt":"Conference Website",
+		"imageUrlModal":"./Assets/Images/capstone.png",
+		"description":"",
+		"linkToLive":"https://mosdevx.github.io/web-dev-capstone/src/homepage.html",
+		"linkToSource":"https://github.com/MosDevx/web-dev-capstone"
 	}
+
 ]
 
 }
