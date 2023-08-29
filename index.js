@@ -1,7 +1,8 @@
 // import anime from "./node_modules/animejs/lib/anime.es";
 // import  {Lenis} from './node_modules/@studio-freight/lenis/bundled/lenis.js'
 
-import './animate.js';
+import  './animate.js'
+
 
 const menuBars = document.querySelector('.menu-bars');
 const menuClose = document.querySelector('.menu-close');
@@ -309,8 +310,12 @@ function buttonDodger() {
 
 formButton.addEventListener('mouseover', () => {
   if (!isFormValid()) {
+    // errorField.textContent = ' *Please fill in all the fields :)';
+    // errorField.classList.remove('hidden')
     errorField.style.visibility = 'visible';
     setTimeout(() => {
+      // errorField.textContent = '';
+      // errorField.classList.add('hidden')
       errorField.style.visibility = 'hidden';
     }, 4000);
     buttonDodger();
@@ -319,8 +324,10 @@ formButton.addEventListener('mouseover', () => {
   }
 });
 
+
 // HANDLING EFFECTS AND ANIMATIONS
 
-document.addEventListener('DOMContentLoaded', () => {
-  lenis.start();
-});
+
+document.addEventListener('DOMContentLoaded',()=>{
+	lenis.start();
+})

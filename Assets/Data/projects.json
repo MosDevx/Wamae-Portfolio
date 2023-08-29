@@ -21,8 +21,8 @@
 		"imageAlt":"Gallery Website",
 		"imageUrlModal":"./Assets/Images/space-project.png",
 		"description":"",
-		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
-		"linkToSource":"https://github.com/"
+		"linkToLive":"https://rocketmissions.netlify.app/",
+		"linkToSource":"https://github.com/MosDevx/Space-Project"
 	},
 	{
 		"id":"2",
@@ -32,8 +32,8 @@
 		"imageAlt":"Conference Website",
 		"imageUrlModal":"./Assets/Images/capstone.png",
 		"description":"",
-		"linkToLive":"https://mosdevx.github.io/Wamae-Portfolio/",
-		"linkToSource":"https://github.com/"
+		"linkToLive":"https://mosdevx.github.io/web-dev-capstone/src/homepage.html",
+		"linkToSource":"https://github.com/MosDevx/web-dev-capstone"
 	}
 ]
 
