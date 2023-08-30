@@ -167,7 +167,7 @@ export function showFormSuccess(){
     duration:1,
     ease: 'elastic.out(0.7,0.6)',
     stagger: 0.1,
-    opacity:0
+    opacity:0,
   })
   
   setTimeout(()=>{

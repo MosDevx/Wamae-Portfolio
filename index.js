@@ -213,6 +213,8 @@ function isFormValid() {
   return false;
 }
 
+const formTitle = document.getElementById('form-title-id')
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const emailValue = emailInput.value;
@@ -221,33 +223,32 @@ form.addEventListener('submit', (event) => {
     // errorField.innerText = '';
     // form.submit();
     const formData = new FormData(form);
-    // const url = 'https://formspree.io/f/xnqkvqvy';
+    const url = 'https://formspree.io/f/xnqkvqvy';
 
-    // fetch(url, {
-    //   method: 'POST',
-    //   headers: {
-    //     'Accept': 'application/json'
-    // },
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json'
+    },
 
-    //   body: formData,
-    // })
-    //   .then((response) =>{
-    //     if(response.ok){
-    //       console.log("Successs")
+      body: formData,
+    })
+      .then((response) =>{
+        if(response.ok){
+          console.log("Successs")
           
-    //       form.reset();
-    //       showFormSuccess();
-    //     }
-    //   })
-    //   // .then((data) => { console.log("first")})
-    //   .catch((error) => { console.log("Error occurs"); console.error(error); })
-    //   .finally(() => {
-    //     // window.location.reload();
-    //   // window.scrollTo(0,0)
-    //   });
-    //
-    form.reset()
-    showFormSuccess()
+          form.reset();
+    formTitle.scrollIntoView()
+          showFormSuccess();
+        }
+      })
+      // .then((data) => { console.log("first")})
+      .catch((error) => { console.log("Error occurs"); console.error(error); })
+      .finally(() => {
+        // window.location.reload();
+      // window.scrollTo(0,0)
+      });
+
   } else {
     // errorField.innerText = 'Please type email in lower case*';
   }
