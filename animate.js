@@ -152,17 +152,86 @@ gsap.to([jobTitleText.words, greetingText.words], {
 
 //function to show the Success message on succesfull form submission
 
-const formText = new SplitType('.form-title', {type:'words'})
-const successText = new SplitType('.form-success', {type:'words'})
+// const successText = new SplitType('.form-success', {type:'words'})
+const formTitle = document.getElementById('form-title-id')
 
 export function showFormSuccess(){
 
-  gsap.to(formText.words, {
-    y: -40,
+  let formTL = gsap.timeline()
+
+  let successText = ''
+  let formText = new SplitType('.form-title', {type:'lines'})
+
+  formTL.to(formText.lines, {
+    y: -10,
     duration:1,
     ease: 'elastic.out(0.7,0.6)',
-    stagger: 0.2
+    stagger: 0.1,
+    opacity:0
   })
+  
+  setTimeout(()=>{
+    // formTitle.style.opacity = 0
+    formText.revert()
+    formTitle.innerHTML = 'Thank you so much for reaching out. I will be in touch soon.<br/>Looking forward to working together!!'
+    successText = new SplitType('.form-title', {type:'lines'})
+    
+    // formTitle.style.co = 1
+ formTL.fromTo(successText.lines,
+    {
+      opacity:0,
+      color:'#08ff08'
+    },
+
+    {
+      y:10,
+      opacity:1,
+      stagger:0.1,
+      duration:1.3,
+      ease:'elastic.out(0.7,0.6)'
+    },
+    )
+
+    formTL.to(successText.lines,{
+      y: -10,
+      duration:1,
+      ease: 'elastic.out(0.7,0.6)',
+      stagger: 0.1,
+      opacity:0
+    },'>5')
+
+    // successText.revert()
+  },1500)
+
+  setTimeout(()=>{
+
+    successText.revert()
+
+    // successText.revert()
+
+    formTitle.innerHTML = " I'm always interested in hearing about new projects, so if you'd like to chat please get in touch."
+
+   formText = new SplitType('.form-title', {type:'lines'})
+
+    formTL.fromTo(formText.lines,
+      {
+        opacity:0,
+        color:'#ff9500'
+      },
+  
+      {
+        y:10,
+        opacity:1,
+        stagger:0.1,
+        duration:1,
+        ease:'elastic.out(0.7,0.6)'
+      },)
+
+
+  },9000)
+
+  // successText.revert()
+  // formText.revert()
 }
 
 // Change the gradient color of WAMAE in a loop

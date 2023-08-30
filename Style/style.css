@@ -667,15 +667,6 @@ h6 {
   margin: 0 24px;
   display: default;
 }
-.contact-form-page .form-div .form-success {
-  display: none;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 52px;
-  text-align: center;
-  color: #08ff08;
-  margin: 0 24px;
-}
 .contact-form-page .form-div form {
   margin-top: 58px;
   display: flex;
