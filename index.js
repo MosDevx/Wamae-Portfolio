@@ -235,18 +235,15 @@ form.addEventListener('submit', (event) => {
     })
       .then((response) =>{
         if(response.ok){
-          console.log("Successs")
           
           form.reset();
     formTitle.scrollIntoView()
           showFormSuccess();
         }
       })
-      // .then((data) => { console.log("first")})
       .catch((error) => { console.log("Error occurs"); console.error(error); })
       .finally(() => {
-        // window.location.reload();
-      // window.scrollTo(0,0)
+   
       });
 
   } else {
