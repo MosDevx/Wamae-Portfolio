@@ -7,6 +7,7 @@
 		"imageUrl":"./Assets/Images/vespa-project.png",
 		"imageAlt":"Vespa Reservation",
 		"imageUrlModal":"./Assets/Images/vespa-project.png",
+		"description":"",
 		"linkToLive":"https://vespa-reservation.onrender.com/home",
 		"linkToSource":"https://github.com/MosDevx/Capstone-Project-Vespas-Fronted"
 	},
