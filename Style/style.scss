@@ -661,12 +661,22 @@ backdrop-filter: blur(6.9px);
   .form-div {
     .form-title {
       font-weight: 700;
-      font-size: 30px;
+      font-size: 26px;
       line-height: 52px;
       text-align: center;
       color: $text-main;
       margin: 0 24px;
+      display: default;
       // background-color: #fff;
+    }
+    .form-success{
+      display: none;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 52px;
+      text-align: center;
+      color: #08ff08;
+      margin: 0 24px;
     }
 
     form {
@@ -989,6 +999,11 @@ backdrop-filter: blur(5px);
         width: 50%;
       }
 
+      .form-success{
+        font-size: 25px;
+        width: 50%;
+      }
+
       form {
         width: 40%;
         align-items: flex-start;
@@ -1098,6 +1113,11 @@ backdrop-filter: blur(5px);
       justify-content: center;
       // width:100%;
       .form-title {
+        font-size: 30px;
+        width: 30%;
+        margin-top:-40px;
+      }
+      .form-success{
         font-size: 30px;
         width: 30%;
         margin-top:-40px;

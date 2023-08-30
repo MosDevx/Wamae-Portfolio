@@ -1,8 +1,8 @@
 // import anime from "./node_modules/animejs/lib/anime.es";
 // import  {Lenis} from './node_modules/@studio-freight/lenis/bundled/lenis.js'
 
-import  './animate.js'
-
+import './animate.js';
+import { showFormSuccess } from './animate.js';
 
 const menuBars = document.querySelector('.menu-bars');
 const menuClose = document.querySelector('.menu-close');
@@ -218,11 +218,36 @@ form.addEventListener('submit', (event) => {
   const emailValue = emailInput.value;
 
   if (isLowerCase(emailValue)) {
-    errorField.innerText = '';
-    form.submit();
-    form.reset();
+    // errorField.innerText = '';
+    // form.submit();
+    const formData = new FormData(form);
+    const url = 'https://formspree.io/f/mgeqkdqj';
+
+    fetch(url, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json'
+    },
+
+      body: formData,
+    })
+      .then((response) =>{
+        if(response.ok){
+          console.log("Successs")
+          
+          form.reset();
+          showFormSuccess();
+        }
+      })
+      // .then((data) => { console.log("first")})
+      .catch((error) => { console.log("Error occurs"); console.error(error); })
+      .finally(() => {
+        // window.location.reload();
+      // window.scrollTo(0,0)
+      });
+    //
   } else {
-    errorField.innerText = 'Please type email in lower case*';
+    // errorField.innerText = 'Please type email in lower case*';
   }
 });
 
@@ -315,6 +340,7 @@ formButton.addEventListener('mouseover', () => {
     errorField.style.visibility = 'visible';
     setTimeout(() => {
       // errorField.textContent = '';
+      console.log('in isFormValid')
       // errorField.classList.add('hidden')
       errorField.style.visibility = 'hidden';
     }, 4000);
@@ -324,10 +350,9 @@ formButton.addEventListener('mouseover', () => {
   }
 });
 
-
 // HANDLING EFFECTS AND ANIMATIONS
 
 
-document.addEventListener('DOMContentLoaded',()=>{
-	lenis.start();
-})
+document.addEventListener('DOMContentLoaded', () => {
+  lenis.start();
+});

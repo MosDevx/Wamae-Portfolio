@@ -660,10 +660,20 @@ h6 {
 }
 .contact-form-page .form-div .form-title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 52px;
   text-align: center;
   color: #ff9500;
+  margin: 0 24px;
+  display: default;
+}
+.contact-form-page .form-div .form-success {
+  display: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 52px;
+  text-align: center;
+  color: #08ff08;
   margin: 0 24px;
 }
 .contact-form-page .form-div form {
@@ -1015,6 +1025,10 @@ h6 {
     font-size: 25px;
     width: 50%;
   }
+  .contact-form-page .form-div .form-success {
+    font-size: 25px;
+    width: 50%;
+  }
   .contact-form-page .form-div form {
     width: 40%;
     align-items: flex-start;
@@ -1087,6 +1101,11 @@ h6 {
     justify-content: center;
   }
   .contact-form-page .form-div .form-title {
+    font-size: 30px;
+    width: 30%;
+    margin-top: -40px;
+  }
+  .contact-form-page .form-div .form-success {
     font-size: 30px;
     width: 30%;
     margin-top: -40px;

@@ -149,6 +149,23 @@ gsap.to([jobTitleText.words, greetingText.words], {
 
 });
 
+
+//function to show the Success message on succesfull form submission
+
+const formText = new SplitType('.form-title', {type:'words'})
+const successText = new SplitType('.form-success', {type:'words'})
+
+export function showFormSuccess(){
+
+  gsap.to(formText.words, {
+    y: -40,
+    duration:1,
+    ease: 'elastic.out(0.7,0.6)',
+    stagger: 0.2
+  })
+}
+
+// Change the gradient color of WAMAE in a loop
 gsap.to('.name-span div', {
 
   keyframes: {
@@ -183,3 +200,5 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     lenis.scrollTo(this.getAttribute('href'));
   });
 });
+
+
