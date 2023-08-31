@@ -10,6 +10,19 @@ const navMenu = document.querySelector('.mobile-nav');
 const mobileLinkItemList = document.querySelectorAll('.linkItem');
 const src = './Assets/Data/projects.json';
 
+const loadingScreen = document.querySelector('.loading-screen')
+const allContent = document.querySelector('.all-content')
+
+document.addEventListener("DOMContentLoaded", ()=>{
+  loadingScreen.style.display = 'none';
+  allContent.style.display ='inline'
+
+
+
+  
+
+})
+
 // ! Unnecessary code duplication next two blocks. find a better method
 // code to handle opening of mobile nav menu
 menuBars.addEventListener('click', () => {

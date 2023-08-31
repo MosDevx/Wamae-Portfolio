@@ -163,6 +163,16 @@ $screen-extra-large-min:1200px;
 .dark-theme{
   color:white !important;
 }
+
+.loading-screen{
+  min-height: 100vh;
+
+}
+.all-content{
+  display: none;
+  // background-image: url(../Assets/Images/realblack-mobile2.jpg);
+
+}
 // Homepage
 .homepage-container {
   display: flex;
@@ -817,6 +827,7 @@ backdrop-filter: blur(6.9px);
     background-image: url(../Assets/Images/realblack.jpg);
 
   }
+
   .homepage-container {
     background-size: cover;
     background-repeat: no-repeat;

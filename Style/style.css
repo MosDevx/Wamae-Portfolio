@@ -125,6 +125,14 @@ h6 {
   color: white !important;
 }
 
+.loading-screen {
+  min-height: 100vh;
+}
+
+.all-content {
+  display: none;
+}
+
 .homepage-container {
   display: flex;
   flex-direction: column;
