@@ -311,6 +311,8 @@ window.addEventListener('scroll', () => {
 
 // making a dodgy form submit button: it dodges the mouse till the form inputs are correct
 
+//! is the problem on resize where the available width is to much..or even on normal load...its happening even when i reload the page
+
 const formButtonDiv = document.getElementById('form-button-div');
 const formButton = document.getElementById('form-button');
 
@@ -344,6 +346,29 @@ function buttonDodger() {
     formButton.style.transform = `translateX(${newPosition}px)`;
   }
 }
+//for dodging on  touch
+//! This is going off screen and i dont have time right now to fix it
+formButton.addEventListener('touchstart', (e)=>{
+  if(!isFormValid()){
+    e.preventDefault();
+    errorField.style.visibility = 'visible';
+    setTimeout(() => {
+  
+      errorField.style.visibility = 'hidden';
+    }, 4000);
+    buttonDodger();
+  }else{
+    errorField.style.visibility = 'hidden';
+  }
+})
+
+
+//for dodging on desktop 
+//? adding a chech to disable buttondodger on touch screens
+
+function hasTouchSupport(){
+  return 'ontouchstart' in window || navigator.maxTouchPoints > 0
+}
 
 formButton.addEventListener('mouseover', () => {
   if (!isFormValid()) {
@@ -351,12 +376,11 @@ formButton.addEventListener('mouseover', () => {
     // errorField.classList.remove('hidden')
     errorField.style.visibility = 'visible';
     setTimeout(() => {
-      // errorField.textContent = '';
-      console.log('in isFormValid')
-      // errorField.classList.add('hidden')
+ 
       errorField.style.visibility = 'hidden';
     }, 4000);
-    buttonDodger();
+    
+      buttonDodger();
   } else {
     errorField.style.visibility = 'hidden';
   }
