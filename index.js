@@ -348,6 +348,7 @@ function buttonDodger() {
 }
 //for dodging on  touch
 //! This is going off screen and i dont have time right now to fix it
+//* its working!! I needed to set position relative on the buttonDiv.
 formButton.addEventListener('touchstart', (e)=>{
   if(!isFormValid()){
     e.preventDefault();
@@ -364,11 +365,8 @@ formButton.addEventListener('touchstart', (e)=>{
 
 
 //for dodging on desktop 
-//? adding a chech to disable buttondodger on touch screens
 
-function hasTouchSupport(){
-  return 'ontouchstart' in window || navigator.maxTouchPoints > 0
-}
+
 
 formButton.addEventListener('mouseover', () => {
   if (!isFormValid()) {
