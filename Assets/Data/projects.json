@@ -18,7 +18,7 @@
 		"techList":["NextJS","Prisma","SQLite"],
 		"imageUrl":"./Assets/Images/icon-reward.png",
 		"imageAlt":"Re-Verse App",
-		"imageUrlModal":"./Assets/Images/icon-reward.png",
+		"imageUrlModal":"Assets/Images/reverse-app.png",
 		"description":"",
 		"linkToLive":"#",
 		"linkToSource":"https://github.com/MosDevx/"
