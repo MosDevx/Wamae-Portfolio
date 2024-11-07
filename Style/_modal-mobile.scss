@@ -52,8 +52,10 @@
   text-align: center;
   margin: -40px auto;
   padding: 0 10px;
-  border: 1px solid #d0d9d4;
-  background: #fff;
+  // border: 1px solid #d0d9d4;
+  background-image: url(../Assets/Images/realblack-mobile2.jpg);
+  // background-position: center;
+  // background-repeat: repeat-y;
   border-radius: 8px;
   width: 80vw;
   align-items: center;
@@ -82,13 +84,13 @@
       padding: 10px;
       margin: 0;
       line-height: 0px;
-      background-color: rgba(255, 255, 255, 0.651);
+      background-color: transparent;
       font-size: 25px;
       position: absolute;
       top: 50%;
       cursor: pointer;
       transition: color 0.2s ease-out;
-      color: $primary;
+      color: white;
 
       &:hover {
         color: $primary;
@@ -109,7 +111,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background: #fff;
+    background: transparent;
     border-radius: 8px;
 
     .modal-heading {
@@ -118,7 +120,7 @@
       font-size: 32px;
       line-height: 44px;
       margin-top: 10px;
-      color: $text-project-card;
+      color: $text-main;
     }
 
     .modal-languages {
@@ -139,14 +141,16 @@
 
         .modal-li {
           padding: 8px 12px;
-          background: #ebf0ee;
+          background: transparent;
+          font-family: $font-tertiary;
           border-radius: 4px;
+          letter-spacing: 1px;
           font-size: 12px;
           line-height: 16px;
           font-style: normal;
           font-weight: 600;
           text-align: center;
-          color: $text-project-card;
+          color: $language-color;
         }
       }
     }
@@ -157,9 +161,12 @@
       margin: 15px 0;
 
       .modal-button {
-        width: 140px;
+        width: 145px;
         height: 48px;
+        padding: 10px 0px;
         margin-bottom: 10px;
+        background-color: transparent;
+        border: 2px groove $button-enable;
 
         &:hover {
           box-shadow: 0 8px 16px $button-hover-shadow;
