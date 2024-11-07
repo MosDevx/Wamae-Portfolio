@@ -16,7 +16,7 @@
 		"id":"1",
 		"name":"Re-Verse Discipleship App",
 		"techList":["NextJS","Prisma","SQLite"],
-		"imageUrl":"./Assets/Images/icon-reward.png",
+		"imageUrl":"./Assets/Images/reverse-app.png",
 		"imageAlt":"Re-Verse App",
 		"imageUrlModal":"Assets/Images/reverse-app.png",
 		"description":"",
