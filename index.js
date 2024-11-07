@@ -11,17 +11,18 @@ const mobileLinkItemList = document.querySelectorAll('.linkItem');
 const src = './Assets/Data/projects.json';
 
 const loadingScreen = document.querySelector('.loading-screen')
-const allContent = document.querySelector('.all-content')
+// const allContent = document.querySelector('.all-content')
 
 //!Continue implementing a loading screen
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    loadingScreen.style.display = 'none';
+    loadingScreen.style.opacity = 0;
+    loadingScreen.style.width = 0;
+    loadingScreen.style.height = 0;
 
-// document.addEventListener("DOMContentLoaded", ()=>{
-//   loadingScreen.style.display = 'none';
-//   allContent.style.display ='inline'
-
-
-// })
-
+  }, 3);
+});
 // ! Unnecessary code duplication next two blocks. find a better method
 // code to handle opening of mobile nav menu
 menuBars.addEventListener('click', () => {
@@ -347,7 +348,6 @@ function buttonDodger() {
   }
 }
 //for dodging on  touch
-//! This is going off screen and i dont have time right now to fix it
 //* its working!! I needed to set position relative on the buttonDiv.
 formButton.addEventListener('touchstart', (e)=>{
   if(!isFormValid()){

@@ -165,13 +165,17 @@ $screen-extra-large-min:1200px;
 
 .loading-screen{
   min-height: 100vh;
-
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.all-content{
-  display: none;
-  // background-image: url(../Assets/Images/realblack-mobile2.jpg);
 
-}
+
 // Homepage
 .homepage-container {
   display: flex;
@@ -443,8 +447,8 @@ backdrop-filter: blur(6.9px);
       flex-direction: column;
       text-align: center;
       margin: 0 0;
-      border: 1px solid #d0d9d4;
-      background: #ebf0ee;
+      border: 2px solid rgba($text-main, 0.35);
+      background: transparent;
       border-radius: 8px;
 
       .project-card-image {
@@ -467,7 +471,7 @@ backdrop-filter: blur(6.9px);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        background: #fff;
+        background: transparent;
         border-radius: 8px;
 
         .card-heading {
@@ -476,7 +480,7 @@ backdrop-filter: blur(6.9px);
           font-size: 24px;
           line-height: 32px;
           margin-top: 10px;
-          color: $text-project-card;
+          color: $text-main;
         }
 
         .card-languages {
@@ -496,15 +500,15 @@ backdrop-filter: blur(6.9px);
             list-style-type: none;
 
             li {
-              padding: 8px 12px;
-              background: #ebf0ee;
+              padding: 4px 8px;
+              background: transparent;
               border-radius: 4px;
-              font-size: 12px;
+              font-size: 14px;
               line-height: 16px;
               font-style: normal;
               font-weight: 600;
               text-align: center;
-              color: $text-project-card;
+              color: #dfdada;
             }
           }
         }

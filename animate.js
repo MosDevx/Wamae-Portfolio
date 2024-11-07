@@ -1,4 +1,4 @@
-git gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 // let t1 = gsap.timeline({
 
@@ -86,7 +86,6 @@ homepageTL.to(introText.words, {
 
 function completeIntroText() {
   // introText.revert()
-  console.log('Called');
   gsap.to(introText.words, {
     x: 0,
     y: 0,
@@ -105,8 +104,8 @@ gsap.to(introText.words,
     x: 'random(-300,300)',
     y: 'random(-100,400)',
     rotation: 'random(0,360)',
-    duration: 3.8,
-    scale: 'random(0.5,1.4)',
+    duration: 6,
+    scale: 'random(0.3,1.7)',
     // stagger:0.1,
     // yoyo:true,
     repeat: -1,
@@ -117,10 +116,10 @@ gsap.to(introText.words,
       onEnterBack: () => completeIntroText(),
 
       trigger: '.intro-text',
-      // markers:true,
-      start: '30 40%',
+      markers:false,
+      start: '70 40%',
       // pin:true,
-      end: '+=100px 55%',
+      end: '+=100px 60%',
       toggleActions: 'play none reset none ',
 
     },

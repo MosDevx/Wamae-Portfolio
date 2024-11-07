@@ -38,7 +38,7 @@
 	{
 		"id":"3",
 		"name":"Annual Writers Meetup",
-		"techList":["TailwindCss","Javascript","Html"],
+		"techList":["TailwindCSS","Javascript","Html"],
 		"imageUrl":"./Assets/Images/capstone.png",
 		"imageAlt":"Conference Website",
 		"imageUrlModal":"./Assets/Images/capstone.png",
