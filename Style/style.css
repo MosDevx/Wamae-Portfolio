@@ -462,9 +462,11 @@ h2 {
   padding: 10px 10px;
 }
 .modal-card .modal-image-div .icon-close {
-  color: #fff;
+  color: rgba(218, 7, 7, 0.5411764706);
   padding: 7px;
   position: absolute;
+  width: 24px;
+  height: 24px;
   right: 4%;
   cursor: pointer;
 }
@@ -544,10 +546,11 @@ h2 {
   margin: 15px 0;
 }
 .modal-card .modal-details .modal-button-container .modal-button {
-  width: 145px;
-  height: 48px;
-  padding: 10px 0px;
+  width: 120px;
+  height: 40px;
+  padding: 8px 4px;
   margin-bottom: 10px;
+  font-size: 12px;
   background-color: transparent;
   border: 2px groove #36b37e;
 }
@@ -931,6 +934,8 @@ h2 {
   .modal-card .modal-image-div .icon-close {
     padding: 10px;
     color: #fff;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
     transition: color 0.2s ease-out;
   }
@@ -965,6 +970,7 @@ h2 {
     align-content: center;
     background: transparent;
     border-radius: 8px;
+    width: 450px;
   }
   .modal-card .modal-details .modal-heading {
     font-style: normal;
@@ -1017,6 +1023,11 @@ h2 {
     right: 15px;
     bottom: 45px;
     gap: 0 10px;
+  }
+  .modal-card .modal-details .modal-button-container .modal-button {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
   }
   .modal-card .modal-details .modal-button-container .modal-button:hover {
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);

@@ -65,9 +65,11 @@
     padding: 10px 10px;
 
     .icon-close {
-      color: #fff;
+      color: #da07078a;
       padding: 7px;
       position: absolute;
+      width : 24px;
+      height: 24px;
       right: 4%;
       cursor: pointer;
       // background-color: rgba(248, 80, 80, 0.594);
@@ -113,6 +115,7 @@
     justify-content: space-evenly;
     background: transparent;
     border-radius: 8px;
+    
 
     .modal-heading {
       font-style: normal;
@@ -161,10 +164,11 @@
       margin: 15px 0;
 
       .modal-button {
-        width: 145px;
-        height: 48px;
-        padding: 10px 0px;
+        width: 120px;
+        height: 40px;
+        padding: 8px 4px;
         margin-bottom: 10px;
+        font-size: 12px;
         background-color: transparent;
         border: 2px groove $button-enable;
 

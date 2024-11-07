@@ -13,6 +13,8 @@
     .icon-close {
       padding: 10px;
       color: #fff;
+      width : 50px;
+      height: 50px;
       background-color: transparent;
       transition: color 0.2s ease-out;
       // background-color: rgb(249, 101, 101);
@@ -57,6 +59,7 @@
     align-content: center;
     background: transparent;
     border-radius: 8px;
+    width:450px;
 
     .modal-heading {
       font-style: normal;
@@ -117,6 +120,9 @@
       gap: 0 10px;
 
       .modal-button {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
         &:hover {
           box-shadow: 0 8px 16px $button-hover-shadow;
         }
