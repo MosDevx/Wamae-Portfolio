@@ -1,6 +1,18 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+// @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
+
+
+$font-primary: 'Montserrat', san-serif;
+$font-secondary: 'Anta', san-serif;
+$font-tertiary: 'Lato',san-serif;
 //Start css reset
 
 /*
@@ -26,9 +38,10 @@ html,
 body {
   scroll-behavior: auto;
   height: auto;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-primary, sans-serif;
   // overflow-x:hidden;
 }
+
 
 /*
 	Typographic tweaks!
@@ -89,14 +102,26 @@ h6 {
 
 // end of css reset
 
+
+
+
 //Scss Variable and Mixins
-//Color themes
+
+//fonts 
+h1,
+h2{
+  font-family: $font-secondary;
+  letter-spacing: 2px;
+}
+
+//Color themes 
 $primary:#ffffff;
 $button-enable:#36b37e;
 $button-active:#008552;
 $button-hover-shadow:rgba(54, 179, 127, 0.24);
 $text-project-card:#3a4a42;
 $text-main: #ff9500;
+$skills-color: #000000;
 
 // Screen breakpoints
 $screen-small-min:576px;
@@ -352,6 +377,7 @@ backdrop-filter: blur(6.9px);
       .greeting-span{
         font-size: 50px;
         margin-bottom: 20px;
+        
      
 
         .name-span div{
@@ -447,8 +473,9 @@ backdrop-filter: blur(6.9px);
       flex-direction: column;
       text-align: center;
       margin: 0 0;
-      border: 2px solid rgba($text-main, 0.35);
+      border: 2px inset rgba($text-main, 0.45);
       background: transparent;
+      
       border-radius: 8px;
 
       .project-card-image {
@@ -502,6 +529,8 @@ backdrop-filter: blur(6.9px);
             li {
               padding: 4px 8px;
               background: transparent;
+              font-family: $font-tertiary;
+              letter-spacing: 1px;
               border-radius: 4px;
               font-size: 14px;
               line-height: 16px;
@@ -514,15 +543,23 @@ backdrop-filter: blur(6.9px);
         }
 
         .project-card-button {
-          width: 122px;
+          width: 140px;
           height: 48px;
           margin-bottom: 10px;
+          border: 2px groove $button-enable;
           align-self: center;
+          background-color: transparent;
+          font-family: $font-tertiary;
+          font-weight: 600;
+          letter-spacing: 2px;
         }
       }
     }
+
   }
 }
+
+
 //End portfolio Section
 
 //styling for modals
@@ -651,13 +688,15 @@ backdrop-filter: blur(6.9px);
             li {
               padding: 12px;
               background: #ebf0ee;
+              font-family: $font-tertiary;
+              letter-spacing: 1.5px;
               border-radius: 8px;
               font-size: 12px;
               line-height: 16px;
               font-style: normal;
-              font-weight: 600;
+              font-weight: 400;
               text-align: center;
-              color: black;
+              color: $skills-color ;
             }
           }
         }
@@ -773,6 +812,7 @@ backdrop-filter: blur(6.9px);
         .form-button {
           width: 137px;
           height: 48px;
+          font-family: $font-secondary;
         }
       }
     }

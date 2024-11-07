@@ -84,7 +84,7 @@ projects.forEach((project, index) => {
     <div class="card-languages">
         <ul id ="ul-${index}"></ul>
     </div>
-    <button data-id="${index}" class="btn project-card-button">See Project</button>
+    <button data-id="${index}" class="btn project-card-button">View</button>
   </div>
 </section>
   `;

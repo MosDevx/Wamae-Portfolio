@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -22,7 +24,7 @@ html,
 body {
   scroll-behavior: auto;
   height: auto;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", san-serif, sans-serif;
 }
 
 /*
@@ -81,6 +83,12 @@ h6 {
   isolation: isolate;
 }
 
+h1,
+h2 {
+  font-family: "Anta", san-serif;
+  letter-spacing: 2px;
+}
+
 .btn {
   background-color: #36b37e;
   color: #fff;
@@ -97,7 +105,7 @@ h6 {
   white-space: nowrap;
 }
 .btn:hover {
-  box-shadow: 0 8px 16px rgba(19, 217, 134, 0.24);
+  box-shadow: 0 0 36px rgba(19, 217, 134, 0.2392156863);
 }
 .btn:active {
   background: #008552;
@@ -324,7 +332,7 @@ h6 {
   flex-direction: column;
   text-align: center;
   margin: 0 0;
-  border: 2px solid rgba(255, 149, 0, 0.35);
+  border: 2px inset rgba(255, 149, 0, 0.45);
   background: transparent;
   border-radius: 8px;
 }
@@ -370,6 +378,8 @@ h6 {
 .project-page .grid-card-display .project-card .card-details .card-languages .language-list li {
   padding: 4px 8px;
   background: transparent;
+  font-family: "Lato", san-serif;
+  letter-spacing: 1px;
   border-radius: 4px;
   font-size: 14px;
   line-height: 16px;
@@ -379,10 +389,15 @@ h6 {
   color: #dfdada;
 }
 .project-page .grid-card-display .project-card .card-details .project-card-button {
-  width: 122px;
+  width: 140px;
   height: 48px;
   margin-bottom: 10px;
+  border: 2px groove #36b37e;
   align-self: center;
+  background-color: transparent;
+  font-family: "Lato", san-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .modal-overlay {
@@ -658,13 +673,15 @@ h6 {
 .about-me-page .grid-skill-display .skill-card .skill-card-details .skill-card-languages .skill-language-list li {
   padding: 12px;
   background: #ebf0ee;
+  font-family: "Lato", san-serif;
+  letter-spacing: 1.5px;
   border-radius: 8px;
   font-size: 12px;
   line-height: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
-  color: black;
+  color: #000000;
 }
 
 .contact-form-page {
@@ -780,6 +797,7 @@ h6 {
 .contact-form-page .form-div form .form-button-div .form-button {
   width: 137px;
   height: 48px;
+  font-family: "Anta", san-serif;
 }
 .contact-form-page .footer-social-media {
   margin-top: 46px;
