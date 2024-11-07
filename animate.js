@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+git gsap.registerPlugin(ScrollTrigger);
 
 // let t1 = gsap.timeline({
 
