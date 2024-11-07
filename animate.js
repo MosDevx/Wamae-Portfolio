@@ -25,6 +25,7 @@ homepageTL.fromTo('.greeting-span', {
   x: 0,
   // duration: 1.5,
   opacity: 1,
+  delay:2,
   // zIndex:-1
 });
 homepageTL.fromTo('.jobtitle-span', {

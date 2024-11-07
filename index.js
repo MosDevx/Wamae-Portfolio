@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadingScreen.style.width = 0;
     loadingScreen.style.height = 0;
 
-  }, 3);
+  }, 0);
 });
 // ! Unnecessary code duplication next two blocks. find a better method
 // code to handle opening of mobile nav menu

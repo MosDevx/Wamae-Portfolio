@@ -11,8 +11,20 @@
 		"linkToLive":"https://https://iconrewards.vercel.app/",
 		"linkToSource":"https://github.com/MosDevx/"
 	},
+
 	{
 		"id":"1",
+		"name":"Re-Verse Discipleship App",
+		"techList":["NextJS","Prisma","SQLite"],
+		"imageUrl":"./Assets/Images/icon-reward.png",
+		"imageAlt":"Re-Verse App",
+		"imageUrlModal":"./Assets/Images/icon-reward.png",
+		"description":"",
+		"linkToLive":"#",
+		"linkToSource":"https://github.com/MosDevx/"
+	},
+	{
+		"id":"2",
 		"name":"Vespa Reservation",
 		"techList":["React","Ruby on Rails","PostgreSQL"],
 		"imageUrl":"./Assets/Images/vespa-project.png",
@@ -25,7 +37,7 @@
 
 	
 	{
-		"id":"2",
+		"id":"3",
 		"name":"Space Missions",
 		"techList":["React","TailwindCSS","HTML"],
 		"imageUrl":"./Assets/Images/space-project.png",
@@ -36,7 +48,7 @@
 		"linkToSource":"https://github.com/MosDevx/Space-Project"
 	},
 	{
-		"id":"3",
+		"id":"4",
 		"name":"Annual Writers Meetup",
 		"techList":["TailwindCSS","Javascript","Html"],
 		"imageUrl":"./Assets/Images/capstone.png",
@@ -47,7 +59,7 @@
 		"linkToSource":"https://github.com/MosDevx/web-dev-capstone"
 	},
 	{
-		"id":"4",
+		"id":"5",
 		"name":"MovieBase",
 		"techList":["Sass","Javascript","Html","Webpack"],
 		"imageUrl":"./Assets/Images/moviebase.png",
