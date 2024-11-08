@@ -395,40 +395,38 @@ h2 {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%);
   width: 100vw;
   height: 100vh;
   -webkit-backdrop-filter: blur(200px);
           backdrop-filter: blur(200px);
+  opacity: 0;
+  visibility: collapse;
   z-index: 2;
   transition: all 0.33s ease-in-out;
 }
 
 .show-modal-overlay {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 100vh;
-  transform: translate(-50%, -50%) scale(1);
-  transition: all 0.4s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.36s ease-out;
 }
 
 .modal-container {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  visibility: collapse;
+  opacity: 0;
+  transform: translate(-50%, -50%);
   transition: all 0.33s ease-in-out;
   z-index: 4;
 }
 
 .show-modal-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: all 0.4s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.36s ease-out;
 }
 
 .modal-card {
@@ -453,7 +451,7 @@ h2 {
   padding: 10px 10px;
 }
 .modal-card .modal-image-div .icon-close {
-  color: rgba(218, 7, 7, 0.5411764706);
+  color: rgba(218, 7, 7, 0.8039215686);
   padding: 7px;
   position: absolute;
   width: 32px;

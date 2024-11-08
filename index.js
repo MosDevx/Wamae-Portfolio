@@ -115,14 +115,14 @@ const { body } = document;
 function showModal() {
   modalContainer.classList.add('show-modal-container');
   modalOverlay.classList.add('show-modal-overlay');
-  body.style.overflow = 'hidden';
+  // body.style.overflow = 'hidden'; //was supposed to stop bg scrolling ...but not woring
 }
 
 function hideModal() {
   modalContainer.classList.remove('show-modal-container');
 
   modalOverlay.classList.remove('show-modal-overlay');
-  body.style.overflow = 'auto';
+  // body.style.overflow = 'auto'; //was supposed to stop background scrolling ..but not working
 }
 
 // add an event listener to close the modal ,when the overlay isclicked
