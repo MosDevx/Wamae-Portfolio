@@ -145,7 +145,7 @@ gsap.to([jobTitleText.words, greetingText.words], {
     start: () => window.innerWidth < 768 ? '20 100' : 'top 10%',
     end: () => window.innerWidth < 768 ? 'bottom 240' : 'bottom 230',
     scrub: 1.5,
-    markers:true,
+    // markers:true,
     // pin:true
   },
 });
