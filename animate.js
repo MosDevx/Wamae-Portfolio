@@ -117,8 +117,8 @@ gsap.to(introText.words,
       onEnterBack: () => completeIntroText(),
 
       trigger: '.intro-text',
-      markers:false,
-      start: '70 40%',
+      markers:true,
+      start: '70 48%',
       // pin:true,
       end: '+=100px 60%',
       toggleActions: 'play none reset none ',
@@ -140,8 +140,10 @@ gsap.to([jobTitleText.words, greetingText.words], {
   ease: 'elastic.out(0.7,0.6)',
   scrollTrigger: {
     trigger: '.greeting-span',
-    start: 'top 10%',
-    scrub: 1.5,
+    start: 'top 20%',
+    markers: true,
+    end: 'bottom 30%',
+    scrub: 1.8,
 
     // markers:true,
     // pin:true
