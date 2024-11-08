@@ -117,8 +117,10 @@ gsap.to(introText.words,
       onEnterBack: () => completeIntroText(),
 
       trigger: '.intro-text',
-      markers:true,
-      start: '70 40%',
+      // markers:true,
+      // start: '70 40%',
+      start: () => window.innerWidth < 768 ? 'top 32%' : '70 38%',
+      end: () => window.innerWidth < 768 ? 'bottom 220' : '+=100px 60%',
       // pin:true,
       end: '+=100px 60%',
       toggleActions: 'play none reset none ',
@@ -140,10 +142,10 @@ gsap.to([jobTitleText.words, greetingText.words], {
   ease: 'elastic.out(0.7,0.6)',
   scrollTrigger: {
     trigger: '.greeting-span',
-    start: () => window.innerWidth < 768 ? 'top 20%' : 'top 10%',
-    end: () => window.innerWidth < 768 ? 'bottom 20%' : 'bottom 10%',
+    start: () => window.innerWidth < 768 ? 'top 100' : 'top 10%',
+    end: () => window.innerWidth < 768 ? 'bottom 240' : 'bottom 10%',
     scrub: 1.5,
-    markers:true,
+    // markers:true,
     // pin:true
   },
 });
