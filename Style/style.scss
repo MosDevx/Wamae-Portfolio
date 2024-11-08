@@ -246,41 +246,34 @@ $screen-extra-large-min:1200px;
       transition: all 0.4s ease-in-out;
 
       
-//glass effect for menu
-background: rgba(255, 255, 255, 0.46);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6.9px);
--webkit-backdrop-filter: blur(6.9px);
+    //glass effect for menu
+    background: rgba(255, 255, 255, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
 
       ul {
         list-style-type: none;
-        margin-top: 108px;
+        margin-top: 170px;
 
         li {
+          text-align: right;
           font-style: normal;
           font-weight: 600;
           font-size: 32px;
           line-height: 44px;
+          padding-right: 25px;
           padding-bottom: 40px;
-          // background-color: #000000;
-
-          // background-clip: text;
-          // -webkit-background-clip: text;
-          // // color: rgba(0, 0, 0, 0.2);
-          // -webkit-fill-text-color : transparent;
-
+          
           a {
             text-decoration: none;
-            // color:black;
             background-color: #ff9500f9;
-            padding: 5px;
+            padding: 5px 10px;
+            // border: 1px solid ;
+            border-radius:0% 21% 0% 24% / 0% 29% 0% 33%   ;
          
 
-            &:hover {
-              // color:black;
-        
-            }
           }
 
         }

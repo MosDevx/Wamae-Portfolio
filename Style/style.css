@@ -182,19 +182,22 @@ h2 {
 }
 .homepage-container .homepage-header nav.mobile-nav ul {
   list-style-type: none;
-  margin-top: 108px;
+  margin-top: 170px;
 }
 .homepage-container .homepage-header nav.mobile-nav ul li {
+  text-align: right;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
+  padding-right: 25px;
   padding-bottom: 40px;
 }
 .homepage-container .homepage-header nav.mobile-nav ul li a {
   text-decoration: none;
   background-color: rgba(255, 149, 0, 0.9764705882);
-  padding: 5px;
+  padding: 5px 10px;
+  border-radius: 0% 21% 0% 24%/0% 29% 0% 33%;
 }
 .homepage-container .homepage-header nav.mobile-nav ul span {
   background-clip: text;
@@ -443,7 +446,7 @@ h2 {
   padding: 0 10px;
   background-image: url(../Assets/Images/realblack-mobile2.jpg);
   border-radius: 8px;
-  width: 80vw;
+  width: 97vw;
   align-items: center;
   z-index: 4;
 }
@@ -452,11 +455,11 @@ h2 {
 }
 .modal-card .modal-image-div .icon-close {
   color: rgba(218, 7, 7, 0.8039215686);
-  padding: 7px;
+  padding-right: 4px;
   position: absolute;
   width: 32px;
   height: 32px;
-  right: 4%;
+  right: 2px;
   cursor: pointer;
 }
 .modal-card .modal-image-div .modal-image {
@@ -925,6 +928,7 @@ h2 {
     color: #fff;
     width: 50px;
     height: 50px;
+    right: 5%;
     background-color: transparent;
     transition: color 0.2s ease-out;
   }

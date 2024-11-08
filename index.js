@@ -30,6 +30,8 @@ mobileNavOverlay.addEventListener('click', (e) => {
   menuBars.classList.toggle('hide-element');
 });
 
+
+
 // ! Unnecessary code duplication next two blocks. find a better method
 // code to handle opening of mobile nav menu
 menuBars.addEventListener('click', () => {
@@ -47,10 +49,12 @@ menuClose.addEventListener('click', () => {
 // hides the nav drawer when a nav item is clicked
 
 mobileLinkItemList.forEach((linkItem) => {
-  linkItem.addEventListener('click', () => {
+  linkItem.addEventListener('click', (e) => {
+    e.stopPropagation();
     navMenu.classList.remove('show-mobile-nav');
     menuClose.classList.toggle('hide-element');
     menuBars.classList.toggle('hide-element');
+
   });
 });
 

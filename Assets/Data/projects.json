@@ -15,7 +15,7 @@
 	{
 		"id":"1",
 		"name":"Re-Verse Discipleship App",
-		"techList":["NextJS","Prisma","SQLite"],
+		"techList":["NextJS","Prisma","SQLite","Gemini"],
 		"imageUrl":"./Assets/Images/reverse-app.png",
 		"imageAlt":"Re-Verse App",
 		"imageUrlModal":"Assets/Images/reverse-app.png",
