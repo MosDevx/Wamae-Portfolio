@@ -228,26 +228,54 @@ const nameInput = form.elements.name;
 const messageInput = form.elements.message;
 const errorField = document.getElementById('error-message');
 
-function isLowerCase(email) {
-  return email === email.toLowerCase();
+
+
+function isValidEmail(email) {
+  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return emailPattern.test(email);
 }
 
 function isFormValid() {
-  if (emailInput.value && nameInput.value && messageInput.value) {
+  console.log("isFormValidCalled")
+  if (emailInput.value && isValidEmail(emailInput.value) && nameInput.value && messageInput.value) {
+    nameInput.style.color = 'default'
+    messageInput.style.color='inherit'
+    emailInput.style.color='inherit'
     return true;
+  }else{
+  if (!nameInput.value) {
+    nameInput.style.border = '3px outset red';
+    errorField.textContent = 'Please fill in the name field :)';
+    nameInput.focus();
+  } else if (!emailInput.value) {
+    emailInput.style.border = '3px outset red';
+    errorField.textContent = 'Please fill in the email field :)';
+    emailInput.focus();
+  } else if (!isValidEmail(emailInput.value)) {
+    emailInput.style.border = '3px outset red';
+    emailInput.style.color = 'red'
+    errorField.textContent = 'Incorrect email address :)';
+    emailInput.focus();
+  } else if (!messageInput.value) {
+    messageInput.style.border = '3px outset red';
+    errorField.textContent = 'Please fill in the message field :)';
+    messageInput.focus();
   }
-  return false;
+    
+
+    return false
+  }
+
 }
 
 const formTitle = document.getElementById('form-title-id')
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const emailValue = emailInput.value;
+  // const emailValue = emailInput.value.toLowerCase();
 
-  if (isLowerCase(emailValue)) {
-    // errorField.innerText = '';
-    // form.submit();
+  if (isFormValid()) {
+
     const formData = new FormData(form);
     const url = 'https://formspree.io/f/xnqkvqvy';
 
@@ -263,17 +291,20 @@ form.addEventListener('submit', (event) => {
         if(response.ok){
           
           form.reset();
-    formTitle.scrollIntoView()
+          formTitle.scrollIntoView()
           showFormSuccess();
         }
       })
-      .catch((error) => { console.log("Error occurs"); console.error(error); })
+      .catch((error) => { 
+        console.log("Error occurs");
+         console.error(error); 
+         errorField.textContent= 'Network Error; Please try again later';})
       .finally(() => {
    
       });
 
   } else {
-    // errorField.innerText = 'Please type email in lower case*';
+    errorField.textContent = 'Network Error; Please try again later';
   }
 });
 
@@ -334,7 +365,7 @@ const formButtonDivRect = formButtonDiv.getBoundingClientRect();
 const formButtonDivWidth = formButtonDivRect.width;
 const formButtonRect = formButton.getBoundingClientRect();
 const formButtonWidth = formButtonRect.width;
-
+// const emailInput = document.getElementById('email');
 function getRandomValue(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -362,39 +393,60 @@ function buttonDodger() {
 }
 //for dodging on  touch
 //* its working!! I needed to set position relative on the buttonDiv.
-formButton.addEventListener('touchstart', (e)=>{
-  if(!isFormValid()){
-    e.preventDefault();
-    errorField.style.visibility = 'visible';
-    setTimeout(() => {
+// formButton.addEventListener('touchstart', (e)=>{
+//   if(!isFormValid()){
+//     e.preventDefault();
+
+//     if(emailInput.value && !emailInput.validity.valid){
+//       emailInput.style.border = '3px solid red';
+//     }
+//     errorField.style.visibility = 'visible';
+//     setTimeout(() => {
   
-      errorField.style.visibility = 'hidden';
-    }, 4000);
-    buttonDodger();
-  }else{
-    errorField.style.visibility = 'hidden';
-  }
-})
+//       errorField.style.visibility = 'hidden';
+//     }, 4000);
+//     buttonDodger();
+//   }else{
+//     emailInput.style.border = '2px solid green';
+//     errorField.style.visibility = 'hidden';
+//   }
+// })
 
-
-//for dodging on desktop 
-
-
-
-formButton.addEventListener('mouseover', () => {
+const formValidateAndDodge = ()=>{
   if (!isFormValid()) {
-    // errorField.textContent = ' *Please fill in all the fields :)';
-    // errorField.classList.remove('hidden')
+
     errorField.style.visibility = 'visible';
+
+    setTimeout(() => {     
+      emailInput.style.color='black'
+      emailInput.style.border='black'
+      nameInput.style.border='black'
+      messageInput.style.border='black'
+    
+    }, 2600);
     setTimeout(() => {
- 
       errorField.style.visibility = 'hidden';
+
     }, 4000);
     
       buttonDodger();
   } else {
+    emailInput.style.border = '2px solid green';
+    nameInput.style.border = '2px solid green';
+    messageInput.style.border = '2px solid green';
     errorField.style.visibility = 'hidden';
   }
+
+}
+
+//for dodging on touch
+formButton.addEventListener('touchstart', () => {
+  formValidateAndDodge();
+});
+//for dodging on desktop 
+
+formButton.addEventListener('mouseover', () => {
+  formValidateAndDodge();
 });
 
 // HANDLING EFFECTS AND ANIMATIONS
