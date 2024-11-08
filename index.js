@@ -23,6 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }, 2000);
 });
+
+//Add event listener to close the mobile nav when the overlay is clicked
+const mobileNavOverlay = document.querySelector('.mobile-nav')
+mobileNavOverlay.addEventListener('click', (e) => {
+  e.preventDefault();
+  navMenu.classList.remove('show-mobile-nav');
+  menuClose.classList.toggle('hide-element');
+  menuBars.classList.toggle('hide-element');
+});
+
 // ! Unnecessary code duplication next two blocks. find a better method
 // code to handle opening of mobile nav menu
 menuBars.addEventListener('click', () => {
