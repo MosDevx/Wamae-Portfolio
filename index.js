@@ -1,8 +1,5 @@
-// import anime from "./node_modules/animejs/lib/anime.es";
-// import  {Lenis} from './node_modules/@studio-freight/lenis/bundled/lenis.js'
 
-import './animate.js';
-import { showFormSuccess } from './animate.js';
+import {lenis, showFormSuccess } from './animate.js';
 
 const menuBars = document.querySelector('.menu-bars');
 const menuClose = document.querySelector('.menu-close');
@@ -21,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadingScreen.style.width = 0;
     loadingScreen.style.height = 0;
 
-  }, 2000);
+  }, 2500);
 });
 
 //Add event listener to close the mobile nav when the overlay is clicked
@@ -115,6 +112,7 @@ const { body } = document;
 function showModal() {
   modalContainer.classList.add('show-modal-container');
   modalOverlay.classList.add('show-modal-overlay');
+  lenis.stop()
   // body.style.overflow = 'hidden'; //was supposed to stop bg scrolling ...but not woring
 }
 
@@ -122,6 +120,7 @@ function hideModal() {
   modalContainer.classList.remove('show-modal-container');
 
   modalOverlay.classList.remove('show-modal-overlay');
+  lenis.start()
   // body.style.overflow = 'auto'; //was supposed to stop background scrolling ..but not working
 }
 

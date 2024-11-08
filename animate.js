@@ -255,7 +255,7 @@ gsap.to('.name-span div', {
 // 		opacity:1
 // })
 
-const lenis = new Lenis();
+export const lenis = new Lenis();
 
 function raf(time) {
   lenis.raf(time);
