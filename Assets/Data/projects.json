@@ -1,75 +1,73 @@
 {
-"projects":[
-	{
-		"id":"0",
-		"name":"Icon Loyalty Reward",
-		"techList":["React","Ruby on Rails","PostgreSQL"],
-		"imageUrl":"./Assets/Images/icon-reward.png",
-		"imageAlt":"Loyalty Program",
-		"imageUrlModal":"./Assets/Images/icon-reward.png",
-		"description":"",
-		"linkToLive":"https://https://iconrewards.vercel.app/",
-		"linkToSource":"https://github.com/MosDevx/"
-	},
+	"projects": [
+		{
+			"id": "0",
+			"name": "Primehealth Ecommerce",
+			"techList": ["Qwik", "Vite", "Cloudflare Pages"],
+			"imageUrl": "./Assets/Images/primehealth.png",
+			"imageAlt": "Ecommere Site",
+			"imageUrlModal": "./Assets/Images/primehealth.png",
+			"description": "",
+			"linkToLive": "https://primehealth.beauty/",
+			"linkToSource": "https://github.com/MosDevx/"
+		},
 
-	{
-		"id":"1",
-		"name":"Re-Verse Discipleship App",
-		"techList":["NextJS","Prisma","SQLite","Gemini"],
-		"imageUrl":"./Assets/Images/reverse-app.png",
-		"imageAlt":"Re-Verse App",
-		"imageUrlModal":"Assets/Images/reverse-app.png",
-		"description":"",
-		"linkToLive":"#",
-		"linkToSource":"https://github.com/MosDevx/"
-	},
-	{
-		"id":"2",
-		"name":"Vespa Reservation",
-		"techList":["React","Ruby on Rails","PostgreSQL"],
-		"imageUrl":"./Assets/Images/vespa-project.png",
-		"imageAlt":"Vespa Reservation",
-		"imageUrlModal":"./Assets/Images/vespa-project.png",
-		"description":"",
-		"linkToLive":"https://vespa-reservation.onrender.com/home",
-		"linkToSource":"https://github.com/MosDevx/Capstone-Project-Vespas-Fronted"
-	},
+		{
+			"id": "1",
+			"name": "Food-Systems EdTech",
+			"techList": ["HTML", "JS", "Tailwind", "Firebase"],
+			"imageUrl": "./Assets/Images/food-system.png",
+			"imageAlt": "Food Systems EdTech",
+			"imageUrlModal": "./Assets/Images/food-system.png",
+			"description": "",
+			"linkToLive": "https://food-system-flow.netlify.app/",
+			"linkToSource": "https://github.com/MosDevx/"
+		},
+		{
+			"id": "2",
+			"name": "Rehema Ability CBO",
+			"techList": ["HTML", "JS", "CSS"],
+			"imageUrl": "./Assets/Images/rehema-ability.png",
+			"imageAlt": "Rehema Ability CBO",
+			"imageUrlModal": "./Assets/Images/rehema-ability.png",
+			"description": "",
+			"linkToLive": "https://rehemaability.org/",
+			"linkToSource": "https://github.com/MosDevx/"
+		},
+		{
+			"id": "3",
+			"name": "Food-Heroes EdTech",
+			"techList": ["HTML", "JS", "Tailwind", "Firebase"],
+			"imageUrl": "./Assets/Images/food-heroes.png",
+			"imageAlt": "Food Heroes EdTech",
+			"imageUrlModal": "./Assets/Images/food-heroes.png",
+			"description": "",
+			"linkToLive": "https://food-heroes.netlify.app/",
+			"linkToSource": "https://github.com/MosDevx/"
+		},
 
-	
-	{
-		"id":"3",
-		"name":"Space Missions",
-		"techList":["React","TailwindCSS","HTML"],
-		"imageUrl":"./Assets/Images/space-project.png",
-		"imageAlt":"Gallery Website",
-		"imageUrlModal":"./Assets/Images/space-project.png",
-		"description":"",
-		"linkToLive":"https://rocketmissions.netlify.app/",
-		"linkToSource":"https://github.com/MosDevx/Space-Project"
-	},
-	{
-		"id":"4",
-		"name":"Annual Writers Meetup",
-		"techList":["TailwindCSS","Javascript","Html"],
-		"imageUrl":"./Assets/Images/capstone.png",
-		"imageAlt":"Conference Website",
-		"imageUrlModal":"./Assets/Images/capstone.png",
-		"description":"",
-		"linkToLive":"https://mosdevx.github.io/web-dev-capstone/src/homepage.html",
-		"linkToSource":"https://github.com/MosDevx/web-dev-capstone"
-	},
-	{
-		"id":"5",
-		"name":"MovieBase",
-		"techList":["Sass","Javascript","Html","Webpack"],
-		"imageUrl":"./Assets/Images/moviebase.png",
-		"imageAlt":"MovieBase",
-		"imageUrlModal":"./Assets/Images/moviebase.png",
-		"description":"",
-		"linkToLive":"https://mosdevx.github.io/MovieApiProject/dist/index.html",
-		"linkToSource":"https://github.com/MosDevx/MovieApiProject"
-	}
+		{
+			"id": "4",
+			"name": "Icon Loyalty Reward",
+			"techList": ["React", "Ruby on Rails", "PostgreSQL"],
+			"imageUrl": "./Assets/Images/icon-reward.png",
+			"imageAlt": "Loyalty Program",
+			"imageUrlModal": "./Assets/Images/icon-reward.png",
+			"description": "",
+			"linkToLive": "https://https://iconrewards.vercel.app/",
+			"linkToSource": "https://github.com/MosDevx/"
+		},
 
-]
-
+		{
+			"id": "5",
+			"name": "Re-Verse Discipleship App",
+			"techList": ["NextJS", "Prisma", "SQLite"],
+			"imageUrl": "./Assets/Images/reverse-app.png",
+			"imageAlt": "Re-Verse App",
+			"imageUrlModal": "Assets/Images/reverse-app.png",
+			"description": "",
+			"linkToLive": "#",
+			"linkToSource": "https://github.com/MosDevx/"
+		}
+	]
 }
